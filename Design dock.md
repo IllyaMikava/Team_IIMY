@@ -197,7 +197,7 @@ Generic job boards return hundreds of keyword-matched, mostly irrelevant results
 
 | Risk | Mitigation |
 |---|---|
-| Scraping | **None** | Out of scope — listings are pre-seeded data |
+| Scraping | **None** — out of scope; listings are pre-seeded data |
 | Gmail SMTP app-password issues | Set up + test the app password on day 1; have a mock-send fallback that logs the email |
 | Emails land in spam | Use a real test inbox you control; pre-send once before the demo |
 | Threshold too strict/loose | Make `MATCH_THRESHOLD` an env var; tune live |
