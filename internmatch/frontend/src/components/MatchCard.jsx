@@ -11,6 +11,11 @@ export default function MatchCard({ match }) {
           <p className="match-company">{match.company}</p>
         </div>
         {match.emailed && <span className="match-badge">emailed ✓</span>}
+        {match.awaiting_review && (
+          <span className="badge badge-warn" title="This recruiter reviews matches before inviting">
+            under review
+          </span>
+        )}
       </div>
 
       {match.location && <p className="match-location">{match.location}</p>}

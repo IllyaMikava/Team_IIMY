@@ -50,7 +50,8 @@ Full spec: [Design dock.md](Design%20dock.md) · Build prompts: [InternMatch Imp
 | **Backend: API** | `backend/app/main.py`, `cv_parser.py`, `search.py`, `models.py` | `GET /api/health`, `POST /api/upload-cv` (PDF/DOCX/TXT → text → `$vectorSearch` → threshold → reasons → email → `match_events`). |
 | **Backend: email** | `backend/app/emailer.py` | Gmail SMTP, one email per strong match with `Next step:` verbatim. **MOCK mode** (prints the email) when Gmail isn't configured. |
 | Match reasons (optional) | `backend/app/search.py` → `explain_matches` | One `claude-haiku-4-5` call with structured output; blank reasons if no key or on any error. |
-| Frontend page + styles | `internmatch/frontend/index.html`, `style.css` | Static HTML/CSS: hero, CV dropzone, email field, result cards, summary banner, empty state, toast. |
+| Student page | `internmatch/frontend/src/` (React + Vite) | CV dropzone, email field, result cards, summary banner, empty state, toast. |
+| **Recruiter page** (`/recruiter`) | `frontend/src/components/recruiter/`, `backend/app/recruiter.py` | Post a role, including its **next step**. It's embedded immediately, so it's searchable straight away. Choose **auto invite** (matching students are emailed straight away) or **manual invite** (matches wait for review and the recruiter clicks *Invite*). See matched candidates (score, reason, next step, status) and roles with match counts; switch a role's invite mode or close it. Filter everything by company. No login: accounts are a non-goal. |
 
 The backend passes an offline test run with the network services faked: CV parsing, threshold and fallback, reasons, email building, and every API success and error path.
 It has **not** yet been run against a real Atlas cluster or a real Voyage or Gmail account, because that needs the team's keys.
@@ -107,7 +108,16 @@ uvicorn app.main:app --reload --port 8000
   curl -X POST http://localhost:8000/api/upload-cv -F "file=@data/sample_cv.txt" -F "email=you@example.com"
   ```
 
-**4. Frontend**: open `internmatch/frontend/index.html` in a browser (or `python -m http.server 5173` in that folder).
+**4. Frontend**
+```bash
+cd internmatch/frontend
+npm install
+npm run dev
+```
+- Students: http://localhost:5173
+- Recruiters: http://localhost:5173/recruiter
+
+Vite forwards `/api` to the backend on port 8000. Use `VITE_USE_MOCK=true` to run the UI with no backend.
 
 ### API contract
 
@@ -131,9 +141,20 @@ uvicorn app.main:app --reload --port 8000
   "total_emailed": 3
 }
 ```
-- `matches` holds every result with `score >= MATCH_THRESHOLD`, best first, capped at `MAX_EMAILS`. Each one gets an email.
+- `matches` holds every result with `score >= MATCH_THRESHOLD`, best first, capped at `MAX_EMAILS`. Each one gets an email, except roles set to **manual invite**: those come back with `awaiting_review: true` and are emailed only when the recruiter clicks Invite.
 - If nothing clears the threshold, you get the single best result with `best_available: true`. It is **not emailed**, because it isn't a strong match.
 - Errors return `{"detail": "..."}`: `400` for a bad file type, unreadable file or bad email; `413` for a file over 5 MB; `503` when search is unavailable (MongoDB/Voyage not configured or not reachable).
+
+**Recruiter endpoints** (`/api/recruiter`, no auth)
+
+| Method | Path | What it does |
+|---|---|---|
+| `GET` | `/jobs?company=` | Roles, newest first, each with `match_count` (strong matches from `match_events`) |
+| `POST` | `/jobs` | JSON `{title, company, location, url, description, skills[], next_step, invite_mode}` (`invite_mode` is `"auto"` or `"manual"`, default auto) → embeds it and saves it → `201`. `409` if the company already has that title; `422` if a field is missing or too short |
+| `PATCH` | `/jobs/{id}` | `{invite_mode: "auto" \| "manual"}`: switch how future matches are handled |
+| `DELETE` | `/jobs/{id}` | Close a role so it stops matching (past matches are kept) → `204` |
+| `GET` | `/matches?company=` | Matched candidates, newest first: email, role, score, next step, reason, `emailed`, `awaiting_review` |
+| `POST` | `/matches/{id}/invite` | Manual invite: email the candidate the role's next step now. `409` if they were already emailed |
 
 ### `backend/.env`
 ```

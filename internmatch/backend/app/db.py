@@ -15,7 +15,8 @@ def get_client() -> MongoClient:
     """One shared client for the whole process (pymongo pools connections itself)."""
     if not config.MONGODB_URI:
         raise RuntimeError("MONGODB_URI is not set. Copy backend/.env.example to backend/.env and fill it in.")
-    return MongoClient(config.MONGODB_URI, serverSelectionTimeoutMS=10_000, appname="internmatch")
+    # tz_aware: return datetimes as UTC-aware, so the API sends "...+00:00" and browsers show the right local time.
+    return MongoClient(config.MONGODB_URI, serverSelectionTimeoutMS=10_000, appname="internmatch", tz_aware=True)
 
 
 def get_db() -> Database:
