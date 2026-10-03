@@ -77,7 +77,6 @@ p { margin: 0; }
 a { color: inherit; }
 button, input, textarea { font: inherit; color: inherit; }
 img { max-width: 100%; }
-[hidden], .hidden { display: none !important; }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
@@ -173,6 +172,7 @@ img { max-width: 100%; }
   font-weight: 600;
   cursor: pointer;
   transition: filter .15s, border-color .15s, transform .05s;
+  text-decoration: none;
 }
 .btn:hover { border-color: var(--muted); }
 .btn:active { transform: translateY(1px); }
@@ -202,7 +202,7 @@ img { max-width: 100%; }
 .card-title { font-size: 1.5rem; margin-bottom: 6px; }
 .card-desc { color: var(--muted); margin-bottom: 22px; }
 
-#match-form { display: grid; gap: 18px; }
+.match-form { display: grid; gap: 18px; }
 
 /* dropzone */
 .dropzone {
