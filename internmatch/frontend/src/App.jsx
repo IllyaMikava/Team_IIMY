@@ -6,9 +6,13 @@ import Results from './components/Results.jsx'
 import HowItWorks from './components/HowItWorks.jsx'
 import Footer from './components/Footer.jsx'
 import Toast from './components/Toast.jsx'
+import Login from './components/Login.jsx'
+import RecruiterHome from './components/RecruiterHome.jsx'
 import { uploadCv } from './api.js'
+import { clearUser, loadUser, saveUser } from './auth.js'
 
 export default function App() {
+  const [user, setUser] = useState(loadUser) // { email, role } or null
   const [loading, setLoading] = useState(false)
   const [result, setResult] = useState(null)
   const [toast, setToast] = useState(null) // { message, type }
@@ -46,14 +50,35 @@ export default function App() {
     }
   }
 
+  function handleLogin(next) {
+    saveUser(next)
+    setUser(next)
+  }
+
+  function handleLogout() {
+    clearUser()
+    setUser(null)
+    setResult(null)
+  }
+
   return (
     <>
-      <Header />
+      <Header user={user} onLogout={handleLogout} />
       <main>
-        <Hero />
-        <UploadCard onSubmit={handleSubmit} loading={loading} />
-        <Results data={result} />
-        <HowItWorks />
+        {!user && <Login onLogin={handleLogin} />}
+        {user?.role === 'recruiter' && <RecruiterHome user={user} />}
+        {user?.role === 'student' && (
+          <>
+            <Hero />
+            <UploadCard
+              onSubmit={handleSubmit}
+              loading={loading}
+              defaultEmail={user.email}
+            />
+            <Results data={result} />
+            <HowItWorks />
+          </>
+        )}
       </main>
       <Footer />
       <Toast message={toast?.message} type={toast?.type} />

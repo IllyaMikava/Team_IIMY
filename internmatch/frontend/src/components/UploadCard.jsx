@@ -3,9 +3,9 @@ import { useRef, useState } from 'react'
 const ACCEPT = '.pdf,.docx,.txt'
 const MAX_BYTES = 5 * 1024 * 1024
 
-export default function UploadCard({ onSubmit, loading }) {
+export default function UploadCard({ onSubmit, loading, defaultEmail = '' }) {
   const [file, setFile] = useState(null)
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState(defaultEmail)
   const [emailError, setEmailError] = useState('')
   const [dragOver, setDragOver] = useState(false)
   const inputRef = useRef(null)
