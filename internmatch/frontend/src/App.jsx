@@ -7,17 +7,31 @@ import HowItWorks from './components/HowItWorks.jsx'
 import Footer from './components/Footer.jsx'
 import Toast from './components/Toast.jsx'
 import RecruiterPage from './components/recruiter/RecruiterPage.jsx'
+import Login from './components/Login.jsx'
 import { uploadCv } from './api.js'
 
-// Two pages, chosen by URL path: "/" for students, "/recruiter" for recruiters.
-// (Vite's dev server serves index.html for any path, so no router library is needed.)
-const PAGE = window.location.pathname.startsWith('/recruiter') ? 'recruiter' : 'student'
+const ROLE_KEY = 'internmatch.role'
+
+function getSavedRole() {
+  try { return sessionStorage.getItem(ROLE_KEY) } catch { return null }
+}
 
 export default function App() {
+  const [role, setRole] = useState(getSavedRole) // null = show login
   const [loading, setLoading] = useState(false)
   const [result, setResult] = useState(null)
-  const [toast, setToast] = useState(null) // { message, type }
+  const [toast, setToast] = useState(null)
   const toastTimer = useRef(null)
+
+  function handleLogin(userRole) {
+    try { sessionStorage.setItem(ROLE_KEY, userRole) } catch {}
+    setRole(userRole)
+  }
+
+  function handleLogout() {
+    try { sessionStorage.removeItem(ROLE_KEY) } catch {}
+    setRole(null)
+  }
 
   const showToast = useCallback((message, type = 'error') => {
     setToast({ message, type })
@@ -51,11 +65,15 @@ export default function App() {
     }
   }
 
+  if (!role) {
+    return <Login onLogin={handleLogin} />
+  }
+
   return (
     <>
-      <Header page={PAGE} />
+      <Header page={role} onLogout={handleLogout} />
       <main>
-        {PAGE === 'recruiter' ? (
+        {role === 'recruiter' ? (
           <RecruiterPage showToast={showToast} />
         ) : (
           <>

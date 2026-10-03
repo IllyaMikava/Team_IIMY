@@ -1,4 +1,4 @@
-export default function Header({ page = 'student' }) {
+export default function Header({ page = 'student', onLogout }) {
   return (
     <header className="site-header">
       <div className="container header-inner">
@@ -12,14 +12,14 @@ export default function Header({ page = 'student' }) {
           <nav className="header-nav">
             <a href="#candidates">Candidates</a>
             <a href="#roles">Your roles</a>
-            <a href="/" className="nav-switch">For students</a>
             <a href="#post" className="nav-cta">Post a role</a>
+            <button className="nav-switch btn-link" onClick={onLogout}>Log out</button>
           </nav>
         ) : (
           <nav className="header-nav">
             <a href="#how">How it works</a>
-            <a href="/recruiter" className="nav-switch">For recruiters</a>
             <a href="#upload" className="nav-cta">Get matched</a>
+            <button className="nav-switch btn-link" onClick={onLogout}>Log out</button>
           </nav>
         )}
       </div>
