@@ -1,0 +1,21 @@
+alex murphy - 3rd year computer science, TU Dublin
+alex.murphy.demo@example.com | github.com/alexm-demo
+
+about me
+i like building stuff that people actually use. mostly web things but i got into data stuff this year
+
+projects
+- gym tracker app: made a thing that stores users and their workouts and shows charts of progress over time. react frontend, node/express backend, postgres database. wrote the sql myself incl. joins and some indexes because the charts page was slow. deployed on render
+- society ticketing site: flask app for selling tickets for our society events, stripe test payments, emails a qr code. ~400 students used it. had to fix a bug where two people could buy the last ticket (added a transaction)
+- module grades scraper + dashboard: python script that pulls my grades into pandas, cleans them and makes plots with matplotlib. later put it in a streamlit dashboard
+- discord bot for our class, python, keeps reminders in sqlite, runs in docker on a raspberry pi
+
+experience
+- summer 2025 - IT helpdesk intern at a solicitors office. reset passwords, set up laptops, wrote a powershell script to automate new starter accounts
+- part time barista 2023-now (team work, staying calm when its busy lol)
+
+skills
+javascript, react, python, flask, sql/postgres, sqlite, pandas, git, docker (basic), linux, rest apis, a bit of aws (s3 + ec2 from a module)
+
+interests
+backend + data, how databases work, 5-a-side football

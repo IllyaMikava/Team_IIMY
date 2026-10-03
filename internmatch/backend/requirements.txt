@@ -1,0 +1,10 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pymongo>=4.7          # 4.7+ needed for create_search_index (scripts/create_index.py)
+python-dotenv>=1.0
+voyageai>=0.3
+pydantic>=2.7
+pdfplumber>=0.11
+python-docx>=1.1
+anthropic>=1.0          # match reasons use messages.parse(output_format=...)

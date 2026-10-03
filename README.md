@@ -26,7 +26,7 @@ Full spec: [Design dock.md](Design%20dock.md) · Build prompts: [InternMatch Imp
 2. The backend extracts plain text from the CV.
 3. The text is embedded with **Voyage AI** (`voyage-3`, 1024 dims, `input_type="query"`).
 4. Atlas **`$vectorSearch`** ranks the stored job descriptions (`numCandidates=100`, `limit=15`).
-5. Every match with `score >= MATCH_THRESHOLD` (default `0.75`) is kept, capped at `MAX_EMAILS` (default `5`). If none clear the bar, the single best match is returned and flagged "best available".
+5. Every match with `score >= MATCH_THRESHOLD` (default `0.75`) is kept, capped at `MAX_EMAILS` (default `5`). If none clear the bar, the single best match is returned and flagged "best available" (shown in the UI but not emailed).
 6. *(Optional)* One Claude call (`claude-haiku-4-5`) writes a one-line "why this matched" for each result.
 7. For each match, **one email** goes out via Gmail SMTP:
    `You matched: {job_title} at {company}`, with the reason, **`Next step: {next_step}`** copied verbatim from the job, and the job link.
@@ -45,63 +45,106 @@ Full spec: [Design dock.md](Design%20dock.md) · Build prompts: [InternMatch Imp
 | Item | Where | Notes |
 |---|---|---|
 | Design doc + build prompts (CV → match → email flow) | `Design dock.md`, `InternMatch Implementation Prompts.md` | Latest plan. `Design dock.docx` is generated from the `.md`. |
-| Job dataset | `internmatch/backend/data/listings.json` | **271** listings, all with `title, company, location, url, description, skills, next_step, source`. No embeddings (those are added in Atlas by `ingest.py`). |
-| Frontend page + styles | `internmatch/frontend/index.html`, `style.css` | Static HTML/CSS: hero, CV dropzone, email field, result cards (score bar, reason, next-step pill, emailed badge), summary banner, empty state, toast. |
-| `.gitignore` | root | Ignores `.env`, venvs, `node_modules`, etc. |
+| Job dataset | `internmatch/backend/data/listings.json` | **271** listings, all with `title, company, location, url, description, skills, next_step, source`. Embeddings are added in Atlas by `ingest.py`. |
+| **Backend: data pipeline** | `backend/app/db.py`, `embeddings.py`, `scripts/ingest.py`, `scripts/create_index.py` | Voyage `voyage-3` (1024 dims), batched with retry. Ingest saves after every batch and only re-embeds listings whose text changed. |
+| **Backend: API** | `backend/app/main.py`, `cv_parser.py`, `search.py`, `models.py` | `GET /api/health`, `POST /api/upload-cv` (PDF/DOCX/TXT → text → `$vectorSearch` → threshold → reasons → email → `match_events`). |
+| **Backend: email** | `backend/app/emailer.py` | Gmail SMTP, one email per strong match with `Next step:` verbatim. **MOCK mode** (prints the email) when Gmail isn't configured. |
+| Match reasons (optional) | `backend/app/search.py` → `explain_matches` | One `claude-haiku-4-5` call with structured output; blank reasons if no key or on any error. |
+| Frontend page + styles | `internmatch/frontend/index.html`, `style.css` | Static HTML/CSS: hero, CV dropzone, email field, result cards, summary banner, empty state, toast. |
+
+The backend passes an offline test run with the network services faked: CV parsing, threshold and fallback, reasons, email building, and every API success and error path.
+It has **not** yet been run against a real Atlas cluster or a real Voyage or Gmail account, because that needs the team's keys.
 
 ### ⏳ Not done yet
 
-**Part 1 — Data (P1)**
-- [ ] MongoDB Atlas cluster + `vector_index` (path `embedding`, 1024 dims, cosine). Create it **first**, because it takes a few minutes to build.
-- [ ] `backend/requirements.txt`
-- [ ] `backend/app/db.py` (`listings` + `match_events` helpers)
-- [ ] `backend/app/embeddings.py` (`embed_texts`, `embed_query`)
-- [ ] `backend/scripts/ingest.py` (embed `listings.json` → upsert into Atlas)
-- [ ] `backend/README_INDEX.md`, `backend/.env.example`
+**Accounts and keys (do these first)**
+- [ ] Create an Atlas cluster (M0 is fine): add a DB user, allow your IP under Network Access, and copy the connection string into `backend/.env`
+- [ ] Get a Voyage API key → `backend/.env`. Adding a payment method lifts the very low free-tier rate limits; the free token allowance still applies.
+- [ ] Run `python scripts/ingest.py`, then `python scripts/create_index.py`, then `python scripts/try_search.py --file data/sample_cv.txt`
+- [ ] Gmail app password → `backend/.env`, then send a test to an inbox you control and check spam
+- [ ] *(optional)* Anthropic API key for match reasons
 
-**Part 2 — Backend / Match (P2)**
-- [ ] `backend/app/models.py` (`MatchResult`, `UploadResponse`)
-- [ ] `backend/app/cv_parser.py` (PDF / DOCX / TXT → text)
-- [ ] `backend/app/search.py` (`vector_search`, `filter_strong`, optional `explain_matches`)
-- [ ] `backend/app/main.py` (`GET /api/health`, `POST /api/upload-cv`)
-
-**Part 3 — Email + Frontend (P3 / P4)**
-- [ ] `backend/app/emailer.py` (Gmail SMTP + MOCK fallback)
-- [ ] `match_events` inserts + `total_emailed` in `/api/upload-cv`
-- [ ] **`internmatch/frontend/script.js`**: `index.html` loads it, but the file doesn't exist yet, so the page is static and the form does nothing
-- [ ] Point the frontend at `http://localhost:8000`
-- [ ] Run steps (below) verified end to end, then rehearse the demo twice
+**Frontend (P4)**
+- [ ] **`internmatch/frontend/script.js`**: `index.html` loads it, but the file doesn't exist yet, so the form does nothing. It should POST `file` + `email` as multipart to `http://localhost:8000/api/upload-cv` and render `matches`.
+- [ ] Full demo run end to end, then rehearse twice
 
 ### ⚠️ Open decisions (repo vs. plan)
 
-1. **Frontend tech.** The plan says *Vite + React + Tailwind*, but what's built is plain HTML/CSS. Recommendation: keep the plain page and add `script.js` (it's already built and has no build step). If we stay plain, `VITE_API_BASE` becomes a constant in `script.js`.
-2. **Dataset size and `seed.py`.** The plan says `seed.py` generates ~300 listings, but `listings.json` was hand-authored with 271 entries. Recommendation: skip `seed.py` and have `ingest.py` read `listings.json` directly. 271 is plenty for the demo.
+1. **Frontend tech.** The plan says *Vite + React + Tailwind*, but what's built is plain HTML/CSS. Recommendation: keep the plain page and add `script.js` (it's already built and has no build step). The backend allows any origin by default (`CORS_ORIGINS=*`), so this works even when the page is opened straight from disk.
+2. **`seed.py` skipped.** `listings.json` was hand-authored (271 entries), so there is no generator script. `ingest.py` reads `listings.json` directly and validates it first (`--dry-run`).
 
 ---
 
-## Run it (once Parts 1–3 are built)
+## Run it
 
-**Backend**
+**1. Backend setup (once)**
 ```bash
 cd internmatch/backend
-python -m venv .venv && .venv/Scripts/activate      # macOS/Linux: source .venv/bin/activate
+python -m venv .venv
+.venv/Scripts/activate                  # macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env                                # fill in the keys below
-python scripts/ingest.py                            # embeds + uploads listings.json
-uvicorn app.main:app --reload --port 8000
+cp .env.example .env                    # then fill in the keys
 ```
 
-**Frontend**: open `internmatch/frontend/index.html` in a browser (or serve the folder, e.g. `python -m http.server 5173`).
+**2. Load the data (once, or after editing `listings.json`)**
+```bash
+python scripts/ingest.py --dry-run      # validates listings.json, no network
+python scripts/ingest.py                # embeds with Voyage + upserts into Atlas
+python scripts/create_index.py          # creates vector_index and waits until it's ready
+python scripts/try_search.py --file data/sample_cv.txt   # sanity check: prints ranked jobs + scores
+```
+If Voyage rate-limits you, use `python scripts/ingest.py --batch-size 32`. Rerunning is safe because it skips what's already embedded.
+Index details and the Atlas UI alternative are in [`internmatch/backend/README_INDEX.md`](internmatch/backend/README_INDEX.md).
 
-**`backend/.env`**
+**3. Start the API**
+```bash
+uvicorn app.main:app --reload --port 8000
+```
+- Health check: http://localhost:8000/api/health → `{"status":"ok","email_mode":"mock"|"gmail"}`
+- Interactive docs: http://localhost:8000/docs
+- Test without the frontend:
+  ```bash
+  curl -X POST http://localhost:8000/api/upload-cv -F "file=@data/sample_cv.txt" -F "email=you@example.com"
+  ```
+
+**4. Frontend**: open `internmatch/frontend/index.html` in a browser (or `python -m http.server 5173` in that folder).
+
+### API contract
+
+`POST /api/upload-cv` (multipart: `file` = PDF/DOCX/TXT up to 5 MB, `email`)
+```json
+{
+  "candidate_email": "student@example.com",
+  "matches": [
+    {
+      "job_title": "Backend Engineering Intern",
+      "company": "Acme Fintech",
+      "location": "Dublin, Ireland",
+      "url": "https://...",
+      "score": 0.87,
+      "next_step": "Recruiter will schedule a 30-minute Zoom intro call.",
+      "match_reason": "Your Postgres + API project maps to this SQL-heavy backend role.",
+      "emailed": true,
+      "best_available": false
+    }
+  ],
+  "total_emailed": 3
+}
+```
+- `matches` holds every result with `score >= MATCH_THRESHOLD`, best first, capped at `MAX_EMAILS`. Each one gets an email.
+- If nothing clears the threshold, you get the single best result with `best_available: true`. It is **not emailed**, because it isn't a strong match.
+- Errors return `{"detail": "..."}`: `400` for a bad file type, unreadable file or bad email; `413` for a file over 5 MB; `503` when search is unavailable (MongoDB/Voyage not configured or not reachable).
+
+### `backend/.env`
 ```
 MONGODB_URI=mongodb+srv://...
 VOYAGE_API_KEY=...
-ANTHROPIC_API_KEY=...          # only for match reasons
-MATCH_THRESHOLD=0.75
+ANTHROPIC_API_KEY=...                    # optional: match reasons
+MATCH_THRESHOLD=0.75                     # vectorSearchScore = (1 + cosine) / 2
 MAX_EMAILS=5
-GMAIL_ADDRESS=youraddr@gmail.com
+GMAIL_ADDRESS=youraddr@gmail.com         # leave both Gmail values empty → MOCK mode (emails print to the console)
 GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx   # Google Account → Security → 2-Step Verification → App passwords
+CORS_ORIGINS=*
 ```
 
 ---
