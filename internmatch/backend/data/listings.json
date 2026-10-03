@@ -1,0 +1,4609 @@
+[
+  {
+    "title": "Data Science Intern",
+    "company": "Accenture Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.accenture.com/ie-en/careers",
+    "description": "Join our analytics team to build predictive models and data pipelines supporting client engagements. You will work with Python, scikit-learn, and Pandas to clean, analyze, and visualize large datasets. Collaborate with senior data scientists on machine learning projects across fintech and healthcare verticals.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Pandas",
+      "NumPy",
+      "SQL",
+      "Data Visualization"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute Zoom intro call within 3 business days.",
+    "source": "IrishJobs.ie"
+  },
+  {
+    "title": "Machine Learning Engineer Intern",
+    "company": "Stripe",
+    "location": "Dublin, Ireland",
+    "url": "https://stripe.com/jobs",
+    "description": "Work on ML systems that power fraud detection and payment optimization for millions of transactions daily. You will prototype models using PyTorch, conduct experiments, and help deploy models to production. Strong Python skills and comfort with statistical thinking are essential.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Machine Learning",
+      "Statistics",
+      "SQL",
+      "A/B Testing"
+    ],
+    "next_step": "Complete a short take-home ML coding task (estimated 3 hours).",
+    "source": "Stripe Careers"
+  },
+  {
+    "title": "Backend Engineering Intern",
+    "company": "HubSpot",
+    "location": "Dublin, Ireland",
+    "url": "https://www.hubspot.com/careers",
+    "description": "Build and maintain scalable backend services for HubSpot's CRM platform. You will write Java and Python microservices, design REST APIs, and work with PostgreSQL and distributed systems. Opportunity to contribute to features used by 100k+ businesses.",
+    "skills": [
+      "Java",
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "Microservices",
+      "Git"
+    ],
+    "next_step": "Phone screen with the engineering team followed by a technical interview.",
+    "source": "HubSpot Careers"
+  },
+  {
+    "title": "AI/ML Research Intern",
+    "company": "Google",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.google.com",
+    "description": "Contribute to cutting-edge AI research projects involving large language models, generative AI, and neural network optimization. You will implement experiments in Python using TensorFlow or PyTorch, analyze results, and co-author internal research reports.",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Deep Learning",
+      "Research",
+      "Mathematics"
+    ],
+    "next_step": "Recruiter will schedule a 45-minute technical screen covering ML fundamentals.",
+    "source": "Google Careers"
+  },
+  {
+    "title": "Software Engineering Intern",
+    "company": "Meta",
+    "location": "Dublin, Ireland",
+    "url": "https://www.metacareers.com",
+    "description": "Develop and optimize features across Meta's family of apps. Interns work on real production code, collaborate with full-time engineers, and ship changes to billions of users. Strong coding skills in Python or Java required.",
+    "skills": [
+      "Python",
+      "Java",
+      "Data Structures",
+      "Algorithms",
+      "Git",
+      "System Design"
+    ],
+    "next_step": "Online coding assessment via HackerRank (2 algorithmic problems, 90 minutes).",
+    "source": "Meta Careers"
+  },
+  {
+    "title": "Data Analyst Intern",
+    "company": "LinkedIn",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.linkedin.com",
+    "description": "Analyze user engagement and product metrics to inform product decisions. You will write complex SQL queries, build Tableau dashboards, and present insights to product and engineering teams. Experience with Python for data manipulation is a plus.",
+    "skills": [
+      "SQL",
+      "Tableau",
+      "Python",
+      "Excel",
+      "Data Analysis",
+      "Statistics"
+    ],
+    "next_step": "Take-home SQL and data analysis case study (send back within 48 hours).",
+    "source": "LinkedIn Jobs"
+  },
+  {
+    "title": "ML Platform Intern",
+    "company": "Workday",
+    "location": "Dublin, Ireland",
+    "url": "https://www.workday.com/careers",
+    "description": "Help build the infrastructure and tooling that enables Workday's ML teams to train and deploy models at scale. You will work with Python, Docker, and cloud infrastructure on AWS. Familiarity with MLOps concepts and data pipelines is valued.",
+    "skills": [
+      "Python",
+      "Docker",
+      "AWS",
+      "MLOps",
+      "SQL",
+      "Linux"
+    ],
+    "next_step": "Recruiter will schedule a technical phone screen with the ML platform team.",
+    "source": "Workday Careers"
+  },
+  {
+    "title": "SAP Analytics Intern",
+    "company": "SAP",
+    "location": "Dublin, Ireland",
+    "url": "https://www.sap.com/careers",
+    "description": "Support the development and testing of SAP Analytics Cloud features including AI-powered insights. You will work on Python-based AI tools, write and test prompts for LLM integrations, and collaborate with international product teams.",
+    "skills": [
+      "Python",
+      "SAP Analytics Cloud",
+      "LLMs",
+      "Prompt Engineering",
+      "Java",
+      "Git"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, followed by a technical interview with the team.",
+    "source": "SAP Careers"
+  },
+  {
+    "title": "Generative AI Intern",
+    "company": "IBM",
+    "location": "Dublin, Ireland",
+    "url": "https://www.ibm.com/careers",
+    "description": "Work on IBM's generative AI products, building and evaluating LLM-based pipelines. You will design prompts, benchmark model outputs, and integrate AI features into enterprise software using Python and IBM's watsonx platform.",
+    "skills": [
+      "Python",
+      "Generative AI",
+      "LLMs",
+      "Prompt Engineering",
+      "API Integration",
+      "SQL"
+    ],
+    "next_step": "Complete an AI/ML online assessment followed by a panel interview.",
+    "source": "IBM Careers"
+  },
+  {
+    "title": "Python Developer Intern",
+    "company": "Zalando",
+    "location": "Remote (EU)",
+    "url": "https://jobs.zalando.com",
+    "description": "Build and maintain Python microservices powering Zalando's e-commerce platform. You will write clean, testable code, contribute to CI/CD pipelines, and work in an agile team. Experience with REST APIs and PostgreSQL is expected.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "Docker",
+      "Git",
+      "Agile"
+    ],
+    "next_step": "Take-home coding task in Python (build a small REST API, estimated 4 hours).",
+    "source": "Zalando Careers"
+  },
+  {
+    "title": "Data Engineering Intern",
+    "company": "Revolut",
+    "location": "Dublin, Ireland",
+    "url": "https://www.revolut.com/careers",
+    "description": "Design and maintain data pipelines that process millions of financial transactions daily. You will use Python and SQL to build ETL processes, work with PostgreSQL and cloud storage, and ensure data quality across analytics systems.",
+    "skills": [
+      "Python",
+      "SQL",
+      "PostgreSQL",
+      "ETL",
+      "Data Pipelines",
+      "AWS"
+    ],
+    "next_step": "SQL and Python technical screen (live coding session, 1 hour).",
+    "source": "Revolut Careers"
+  },
+  {
+    "title": "Computer Vision Intern",
+    "company": "Qualcomm",
+    "location": "Cork, Ireland",
+    "url": "https://www.qualcomm.com/company/careers",
+    "description": "Work on computer vision algorithms for mobile and edge AI applications. You will implement and evaluate deep learning models using PyTorch, optimize inference pipelines, and collaborate with hardware engineers.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Computer Vision",
+      "Deep Learning",
+      "NumPy",
+      "Linux"
+    ],
+    "next_step": "Technical phone screen covering deep learning and Python fundamentals.",
+    "source": "Qualcomm Careers"
+  },
+  {
+    "title": "NLP / LLM Intern",
+    "company": "Intercom",
+    "location": "Dublin, Ireland",
+    "url": "https://www.intercom.com/careers",
+    "description": "Build and evaluate NLP pipelines powering Intercom's AI customer support features. You will fine-tune and evaluate language models, design prompt templates, and work with Python on production AI systems.",
+    "skills": [
+      "Python",
+      "NLP",
+      "LLMs",
+      "Transformers",
+      "Prompt Engineering",
+      "SQL"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, then a take-home NLP mini project.",
+    "source": "Intercom Careers"
+  },
+  {
+    "title": "Frontend Engineering Intern",
+    "company": "Shopify",
+    "location": "Remote",
+    "url": "https://www.shopify.com/careers",
+    "description": "Build fast, accessible React components for Shopify's merchant dashboard. You will work with React, TypeScript, and GraphQL, write unit tests, and collaborate with designers on polished UIs.",
+    "skills": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "GraphQL",
+      "CSS",
+      "Git"
+    ],
+    "next_step": "Take-home frontend coding task (build a small React component, estimated 3 hours).",
+    "source": "Shopify Careers"
+  },
+  {
+    "title": "Cloud Infrastructure Intern",
+    "company": "Amazon Web Services",
+    "location": "Dublin, Ireland",
+    "url": "https://aws.amazon.com/careers",
+    "description": "Support AWS infrastructure teams in building and monitoring cloud services. You will automate operational tasks with Python and shell scripts, work with Docker containers, and gain hands-on experience with AWS services (EC2, S3, Lambda).",
+    "skills": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Linux",
+      "Bash",
+      "Cloud Infrastructure"
+    ],
+    "next_step": "Online assessment (coding + cloud fundamentals) followed by a virtual interview loop.",
+    "source": "Amazon Careers"
+  },
+  {
+    "title": "Quantitative Analysis Intern",
+    "company": "Citadel",
+    "location": "Dublin, Ireland",
+    "url": "https://www.citadel.com/careers",
+    "description": "Apply statistical modelling and machine learning to financial datasets. You will use Python (NumPy, SciPy, Pandas) to build quantitative models, backtest strategies, and visualize results. Strong mathematical background required.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "SciPy",
+      "Statistics",
+      "Mathematics",
+      "Data Analysis"
+    ],
+    "next_step": "Quantitative online assessment followed by a technical interview with senior quants.",
+    "source": "Citadel Careers"
+  },
+  {
+    "title": "DevOps Engineer Intern",
+    "company": "Paddy Power Betfair",
+    "location": "Dublin, Ireland",
+    "url": "https://www.paddypowerbetfair.com/careers",
+    "description": "Help automate deployment pipelines and maintain cloud infrastructure for high-availability betting systems. You will work with Docker, AWS, Linux, and CI/CD tools, and write automation scripts in Python or Bash.",
+    "skills": [
+      "Docker",
+      "AWS",
+      "Linux",
+      "Python",
+      "CI/CD",
+      "Bash"
+    ],
+    "next_step": "Phone screen with the DevOps team followed by a technical task.",
+    "source": "Paddy Power Betfair Careers"
+  },
+  {
+    "title": "Business Intelligence Intern",
+    "company": "Kerry Group",
+    "location": "Tralee, Ireland",
+    "url": "https://www.kerrygroup.com/careers",
+    "description": "Build and maintain Power BI dashboards and data models to support supply chain and commercial decisions. You will write SQL queries, clean data with Python, and present insights to business stakeholders.",
+    "skills": [
+      "Power BI",
+      "SQL",
+      "Python",
+      "Excel",
+      "Data Analysis",
+      "Tableau"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute Teams call within 2 business days.",
+    "source": "Kerry Group Careers"
+  },
+  {
+    "title": "Security Engineering Intern",
+    "company": "Mastercard",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.mastercard.com",
+    "description": "Support cybersecurity teams in vulnerability scanning, security code reviews, and incident response. You will write Python automation scripts, analyze security logs, and assist with penetration testing exercises.",
+    "skills": [
+      "Python",
+      "Cybersecurity",
+      "Linux",
+      "SQL",
+      "Networking",
+      "Security Tooling"
+    ],
+    "next_step": "Technical interview covering security fundamentals and a Python scripting exercise.",
+    "source": "Mastercard Careers"
+  },
+  {
+    "title": "Software QA Intern",
+    "company": "Bentley Systems",
+    "location": "Galway, Ireland",
+    "url": "https://www.bentley.com/en/about-us/careers",
+    "description": "Design and execute automated test suites for Bentley's engineering software products. You will write Python test scripts, report and triage bugs, and collaborate with developers to improve software quality.",
+    "skills": [
+      "Python",
+      "Test Automation",
+      "QA",
+      "SQL",
+      "Git",
+      "Selenium"
+    ],
+    "next_step": "Take-home QA task: write automated tests for a provided Python module.",
+    "source": "Bentley Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Retail Analytics",
+    "company": "Dunnes Stores",
+    "location": "Dublin, Ireland",
+    "url": "https://www.dunnesstores.com/careers",
+    "description": "Analyze sales, inventory, and customer data to support merchandising decisions. You will use Python and SQL to build models, create dashboards in Tableau, and communicate findings to non-technical teams.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Pandas",
+      "Statistics",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule an introductory call, followed by a brief data task.",
+    "source": "Dunnes Stores Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Recommendations",
+    "company": "Spotify",
+    "location": "Remote (EU)",
+    "url": "https://www.lifeatspotify.com/jobs",
+    "description": "Work on recommendation algorithms powering Spotify's music discovery features. You will experiment with collaborative filtering and deep learning models, analyze listening data, and run A/B tests.",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "PyTorch",
+      "SQL",
+      "Statistics",
+      "Pandas"
+    ],
+    "next_step": "Take-home machine learning mini project (recommendation system task, 1 week).",
+    "source": "Spotify Careers"
+  },
+  {
+    "title": "AI Ethics & Governance Intern",
+    "company": "Accenture Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.accenture.com/ie-en/careers",
+    "description": "Support Accenture's Responsible AI practice by researching AI governance frameworks, evaluating model fairness, and preparing client-facing reports. Python skills for bias analysis and documentation are valued.",
+    "skills": [
+      "Python",
+      "AI Ethics",
+      "Responsible AI",
+      "Data Analysis",
+      "Research",
+      "Communication"
+    ],
+    "next_step": "Panel interview covering AI ethics scenarios and communication skills.",
+    "source": "Accenture Careers"
+  },
+  {
+    "title": "Full-Stack Developer Intern",
+    "company": "Intercom",
+    "location": "Dublin, Ireland",
+    "url": "https://www.intercom.com/careers",
+    "description": "Build end-to-end features for Intercom's customer messaging platform. You will work with React on the frontend and Python or Ruby on the backend, write API integrations, and ship features used by thousands of businesses.",
+    "skills": [
+      "React",
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "Git",
+      "JavaScript"
+    ],
+    "next_step": "Take-home full-stack coding task (build a mini feature, estimated 4-5 hours).",
+    "source": "Intercom Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Healthcare",
+    "company": "Medtronic",
+    "location": "Galway, Ireland",
+    "url": "https://jobs.medtronic.com",
+    "description": "Apply machine learning and statistical modelling to clinical and device data. You will use Python (scikit-learn, Pandas, NumPy) to analyze healthcare datasets, validate models, and support regulatory submissions.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Statistics",
+      "Pandas",
+      "NumPy",
+      "Data Analysis"
+    ],
+    "next_step": "Technical interview covering statistics and Python, followed by a panel interview.",
+    "source": "Medtronic Careers"
+  },
+  {
+    "title": "Deep Learning Research Intern",
+    "company": "Intel",
+    "location": "Shannon, Ireland",
+    "url": "https://jobs.intel.com",
+    "description": "Research and implement deep learning models for computer vision and speech tasks. You will use TensorFlow and PyTorch, optimize neural networks for hardware acceleration, and contribute to internal research.",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Deep Learning",
+      "Mathematics",
+      "Linux"
+    ],
+    "next_step": "Phone screen with research lead followed by a technical presentation of prior ML work.",
+    "source": "Intel Careers"
+  },
+  {
+    "title": "SQL & BI Analyst Intern",
+    "company": "Fenergo",
+    "location": "Dublin, Ireland",
+    "url": "https://www.fenergo.com/careers",
+    "description": "Build business intelligence reports and data models to support Fenergo's financial crime compliance products. You will write advanced SQL queries, develop Power BI dashboards, and work with PostgreSQL databases.",
+    "skills": [
+      "SQL",
+      "Power BI",
+      "PostgreSQL",
+      "Excel",
+      "Data Analysis",
+      "Python"
+    ],
+    "next_step": "SQL skills test (30-minute online assessment) followed by a Teams interview.",
+    "source": "Fenergo Careers"
+  },
+  {
+    "title": "Prompt Engineering Intern",
+    "company": "Zendesk",
+    "location": "Dublin, Ireland",
+    "url": "https://www.zendesk.com/jobs",
+    "description": "Design, test, and iterate on prompts for LLM-powered customer support features. You will benchmark prompt performance, analyze outputs systematically, and collaborate with ML engineers to improve AI product quality.",
+    "skills": [
+      "Prompt Engineering",
+      "Python",
+      "LLMs",
+      "Data Analysis",
+      "NLP",
+      "Communication"
+    ],
+    "next_step": "Practical prompt engineering task: optimize a provided prompt template for accuracy.",
+    "source": "Zendesk Careers"
+  },
+  {
+    "title": "Software Developer Intern \u2014 Java",
+    "company": "Oracle",
+    "location": "Dublin, Ireland",
+    "url": "https://www.oracle.com/corporate/careers",
+    "description": "Develop and test Java-based enterprise software modules within Oracle's cloud platform. You will work in agile sprints, write unit tests, fix bugs, and review code with senior engineers.",
+    "skills": [
+      "Java",
+      "OOP",
+      "SQL",
+      "Git",
+      "Agile",
+      "Unit Testing"
+    ],
+    "next_step": "Technical phone screen in Java, followed by a code review exercise.",
+    "source": "Oracle Careers"
+  },
+  {
+    "title": "Computer Science Intern \u2014 AI Features",
+    "company": "Microsoft",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.microsoft.com",
+    "description": "Contribute to AI-powered features in Microsoft 365 and Azure. You will prototype features using Python and Azure AI services, conduct user experiments, and collaborate with PMs and designers on developer tools.",
+    "skills": [
+      "Python",
+      "Azure",
+      "Machine Learning",
+      "REST APIs",
+      "Git",
+      "Agile"
+    ],
+    "next_step": "Two-round technical interview: coding screen + system design discussion.",
+    "source": "Microsoft Careers"
+  },
+  {
+    "title": "Data Scientist Intern \u2014 Fintech",
+    "company": "Transfermate",
+    "location": "Kilkenny, Ireland",
+    "url": "https://www.transfermate.com/careers",
+    "description": "Build predictive models for FX risk and transaction anomaly detection. You will use Python, scikit-learn, and SQL to mine transactional data, validate models, and present findings to risk stakeholders.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Pandas",
+      "Data Visualization"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a short data science case study.",
+    "source": "TransferMate Careers"
+  },
+  {
+    "title": "AI Developer Intern \u2014 Enterprise",
+    "company": "Deloitte Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www2.deloitte.com/ie/en/careers",
+    "description": "Build AI-powered automation tools for enterprise clients using Python, LLMs, and cloud APIs. You will design and evaluate prompts, integrate AI into business workflows, and document solutions.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Prompt Engineering",
+      "REST APIs",
+      "SQL",
+      "Cloud"
+    ],
+    "next_step": "Assessment day: group case study + individual technical interview.",
+    "source": "Deloitte Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 Python/FastAPI",
+    "company": "Buymie",
+    "location": "Dublin, Ireland",
+    "url": "https://buymie.eu/careers",
+    "description": "Build and maintain Python microservices for Buymie's grocery delivery platform. You will design REST APIs with FastAPI, work with PostgreSQL, and contribute to real-time order management systems.",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "REST APIs",
+      "Docker",
+      "Git"
+    ],
+    "next_step": "Take-home API coding task in Python/FastAPI (estimated 3-4 hours).",
+    "source": "Buymie Careers"
+  },
+  {
+    "title": "Research Intern \u2014 NLP",
+    "company": "Aylien",
+    "location": "Dublin, Ireland",
+    "url": "https://aylien.com/careers",
+    "description": "Work on NLP systems for news intelligence and entity extraction. You will train and evaluate transformer-based models, process large text corpora with Python, and contribute to research papers.",
+    "skills": [
+      "Python",
+      "NLP",
+      "Transformers",
+      "scikit-learn",
+      "SQL",
+      "Research"
+    ],
+    "next_step": "Technical interview including a short NLP problem-solving exercise.",
+    "source": "Aylien Careers"
+  },
+  {
+    "title": "Analytics Engineer Intern",
+    "company": "Boxever",
+    "location": "Dublin, Ireland",
+    "url": "https://www.boxever.com/careers",
+    "description": "Build data models and pipelines to support analytics for Sitecore's personalization platform. You will use SQL, Python, and dbt to transform raw event data into clean analytics tables and dashboards.",
+    "skills": [
+      "SQL",
+      "Python",
+      "dbt",
+      "Data Pipelines",
+      "PostgreSQL",
+      "Analytics"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute call, then a SQL and Python technical screen.",
+    "source": "Boxever Careers"
+  },
+  {
+    "title": "Python Automation Intern",
+    "company": "Version 1",
+    "location": "Dublin, Ireland",
+    "url": "https://www.version1.com/careers",
+    "description": "Automate business processes and testing pipelines for enterprise clients using Python. You will write scripts to interact with APIs, databases, and cloud services, and contribute to DevOps tooling.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "SQL",
+      "Docker",
+      "Linux",
+      "Automation"
+    ],
+    "next_step": "Technical interview featuring a Python scripting and problem-solving exercise.",
+    "source": "Version 1 Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Marketing Analytics",
+    "company": "Paddy Power Betfair",
+    "location": "Dublin, Ireland",
+    "url": "https://www.paddypowerbetfair.com/careers",
+    "description": "Analyze marketing campaign performance and customer behavior using Python, SQL, and Tableau. You will build attribution models, design A/B tests, and present actionable insights to marketing teams.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Statistics",
+      "Pandas",
+      "Excel"
+    ],
+    "next_step": "Take-home analytics case study followed by a presentation to the team.",
+    "source": "Paddy Power Betfair Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Computer Vision",
+    "company": "Valeo",
+    "location": "Tuam, Ireland",
+    "url": "https://www.valeo.com/en/careers",
+    "description": "Develop computer vision models for automotive safety systems. You will annotate datasets, train CNNs with PyTorch, evaluate model performance, and contribute to autonomous driving research.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Computer Vision",
+      "Deep Learning",
+      "NumPy",
+      "Linux"
+    ],
+    "next_step": "Technical interview covering CV/ML fundamentals and PyTorch coding.",
+    "source": "Valeo Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 C",
+    "company": "Ericsson",
+    "location": "Athlone, Ireland",
+    "url": "https://www.ericsson.com/en/careers",
+    "description": "Work on embedded software for Ericsson's radio access network products. You will write and debug C code, work in a Linux environment, and contribute to unit test frameworks.",
+    "skills": [
+      "C",
+      "Linux",
+      "Embedded Systems",
+      "Unit Testing",
+      "Git",
+      "Debugging"
+    ],
+    "next_step": "Technical interview: C programming and systems concepts.",
+    "source": "Ericsson Careers"
+  },
+  {
+    "title": "Junior Data Engineer",
+    "company": "CurrencyFair",
+    "location": "Dublin, Ireland",
+    "url": "https://www.currencyfair.com/careers",
+    "description": "Build and maintain data pipelines ingesting financial transaction data into our analytics warehouse. You will use Python, SQL, and AWS services to automate ETL jobs and monitor data quality.",
+    "skills": [
+      "Python",
+      "SQL",
+      "AWS",
+      "ETL",
+      "PostgreSQL",
+      "Data Engineering"
+    ],
+    "next_step": "Take-home data pipeline coding task in Python (estimated 3 hours).",
+    "source": "CurrencyFair Careers"
+  },
+  {
+    "title": "AI Research Intern \u2014 Responsible AI",
+    "company": "Fujitsu Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.fujitsu.com/global/about/careers",
+    "description": "Support AI ethics research projects including fairness evaluation, bias detection, and governance documentation. You will implement fairness metrics in Python, run experiments, and write research summaries.",
+    "skills": [
+      "Python",
+      "AI Ethics",
+      "Machine Learning",
+      "Statistics",
+      "Research",
+      "Communication"
+    ],
+    "next_step": "Interview with the research team including a short presentation on an AI ethics topic.",
+    "source": "Fujitsu Careers"
+  },
+  {
+    "title": "Data Visualization Intern",
+    "company": "AIB",
+    "location": "Dublin, Ireland",
+    "url": "https://aib.ie/careers",
+    "description": "Create compelling data visualizations and dashboards for AIB's analytics and risk teams. You will use Tableau, Power BI, and Python (Matplotlib, Seaborn) to communicate complex data stories to senior stakeholders.",
+    "skills": [
+      "Tableau",
+      "Power BI",
+      "Python",
+      "Matplotlib",
+      "Seaborn",
+      "SQL"
+    ],
+    "next_step": "Portfolio review of prior data visualization work, followed by a Teams interview.",
+    "source": "AIB Careers"
+  },
+  {
+    "title": "Cloud Developer Intern",
+    "company": "Capita",
+    "location": "Dublin, Ireland",
+    "url": "https://www.capita.com/careers",
+    "description": "Build cloud-native applications and automation scripts on AWS. You will work with Lambda, S3, and DynamoDB, write Python automation, and contribute to CI/CD pipelines using Git.",
+    "skills": [
+      "AWS",
+      "Python",
+      "Docker",
+      "Lambda",
+      "Git",
+      "Cloud"
+    ],
+    "next_step": "Technical interview covering AWS fundamentals and Python scripting.",
+    "source": "Capita Careers"
+  },
+  {
+    "title": "R & Python Statistics Intern",
+    "company": "Central Statistics Office",
+    "location": "Cork, Ireland",
+    "url": "https://www.cso.ie/en/aboutus/workingatcso",
+    "description": "Support statistical analysis of national survey and census data using R and Python. You will clean datasets, build statistical models, produce reports, and contribute to publications read by policymakers.",
+    "skills": [
+      "R",
+      "Python",
+      "Statistics",
+      "Data Analysis",
+      "Pandas",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule a competency-based interview including a statistics knowledge check.",
+    "source": "CSO Careers"
+  },
+  {
+    "title": "LLM Application Developer Intern",
+    "company": "Sidero",
+    "location": "Dublin, Ireland",
+    "url": "https://www.sidero.ie/careers",
+    "description": "Build LLM-powered tools for enterprise knowledge management and automation. You will design and evaluate prompts, integrate OpenAI and Anthropic APIs, and prototype Python-based AI applications.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Prompt Engineering",
+      "REST APIs",
+      "Git",
+      "Generative AI"
+    ],
+    "next_step": "Practical LLM task: build a small prompt-based tool, reviewed live with the team.",
+    "source": "Sidero Careers"
+  },
+  {
+    "title": "PostgreSQL Database Intern",
+    "company": "Sensei",
+    "location": "Dublin, Ireland",
+    "url": "https://sensei.ie/careers",
+    "description": "Design and optimize PostgreSQL schemas and queries for retail analytics applications. You will write complex SQL, manage migrations, tune query performance, and collaborate with backend Python developers.",
+    "skills": [
+      "PostgreSQL",
+      "SQL",
+      "Python",
+      "Database Design",
+      "Query Optimization",
+      "Git"
+    ],
+    "next_step": "SQL skills challenge followed by a technical interview.",
+    "source": "Sensei Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Supply Chain",
+    "company": "DHL Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.dhl.com",
+    "description": "Apply machine learning to supply chain optimization problems including demand forecasting and route planning. You will use Python, scikit-learn, and SQL, and present model results to logistics teams.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Forecasting",
+      "Pandas",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro Teams call, followed by a brief Python task.",
+    "source": "DHL Careers"
+  },
+  {
+    "title": "Java Software Intern",
+    "company": "FIS Global",
+    "location": "Dublin, Ireland",
+    "url": "https://www.fisglobal.com/careers",
+    "description": "Develop Java-based microservices for financial technology systems serving global banking clients. You will write clean OOP code, review pull requests, work with REST APIs, and use Git for version control.",
+    "skills": [
+      "Java",
+      "OOP",
+      "REST APIs",
+      "Git",
+      "SQL",
+      "Microservices"
+    ],
+    "next_step": "Technical Java coding round followed by a system design discussion.",
+    "source": "FIS Careers"
+  },
+  {
+    "title": "Intern \u2014 AI Product Development",
+    "company": "Workhuman",
+    "location": "Dublin, Ireland",
+    "url": "https://www.workhuman.com/careers",
+    "description": "Work with the AI product team to develop and evaluate AI features for HR platforms. You will write Python to prototype NLP pipelines, test LLM integrations, and analyze user feedback data.",
+    "skills": [
+      "Python",
+      "NLP",
+      "LLMs",
+      "Data Analysis",
+      "SQL",
+      "Product Thinking"
+    ],
+    "next_step": "Interview with the product and AI team, including a short case study presentation.",
+    "source": "Workhuman Careers"
+  },
+  {
+    "title": "Site Reliability Engineering Intern",
+    "company": "Workday",
+    "location": "Dublin, Ireland",
+    "url": "https://www.workday.com/careers",
+    "description": "Support SRE teams in monitoring, automation, and incident response for cloud-hosted services. You will write Python and Bash scripts, work with Docker and Kubernetes, and contribute to runbooks and alerting systems.",
+    "skills": [
+      "Python",
+      "Bash",
+      "Docker",
+      "Linux",
+      "Cloud",
+      "Monitoring"
+    ],
+    "next_step": "Technical screen covering Linux, scripting, and SRE concepts.",
+    "source": "Workday Careers"
+  },
+  {
+    "title": "Intern \u2014 Statistical Modelling",
+    "company": "Irish Life",
+    "location": "Dublin, Ireland",
+    "url": "https://www.irishlife.ie/careers",
+    "description": "Support actuarial and data science teams in building statistical models for life insurance pricing and risk. You will use Python (SciPy, NumPy) and R, write validation reports, and present results to senior analysts.",
+    "skills": [
+      "Python",
+      "R",
+      "Statistics",
+      "SciPy",
+      "NumPy",
+      "Excel"
+    ],
+    "next_step": "Phone screen followed by a statistics and modelling technical interview.",
+    "source": "Irish Life Careers"
+  },
+  {
+    "title": "Backend Developer Intern \u2014 Node/Python",
+    "company": "Kitman Labs",
+    "location": "Dublin, Ireland",
+    "url": "https://www.kitmanlabs.com/careers",
+    "description": "Build backend APIs for Kitman Labs' sports science platform. You will write Python services, design REST APIs, work with PostgreSQL, and help integrate wearable sensor data into analytics pipelines.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL",
+      "Git",
+      "Agile"
+    ],
+    "next_step": "Take-home backend coding task in Python followed by a technical interview.",
+    "source": "Kitman Labs Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Anomaly Detection",
+    "company": "ICON plc",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.iconplc.com",
+    "description": "Build anomaly detection models for clinical trial data. You will use Python, scikit-learn, and statistical methods to identify outliers in medical datasets and communicate findings to data managers.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Statistics",
+      "Anomaly Detection",
+      "Pandas",
+      "SQL"
+    ],
+    "next_step": "Technical interview covering ML fundamentals and Python, followed by a case study.",
+    "source": "ICON Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Python",
+    "company": "Phorest Salon Software",
+    "location": "Dublin, Ireland",
+    "url": "https://www.phorest.com/careers",
+    "description": "Build features for Phorest's SaaS salon management platform. You will write Python backend code, integrate REST APIs, work with PostgreSQL, and contribute to automated test suites.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL",
+      "Git",
+      "Testing"
+    ],
+    "next_step": "Take-home coding project followed by a code walkthrough with the team.",
+    "source": "Phorest Careers"
+  },
+  {
+    "title": "Data Analyst Intern \u2014 Operations",
+    "company": "Ryanair",
+    "location": "Dublin, Ireland",
+    "url": "https://www.ryanair.com/gb/en/careers",
+    "description": "Analyze operational data covering flight punctuality, crew utilization, and aircraft availability. You will write SQL queries, automate reports with Python, and build Power BI dashboards for operations teams.",
+    "skills": [
+      "SQL",
+      "Python",
+      "Power BI",
+      "Excel",
+      "Data Analysis",
+      "Pandas"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a brief SQL test.",
+    "source": "Ryanair Careers"
+  },
+  {
+    "title": "Internship \u2014 Scientific Computing",
+    "company": "EMBL-EBI",
+    "location": "Remote (EU)",
+    "url": "https://www.ebi.ac.uk/careers",
+    "description": "Develop Python tools for bioinformatics pipelines and scientific data analysis. You will write well-tested code, process large genomic datasets with NumPy and Pandas, and collaborate with research scientists.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "SQL",
+      "Linux",
+      "Git"
+    ],
+    "next_step": "Technical interview covering Python and scientific computing fundamentals.",
+    "source": "EMBL-EBI Careers"
+  },
+  {
+    "title": "BI Developer Intern",
+    "company": "Bank of Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.bankofireland.com",
+    "description": "Build and maintain BI reports and SQL data models for Bank of Ireland's risk and finance teams. You will use SQL, Power BI, and Python to transform raw data into actionable management reporting.",
+    "skills": [
+      "SQL",
+      "Power BI",
+      "Python",
+      "Excel",
+      "Data Modeling",
+      "PostgreSQL"
+    ],
+    "next_step": "SQL and analytical thinking online test followed by an interview.",
+    "source": "Bank of Ireland Careers"
+  },
+  {
+    "title": "AI Intern \u2014 Chatbot Development",
+    "company": "Permanent TSB",
+    "location": "Dublin, Ireland",
+    "url": "https://www.permanenttsb.ie/about-us/careers",
+    "description": "Help build and improve AI chatbot features for online banking. You will integrate LLM APIs, design conversational flows, test and evaluate dialogue quality, and write Python backend code.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "NLP",
+      "REST APIs",
+      "Git",
+      "Prompt Engineering"
+    ],
+    "next_step": "Technical interview plus a short live demonstration of a chatbot prototype.",
+    "source": "Permanent TSB Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Telecom",
+    "company": "Eir",
+    "location": "Dublin, Ireland",
+    "url": "https://www.eir.ie/careers",
+    "description": "Build churn prediction and network performance models using Python and SQL. You will analyze large telecom datasets, deploy models with scikit-learn, and create dashboards to track KPIs.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Pandas",
+      "Data Visualization",
+      "Statistics"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute call, followed by a Python data challenge.",
+    "source": "Eir Careers"
+  },
+  {
+    "title": "Software Developer Intern \u2014 Full-Stack",
+    "company": "Teamwork.com",
+    "location": "Cork, Ireland",
+    "url": "https://www.teamwork.com/careers",
+    "description": "Build features for Teamwork's project management SaaS platform. You will work across the stack using React and a Python or PHP backend, write tests, and collaborate in fast-paced agile sprints.",
+    "skills": [
+      "React",
+      "Python",
+      "PHP",
+      "SQL",
+      "Git",
+      "REST APIs"
+    ],
+    "next_step": "Full-stack take-home project followed by a technical code review session.",
+    "source": "Teamwork Careers"
+  },
+  {
+    "title": "Intern \u2014 Reinforcement Learning",
+    "company": "Tilde",
+    "location": "Remote",
+    "url": "https://tilde.ai/careers",
+    "description": "Research and implement reinforcement learning algorithms for autonomous systems. You will use Python, PyTorch, and OpenAI Gym, run ablation experiments, and write technical reports on findings.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Reinforcement Learning",
+      "Deep Learning",
+      "Mathematics",
+      "Research"
+    ],
+    "next_step": "Technical interview on RL fundamentals plus a research paper discussion.",
+    "source": "Tilde Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Climate Tech",
+    "company": "NuWatt Energy",
+    "location": "Dublin, Ireland",
+    "url": "https://nuwatt.ie/careers",
+    "description": "Analyze energy consumption and renewable generation data to build forecasting models. You will use Python, Pandas, and scikit-learn, visualize insights with Matplotlib, and collaborate with energy engineers.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "scikit-learn",
+      "Matplotlib",
+      "Forecasting",
+      "SQL"
+    ],
+    "next_step": "30-minute introductory call followed by a short data analysis task.",
+    "source": "NuWatt Careers"
+  },
+  {
+    "title": "Backend Engineering Intern \u2014 Golang/Python",
+    "company": "Swiftly",
+    "location": "Remote (EU)",
+    "url": "https://www.swiftly.com/careers",
+    "description": "Build high-performance backend services for Swiftly's retail technology platform. You will write Python or Golang APIs, work with PostgreSQL and Redis, and contribute to infrastructure automation.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL",
+      "Docker",
+      "Git"
+    ],
+    "next_step": "Take-home coding task followed by two technical interview rounds.",
+    "source": "Swiftly Careers"
+  },
+  {
+    "title": "ML Ops Intern",
+    "company": "Allianz Technology",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.allianz.com",
+    "description": "Support the build-out of Allianz's ML platform for model training, versioning, and deployment. You will work with Python, Docker, AWS, and tools like MLflow to automate model lifecycle management.",
+    "skills": [
+      "Python",
+      "Docker",
+      "AWS",
+      "MLflow",
+      "MLOps",
+      "Linux"
+    ],
+    "next_step": "Technical interview covering Python and cloud/MLOps fundamentals.",
+    "source": "Allianz Careers"
+  },
+  {
+    "title": "Software Intern \u2014 Test Automation",
+    "company": "Optum Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.unitedhealthgroup.com",
+    "description": "Build automated test frameworks for healthcare software using Python and Selenium. You will write test cases, analyze failures, maintain CI/CD pipelines, and collaborate with QA and dev teams.",
+    "skills": [
+      "Python",
+      "Selenium",
+      "Test Automation",
+      "SQL",
+      "Git",
+      "CI/CD"
+    ],
+    "next_step": "Technical interview including a live automation scripting exercise.",
+    "source": "Optum Careers"
+  },
+  {
+    "title": "Junior Software Engineer \u2014 Analytics",
+    "company": "Couchbase",
+    "location": "Dublin, Ireland",
+    "url": "https://www.couchbase.com/company/careers",
+    "description": "Develop analytics query processing features for Couchbase's database platform. You will write Python and Java code, work with SQL-like query languages, optimize performance, and write unit tests.",
+    "skills": [
+      "Python",
+      "Java",
+      "SQL",
+      "Data Engineering",
+      "Git",
+      "Testing"
+    ],
+    "next_step": "Two-round technical interview: algorithmic coding + system design.",
+    "source": "Couchbase Careers"
+  },
+  {
+    "title": "Generative AI Developer Intern",
+    "company": "Accenture Applied Intelligence",
+    "location": "Dublin, Ireland",
+    "url": "https://www.accenture.com/ie-en/careers",
+    "description": "Build generative AI solutions for enterprise clients using Python, LangChain, and Anthropic/OpenAI APIs. You will design RAG pipelines, evaluate LLM outputs, and document AI solutions.",
+    "skills": [
+      "Python",
+      "Generative AI",
+      "LLMs",
+      "LangChain",
+      "Prompt Engineering",
+      "REST APIs"
+    ],
+    "next_step": "Assessment day: technical AI demo + structured interview with the team.",
+    "source": "Accenture Careers"
+  },
+  {
+    "title": "Junior Data Scientist \u2014 Fraud",
+    "company": "Fexco",
+    "location": "Killorglin, Ireland",
+    "url": "https://www.fexco.com/careers",
+    "description": "Build machine learning models to detect fraudulent financial transactions. You will use Python, scikit-learn, and SQL, analyze imbalanced datasets, and present fraud risk metrics to compliance teams.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Machine Learning",
+      "Statistics",
+      "Pandas"
+    ],
+    "next_step": "Technical interview covering ML and statistics, followed by a case study presentation.",
+    "source": "Fexco Careers"
+  },
+  {
+    "title": "Software Developer Intern \u2014 PHP",
+    "company": "Hostelworld",
+    "location": "Dublin, Ireland",
+    "url": "https://www.hostelworldgroup.com/careers",
+    "description": "Build and maintain PHP backend services for Hostelworld's global travel booking platform. You will write clean OOP code, design REST APIs, work with MySQL, and participate in agile sprint ceremonies.",
+    "skills": [
+      "PHP",
+      "REST APIs",
+      "MySQL",
+      "OOP",
+      "Git",
+      "Agile"
+    ],
+    "next_step": "Take-home PHP coding task followed by a technical walkthrough.",
+    "source": "Hostelworld Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 E-Commerce",
+    "company": "Carzone",
+    "location": "Dublin, Ireland",
+    "url": "https://www.carzone.ie/careers",
+    "description": "Build price prediction and recommendation models for Ireland's leading car marketplace. You will use Python, Pandas, and scikit-learn, analyze search and listing data, and present model results.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Visualization"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a data analysis task.",
+    "source": "Carzone Careers"
+  },
+  {
+    "title": "Machine Learning Engineer Intern",
+    "company": "Dataminr",
+    "location": "Remote (EU)",
+    "url": "https://www.dataminr.com/careers",
+    "description": "Work on NLP and event detection models that analyze real-time social and news data. You will use Python and PyTorch, evaluate model performance, and contribute to production ML pipelines.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "NLP",
+      "Machine Learning",
+      "SQL",
+      "Statistics"
+    ],
+    "next_step": "Take-home ML mini project followed by a technical phone screen.",
+    "source": "Dataminr Careers"
+  },
+  {
+    "title": "AI Tutor / Mentorship Intern",
+    "company": "Learno",
+    "location": "Remote",
+    "url": "https://learno.io/careers",
+    "description": "Support the development of AI-powered tutoring features for Python and data science courses. You will help design exercises, evaluate LLM-generated feedback, and mentor students during live sessions.",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "LLMs",
+      "Communication",
+      "Teaching",
+      "Data Science"
+    ],
+    "next_step": "Interview including a short live tutoring simulation.",
+    "source": "Learno Careers"
+  },
+  {
+    "title": "Infrastructure Intern \u2014 Linux/Python",
+    "company": "Ervia",
+    "location": "Cork, Ireland",
+    "url": "https://www.ervia.ie/careers",
+    "description": "Automate infrastructure monitoring and management tasks for utility networks. You will write Python and Bash scripts, maintain Linux servers, and contribute to SCADA data pipelines.",
+    "skills": [
+      "Python",
+      "Linux",
+      "Bash",
+      "SQL",
+      "Networking",
+      "Automation"
+    ],
+    "next_step": "Technical interview covering Linux, Python scripting, and networking basics.",
+    "source": "Ervia Careers"
+  },
+  {
+    "title": "Tableau Developer Intern",
+    "company": "PwC Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.pwc.ie/careers",
+    "description": "Build interactive Tableau dashboards and data stories for client-facing analytics engagements across financial services and retail. You will write SQL to prepare data, design compelling visualizations, and present to clients.",
+    "skills": [
+      "Tableau",
+      "SQL",
+      "Python",
+      "Data Visualization",
+      "Excel",
+      "Storytelling"
+    ],
+    "next_step": "Portfolio review of prior dashboards or charts, followed by a structured interview.",
+    "source": "PwC Careers"
+  },
+  {
+    "title": "Junior ML Engineer \u2014 Recommendation Systems",
+    "company": "TripAdvisor",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.tripadvisor.com",
+    "description": "Work on recommendation and ranking algorithms that surface relevant travel content to millions of users. You will use Python, PyTorch, and SQL to build, evaluate, and iterate on ML models.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Machine Learning",
+      "SQL",
+      "Statistics",
+      "A/B Testing"
+    ],
+    "next_step": "Technical phone screen on ML fundamentals followed by a take-home modelling task.",
+    "source": "TripAdvisor Careers"
+  },
+  {
+    "title": "Intern \u2014 Python Backend Engineer",
+    "company": "Swoop Funding",
+    "location": "Dublin, Ireland",
+    "url": "https://swoopfunding.com/careers",
+    "description": "Build Python microservices for Swoop's business finance platform. You will design REST APIs with FastAPI or Flask, work with PostgreSQL, write tests, and collaborate with a small engineering team.",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL",
+      "Git"
+    ],
+    "next_step": "Take-home Python/API project followed by a live code review.",
+    "source": "Swoop Funding Careers"
+  },
+  {
+    "title": "Data Engineer Intern",
+    "company": "Tourism Ireland",
+    "location": "Coleraine, Ireland",
+    "url": "https://www.tourismireland.com/Corporate/Careers",
+    "description": "Build data pipelines and reporting tools to analyze visitor trends and marketing effectiveness. You will write SQL and Python ETL scripts, maintain data warehouses, and build Power BI dashboards.",
+    "skills": [
+      "SQL",
+      "Python",
+      "Power BI",
+      "ETL",
+      "PostgreSQL",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute introductory call followed by a technical skills test.",
+    "source": "Tourism Ireland Careers"
+  },
+  {
+    "title": "Junior Software Developer \u2014 Python/Django",
+    "company": "Daft Media",
+    "location": "Dublin, Ireland",
+    "url": "https://www.daft.ie/careers",
+    "description": "Build features for Daft.ie's property listings platform. You will write Python/Django backend code, work with PostgreSQL, design REST APIs, and ship features used by hundreds of thousands of Irish users.",
+    "skills": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "REST APIs",
+      "SQL",
+      "Git"
+    ],
+    "next_step": "Take-home project: build a small Django feature, code review with the team.",
+    "source": "Daft Media Careers"
+  },
+  {
+    "title": "Intern \u2014 Machine Learning Infrastructure",
+    "company": "Zalando Research",
+    "location": "Remote (EU)",
+    "url": "https://research.zalando.com/careers",
+    "description": "Build tooling and infrastructure for ML research teams: experiment tracking, data versioning, and model deployment pipelines. You will use Python, Docker, and AWS.",
+    "skills": [
+      "Python",
+      "Docker",
+      "AWS",
+      "MLOps",
+      "Linux",
+      "Git"
+    ],
+    "next_step": "Technical interview on Python and ML infrastructure concepts.",
+    "source": "Zalando Research Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 R&D",
+    "company": "Analog Devices",
+    "location": "Limerick, Ireland",
+    "url": "https://www.analog.com/en/about-adi/careers",
+    "description": "Develop software tools for signal processing and hardware test automation. You will write Python scripts to interface with test equipment, analyze sensor data with NumPy, and contribute to internal engineering libraries.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "Signal Processing",
+      "Linux",
+      "Git",
+      "Automation"
+    ],
+    "next_step": "Technical phone screen followed by an on-site/virtual engineering interview.",
+    "source": "Analog Devices Careers"
+  },
+  {
+    "title": "Cybersecurity Analyst Intern",
+    "company": "Grant Thornton Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.grantthornton.ie/careers",
+    "description": "Support cybersecurity consulting engagements including vulnerability assessments, penetration testing support, and compliance reporting. Python scripting for automation and log analysis required.",
+    "skills": [
+      "Python",
+      "Cybersecurity",
+      "Linux",
+      "Networking",
+      "SQL",
+      "Reporting"
+    ],
+    "next_step": "Competency-based interview plus a short cybersecurity scenario walkthrough.",
+    "source": "Grant Thornton Careers"
+  },
+  {
+    "title": "Junior Data Scientist \u2014 Insurance",
+    "company": "Zurich Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.zurich.ie/about-us/careers",
+    "description": "Build predictive models for insurance pricing and claims analysis. You will use Python, scikit-learn, and SQL, validate models, and communicate findings to actuarial and product teams.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Pandas",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, followed by a technical Python/stats screen.",
+    "source": "Zurich Insurance Careers"
+  },
+  {
+    "title": "Intern \u2014 Deep Learning for NLP",
+    "company": "Aylien",
+    "location": "Dublin, Ireland",
+    "url": "https://aylien.com/careers",
+    "description": "Fine-tune and evaluate transformer-based NLP models for event classification and sentiment analysis. You will use Python, Hugging Face Transformers, and PyTorch, and publish internal technical notes on experiments.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "NLP",
+      "Deep Learning",
+      "Research"
+    ],
+    "next_step": "Technical interview on NLP and deep learning, plus a short coding exercise.",
+    "source": "Aylien Careers"
+  },
+  {
+    "title": "Software Engineer Intern \u2014 Cloud",
+    "company": "Pivotal Solutions",
+    "location": "Dublin, Ireland",
+    "url": "https://www.pivotsolutions.ie/careers",
+    "description": "Build cloud automation tools and microservices for enterprise clients on AWS. You will write Python, design REST APIs, work with Docker and Terraform, and support DevOps workflows.",
+    "skills": [
+      "Python",
+      "AWS",
+      "Docker",
+      "REST APIs",
+      "Terraform",
+      "Linux"
+    ],
+    "next_step": "Technical interview plus a small AWS automation task.",
+    "source": "Pivot Solutions Careers"
+  },
+  {
+    "title": "Intern \u2014 AI Safety & Alignment",
+    "company": "Lero (SFI Research Centre)",
+    "location": "Limerick, Ireland",
+    "url": "https://lero.ie/careers",
+    "description": "Research AI safety and alignment topics, including evaluation of LLM robustness, adversarial prompting, and responsible AI frameworks. You will use Python to run experiments and write research reports.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "AI Ethics",
+      "Research",
+      "Responsible AI",
+      "Statistics"
+    ],
+    "next_step": "Interview with Lero researchers including a short presentation on a relevant AI safety topic.",
+    "source": "Lero Careers"
+  },
+  {
+    "title": "Software Developer Intern \u2014 Android",
+    "company": "Citi Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://jobs.citi.com",
+    "description": "Build features for Citi's mobile banking Android application. You will write Java/Kotlin code, work with REST APIs and SQL, and participate in sprint ceremonies with a distributed team.",
+    "skills": [
+      "Java",
+      "Android",
+      "REST APIs",
+      "SQL",
+      "Git",
+      "Agile"
+    ],
+    "next_step": "Technical phone screen in Java/Kotlin followed by a take-home coding task.",
+    "source": "Citi Careers"
+  },
+  {
+    "title": "ML Research Intern \u2014 Federated Learning",
+    "company": "Telefonica Alpha",
+    "location": "Remote (EU)",
+    "url": "https://www.telefonica.com/en/careers",
+    "description": "Research federated learning techniques for training privacy-preserving ML models across distributed data. You will implement experiments in Python and PyTorch, analyze convergence behavior, and write technical reports.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Machine Learning",
+      "Mathematics",
+      "Research",
+      "Deep Learning"
+    ],
+    "next_step": "Research interview including a discussion of a ML paper you have read recently.",
+    "source": "Telefonica Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Sports Analytics",
+    "company": "Statsports",
+    "location": "Newry, Ireland",
+    "url": "https://www.statsports.com/careers",
+    "description": "Analyze GPS and biometric data from elite athletes to build performance prediction models. You will use Python, Pandas, and scikit-learn, visualize insights with Matplotlib, and present findings to sports scientists.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "scikit-learn",
+      "Matplotlib",
+      "Statistics",
+      "Data Analysis"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute introductory call followed by a data analysis task.",
+    "source": "Statsports Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 Microservices",
+    "company": "Evervault",
+    "location": "Dublin, Ireland",
+    "url": "https://evervault.com/careers",
+    "description": "Build secure backend microservices for Evervault's data encryption platform. You will write Python services, design REST APIs, work with PostgreSQL, and contribute to infrastructure security tooling.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "Docker",
+      "Security",
+      "Git"
+    ],
+    "next_step": "Technical interview: Python coding challenge and system design discussion.",
+    "source": "Evervault Careers"
+  },
+  {
+    "title": "Power BI Developer Intern",
+    "company": "Glanbia",
+    "location": "Kilkenny, Ireland",
+    "url": "https://www.glanbia.com/careers",
+    "description": "Build Power BI reports and dashboards supporting Glanbia's global nutrition and dairy analytics. You will design data models, write DAX, query SQL databases, and present dashboards to commercial teams.",
+    "skills": [
+      "Power BI",
+      "SQL",
+      "DAX",
+      "Excel",
+      "Data Visualization",
+      "Python"
+    ],
+    "next_step": "Interview with the BI team including a review of a dashboard you have built.",
+    "source": "Glanbia Careers"
+  },
+  {
+    "title": "AI/ML Integration Intern",
+    "company": "Evosus",
+    "location": "Remote",
+    "url": "https://evosus.com/careers",
+    "description": "Integrate AI and ML capabilities into business software products. You will build Python integrations with LLM APIs, test features end-to-end, and help document AI-powered functionality.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "REST APIs",
+      "SQL",
+      "Git",
+      "Testing"
+    ],
+    "next_step": "Technical interview plus a small live integration coding exercise.",
+    "source": "Evosus Careers"
+  },
+  {
+    "title": "Intern \u2014 Scientific Data Analysis",
+    "company": "APC (Advanced Pharma Co.)",
+    "location": "Dublin, Ireland",
+    "url": "https://apc.ie/careers",
+    "description": "Analyze process chemistry and manufacturing data to support pharmaceutical development. You will use Python (Pandas, NumPy, Matplotlib) and R to build statistical models and visualize experimental results.",
+    "skills": [
+      "Python",
+      "R",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Statistics"
+    ],
+    "next_step": "Technical interview covering Python and statistical analysis skills.",
+    "source": "APC Careers"
+  },
+  {
+    "title": "Software Engineer Intern \u2014 Accessibility",
+    "company": "Fidelity Investments",
+    "location": "Galway, Ireland",
+    "url": "https://jobs.fidelity.com",
+    "description": "Improve software accessibility for Fidelity's web and desktop financial applications. You will fix accessibility bugs across Java and JavaScript codebases, conduct JAWS screen reader testing, and document compliance improvements.",
+    "skills": [
+      "Java",
+      "JavaScript",
+      "Accessibility",
+      "JAWS",
+      "Testing",
+      "Git"
+    ],
+    "next_step": "Technical interview including a live accessibility code review exercise.",
+    "source": "Fidelity Careers"
+  },
+  {
+    "title": "Python Intern \u2014 Data Platforms",
+    "company": "Centric Health",
+    "location": "Dublin, Ireland",
+    "url": "https://www.centrichealth.ie/careers",
+    "description": "Build data integration pipelines that centralize patient and clinical data across healthcare systems. You will use Python and SQL to extract, transform, and load data, and build reporting dashboards.",
+    "skills": [
+      "Python",
+      "SQL",
+      "ETL",
+      "PostgreSQL",
+      "Data Integration",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute Teams call followed by a Python coding screen.",
+    "source": "Centric Health Careers"
+  },
+  {
+    "title": "Research Intern \u2014 Graph Neural Networks",
+    "company": "IBM Research Dublin",
+    "location": "Dublin, Ireland",
+    "url": "https://www.research.ibm.com/labs/dublin",
+    "description": "Research and implement graph neural network models for knowledge graph reasoning. You will use Python, PyTorch Geometric, and contribute to academic publications and internal research projects.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Graph Neural Networks",
+      "Deep Learning",
+      "Mathematics",
+      "Research"
+    ],
+    "next_step": "Research interview including a discussion of a relevant paper and your prior ML experience.",
+    "source": "IBM Research Careers"
+  },
+  {
+    "title": "Intern Software Developer \u2014 ERP Systems",
+    "company": "Version 1",
+    "location": "Belfast, Ireland",
+    "url": "https://www.version1.com/careers",
+    "description": "Support the implementation and customization of SAP and Oracle ERP systems for enterprise clients. You will write ABAP or Java customizations, assist with data migration, and document system configurations.",
+    "skills": [
+      "Java",
+      "SQL",
+      "SAP",
+      "ERP",
+      "Git",
+      "Documentation"
+    ],
+    "next_step": "Technical interview covering Java fundamentals and enterprise software concepts.",
+    "source": "Version 1 Careers"
+  },
+  {
+    "title": "Intern \u2014 Deep Learning for Tabular Data",
+    "company": "Wayflyer",
+    "location": "Dublin, Ireland",
+    "url": "https://www.wayflyer.com/careers",
+    "description": "Research and implement deep learning models for predicting e-commerce business performance from tabular financial data. You will use PyTorch, compare against gradient boosting baselines, and validate results rigorously.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Deep Learning",
+      "Pandas",
+      "scikit-learn",
+      "Statistics"
+    ],
+    "next_step": "Take-home modelling task followed by a research-style technical interview.",
+    "source": "Wayflyer Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 AgriTech",
+    "company": "Bord Bia",
+    "location": "Dublin, Ireland",
+    "url": "https://www.bordbia.ie/about/careers",
+    "description": "Analyze food industry market data to generate insights on export performance and consumer trends. You will use Python, Pandas, and Tableau to build models and dashboards used by Bord Bia's market intelligence team.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "Tableau",
+      "SQL",
+      "Statistics",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule an introductory call followed by a short data presentation task.",
+    "source": "Bord Bia Careers"
+  },
+  {
+    "title": "Intern \u2014 Embedded Systems Software",
+    "company": "Molex Ireland",
+    "location": "Shannon, Ireland",
+    "url": "https://www.molex.com/en-us/company/careers",
+    "description": "Write C and Python software for embedded hardware test and validation systems. You will automate test procedures, analyze sensor data, and document results for engineering teams.",
+    "skills": [
+      "C",
+      "Python",
+      "Linux",
+      "Embedded Systems",
+      "Testing",
+      "Automation"
+    ],
+    "next_step": "Technical interview on C programming and embedded systems fundamentals.",
+    "source": "Molex Careers"
+  },
+  {
+    "title": "Intern \u2014 AI-Powered Document Processing",
+    "company": "Brightwork",
+    "location": "Dublin, Ireland",
+    "url": "https://www.brightwork.ie/careers",
+    "description": "Build AI document processing pipelines using LLMs and Python. You will integrate OCR tools, design extraction prompts, evaluate accuracy, and help deploy solutions for enterprise clients.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Prompt Engineering",
+      "REST APIs",
+      "SQL",
+      "Git"
+    ],
+    "next_step": "Technical interview plus a live document extraction coding exercise.",
+    "source": "Brightwork Careers"
+  },
+  {
+    "title": "Intern \u2014 Competitive Programming & Algorithms",
+    "company": "Optiver",
+    "location": "Amsterdam (Remote interview)",
+    "url": "https://www.optiver.com/working-at-optiver/career-opportunities",
+    "description": "Work on high-performance trading systems, applying advanced algorithms and data structures. You will write Python and C++ code, solve complex algorithmic problems, and contribute to low-latency financial systems.",
+    "skills": [
+      "Python",
+      "C",
+      "Algorithms",
+      "Data Structures",
+      "Mathematics",
+      "Optimization"
+    ],
+    "next_step": "Online algorithmic coding assessment followed by two technical interview rounds.",
+    "source": "Optiver Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Data Infrastructure",
+    "company": "Glofox",
+    "location": "Dublin, Ireland",
+    "url": "https://www.glofox.com/careers",
+    "description": "Build data infrastructure and internal tooling for Glofox's fitness software platform. You will write Python ETL jobs, work with PostgreSQL, maintain AWS data pipelines, and support the analytics team.",
+    "skills": [
+      "Python",
+      "PostgreSQL",
+      "AWS",
+      "ETL",
+      "SQL",
+      "Git"
+    ],
+    "next_step": "Take-home Python data task followed by a technical interview.",
+    "source": "Glofox Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Time Series",
+    "company": "CRH",
+    "location": "Dublin, Ireland",
+    "url": "https://www.crh.com/careers",
+    "description": "Build time-series forecasting models for CRH's construction materials demand planning. You will use Python, scikit-learn, and statistical methods, and collaborate with supply chain and commercial teams.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Time Series",
+      "Forecasting",
+      "Statistics",
+      "SQL"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a Python modelling task.",
+    "source": "CRH Careers"
+  },
+  {
+    "title": "Junior AI Developer \u2014 Conversational AI",
+    "company": "Nuritas",
+    "location": "Dublin, Ireland",
+    "url": "https://nuritas.com/careers",
+    "description": "Build conversational AI features for internal research tools using LLMs and Python. You will design dialogue systems, evaluate response quality, integrate APIs, and maintain Python codebases.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "NLP",
+      "REST APIs",
+      "Git",
+      "Prompt Engineering"
+    ],
+    "next_step": "Technical interview plus a live demo of a conversational AI prototype you have built.",
+    "source": "Nuritas Careers"
+  },
+  {
+    "title": "Data Science Co-op \u2014 Pharma",
+    "company": "Bristol-Myers Squibb",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.bms.com",
+    "description": "Apply data science to clinical trial data and manufacturing process optimization. You will use Python, R, and SQL, validate statistical models, and contribute to regulatory submissions.",
+    "skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Statistics",
+      "Pandas",
+      "Data Validation"
+    ],
+    "next_step": "Structured competency interview followed by a technical statistics assessment.",
+    "source": "BMS Careers"
+  },
+  {
+    "title": "Intern \u2014 API Integration Engineer",
+    "company": "Taxback International",
+    "location": "Kilkenny, Ireland",
+    "url": "https://www.taxback.com/en/about-us/careers",
+    "description": "Build and maintain REST API integrations connecting Taxback's VAT compliance platform with client ERP systems (SAP, Oracle). You will write Python automation, test integrations, and document API schemas.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "SAP",
+      "SQL",
+      "Git",
+      "Documentation"
+    ],
+    "next_step": "Technical interview on API integration and Python scripting.",
+    "source": "Taxback Careers"
+  },
+  {
+    "title": "Software Engineer Intern \u2014 Search",
+    "company": "Indeed",
+    "location": "Dublin, Ireland",
+    "url": "https://www.indeed.com/careers",
+    "description": "Work on Indeed's job search ranking and retrieval systems. You will build Python pipelines, experiment with ranking algorithms, analyze A/B test data, and contribute to search infrastructure.",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "SQL",
+      "Search",
+      "Statistics",
+      "Git"
+    ],
+    "next_step": "Coding screen (online, 1 hour) followed by a technical and behavioral interview loop.",
+    "source": "Indeed Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Public Sector",
+    "company": "KPMG Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://home.kpmg/ie/en/home/careers",
+    "description": "Apply data analytics and machine learning to public sector client engagements (government, health, education). You will use Python, SQL, and Tableau to build models and dashboards and present findings to clients.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Machine Learning",
+      "Data Analysis",
+      "Communication"
+    ],
+    "next_step": "Assessment centre: group exercise + individual technical and competency interviews.",
+    "source": "KPMG Careers"
+  },
+  {
+    "title": "ML Researcher Intern \u2014 Generative Models",
+    "company": "CognitiveScale",
+    "location": "Remote (EU)",
+    "url": "https://www.cognitivescale.com/careers",
+    "description": "Research and implement generative models (VAEs, diffusion, LLMs) for enterprise AI applications. You will use Python and PyTorch, run controlled experiments, and write technical reports on model behavior.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Generative AI",
+      "Deep Learning",
+      "Research",
+      "Mathematics"
+    ],
+    "next_step": "Research-style technical interview including discussion of generative model architectures.",
+    "source": "CognitiveScale Careers"
+  },
+  {
+    "title": "Software Engineer Intern \u2014 DevTools",
+    "company": "Liffey Software",
+    "location": "Dublin, Ireland",
+    "url": "https://liffeysoftware.ie/careers",
+    "description": "Build developer tools and CI/CD automation for internal platform teams. You will write Python scripts, maintain Docker-based build environments, configure Git pipelines, and improve developer productivity.",
+    "skills": [
+      "Python",
+      "Docker",
+      "Git",
+      "CI/CD",
+      "Linux",
+      "Automation"
+    ],
+    "next_step": "Technical interview covering CI/CD, Python, and a brief scripting exercise.",
+    "source": "Liffey Software Careers"
+  },
+  {
+    "title": "AI Engineer Intern",
+    "company": "IQVIA",
+    "location": "Dublin, Ireland",
+    "url": "https://jobs.iqvia.com",
+    "description": "Build AI-powered analytics features for IQVIA's pharma data platform. You will develop Python NLP pipelines, integrate LLM APIs, evaluate model outputs, and contribute to production AI systems.",
+    "skills": [
+      "Python",
+      "NLP",
+      "LLMs",
+      "Machine Learning",
+      "SQL",
+      "REST APIs"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, followed by a take-home Python AI task.",
+    "source": "IQVIA Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Social Impact",
+    "company": "Concern Worldwide",
+    "location": "Dublin, Ireland",
+    "url": "https://www.concern.net/careers",
+    "description": "Analyze field data and program outcomes to measure the impact of humanitarian interventions. You will use Python, R, and SQL to build statistical models and visualize results for senior management and donors.",
+    "skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Statistics",
+      "Excel",
+      "Data Visualization"
+    ],
+    "next_step": "Interview with the analytics team plus a take-home data analysis task.",
+    "source": "Concern Worldwide Careers"
+  },
+  {
+    "title": "Platform Engineering Intern",
+    "company": "Teamwork.com",
+    "location": "Cork, Ireland",
+    "url": "https://www.teamwork.com/careers",
+    "description": "Build and maintain the developer platform and internal tooling for Teamwork's SaaS infrastructure. You will work with Docker, Kubernetes, Python, and AWS, and automate deployment workflows.",
+    "skills": [
+      "Docker",
+      "Kubernetes",
+      "Python",
+      "AWS",
+      "CI/CD",
+      "Linux"
+    ],
+    "next_step": "Technical interview covering platform engineering and infrastructure concepts.",
+    "source": "Teamwork Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Audio AI",
+    "company": "Soapbox Labs",
+    "location": "Dublin, Ireland",
+    "url": "https://www.soapboxlabs.com/careers",
+    "description": "Work on speech recognition and child voice AI models. You will use Python, TensorFlow, and audio processing libraries, train and evaluate acoustic models, and contribute to production STT pipelines.",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "Deep Learning",
+      "Audio Processing",
+      "NumPy",
+      "Linux"
+    ],
+    "next_step": "Technical interview on ML and audio processing, followed by a take-home model evaluation task.",
+    "source": "Soapbox Labs Careers"
+  },
+  {
+    "title": "Junior Frontend Developer",
+    "company": "Sigmar Recruitment",
+    "location": "Dublin, Ireland",
+    "url": "https://www.sigmar.ie/careers",
+    "description": "Build responsive React web applications for recruitment software products. You will implement UI components, integrate REST APIs, write unit tests, and collaborate with backend Python developers.",
+    "skills": [
+      "React",
+      "JavaScript",
+      "REST APIs",
+      "CSS",
+      "Git",
+      "Testing"
+    ],
+    "next_step": "Take-home React coding task followed by a technical walkthrough with the frontend lead.",
+    "source": "Sigmar Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Logistics",
+    "company": "An Post",
+    "location": "Dublin, Ireland",
+    "url": "https://www.anpost.com/About-Us/Careers",
+    "description": "Build route optimization and demand forecasting models for Ireland's national postal service. You will use Python, scikit-learn, and SQL, analyze delivery and logistics data, and visualize insights with Tableau.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Tableau",
+      "Forecasting",
+      "Pandas"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute call, then a data science case study task.",
+    "source": "An Post Careers"
+  },
+  {
+    "title": "MLOps Intern \u2014 Model Deployment",
+    "company": "ESB Networks",
+    "location": "Dublin, Ireland",
+    "url": "https://esb.ie/careers",
+    "description": "Build and maintain model deployment and monitoring pipelines for ESB's smart grid AI initiatives. You will use Python, Docker, and AWS, automate retraining workflows, and track model performance in production.",
+    "skills": [
+      "Python",
+      "Docker",
+      "AWS",
+      "MLOps",
+      "SQL",
+      "Linux"
+    ],
+    "next_step": "Technical interview covering Python, MLOps, and cloud deployment concepts.",
+    "source": "ESB Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 Real-Time Systems",
+    "company": "Betsson Group",
+    "location": "Dublin, Ireland",
+    "url": "https://www.betsson.com/en/careers",
+    "description": "Build high-throughput backend services for real-time betting and gaming systems. You will write Python and Java microservices, design REST APIs, work with PostgreSQL, and monitor service performance.",
+    "skills": [
+      "Python",
+      "Java",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL",
+      "Docker"
+    ],
+    "next_step": "Technical coding round in Python or Java followed by a system design discussion.",
+    "source": "Betsson Careers"
+  },
+  {
+    "title": "Intern \u2014 NLP & Knowledge Graphs",
+    "company": "Insight Centre for Data Analytics",
+    "location": "Dublin, Ireland",
+    "url": "https://www.insight-centre.org/content/positions-available",
+    "description": "Research knowledge graph construction from unstructured text using NLP and deep learning. You will use Python, spaCy, and PyTorch, build entity relation extraction pipelines, and contribute to research publications.",
+    "skills": [
+      "Python",
+      "NLP",
+      "PyTorch",
+      "Knowledge Graphs",
+      "spaCy",
+      "Research"
+    ],
+    "next_step": "Research interview including a discussion of your NLP or ML background.",
+    "source": "Insight Centre Careers"
+  },
+  {
+    "title": "Intern \u2014 Big Data Engineering",
+    "company": "Core Media",
+    "location": "Dublin, Ireland",
+    "url": "https://www.coremedia.com/careers",
+    "description": "Build batch and streaming data pipelines processing advertising performance data at scale. You will use Python, SQL, and AWS services, design ETL jobs, and support BI reporting for media clients.",
+    "skills": [
+      "Python",
+      "SQL",
+      "AWS",
+      "ETL",
+      "Data Engineering",
+      "PostgreSQL"
+    ],
+    "next_step": "Technical interview covering data pipeline design and Python/SQL skills.",
+    "source": "Core Media Careers"
+  },
+  {
+    "title": "Intern \u2014 AI Product Manager",
+    "company": "Intercom",
+    "location": "Dublin, Ireland",
+    "url": "https://www.intercom.com/careers",
+    "description": "Support AI product development at Intercom, bridging between ML engineers and product stakeholders. You will analyze user data with Python and SQL, write product specs, and evaluate AI feature quality.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Data Analysis",
+      "LLMs",
+      "Communication",
+      "Product Thinking"
+    ],
+    "next_step": "Product case study interview plus a data analysis exercise.",
+    "source": "Intercom Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Financial Risk",
+    "company": "AIB",
+    "location": "Dublin, Ireland",
+    "url": "https://aib.ie/careers",
+    "description": "Build credit risk and default probability models using machine learning. You will use Python, scikit-learn, and SQL, validate models against regulatory standards, and present findings to risk management.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Machine Learning",
+      "Excel"
+    ],
+    "next_step": "Technical screen covering Python and statistics followed by a structured interview.",
+    "source": "AIB Careers"
+  },
+  {
+    "title": "Intern \u2014 Software Testing & QA",
+    "company": "Trend Micro",
+    "location": "Cork, Ireland",
+    "url": "https://www.trendmicro.com/en_us/about/careers.html",
+    "description": "Design and execute test plans for Trend Micro's cybersecurity products. You will write Python automation scripts, perform exploratory testing, triage bugs, and contribute to CI/CD quality gates.",
+    "skills": [
+      "Python",
+      "Test Automation",
+      "QA",
+      "Linux",
+      "Git",
+      "Security"
+    ],
+    "next_step": "Technical interview followed by a live Python test scripting exercise.",
+    "source": "Trend Micro Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 HealthTech",
+    "company": "Wellola",
+    "location": "Dublin, Ireland",
+    "url": "https://www.wellola.com/careers",
+    "description": "Analyze patient engagement and health outcomes data to improve digital health features. You will use Python and SQL, build predictive models, and visualize results with Matplotlib and Seaborn.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "Matplotlib",
+      "Seaborn",
+      "Statistics"
+    ],
+    "next_step": "30-minute intro call followed by a data analysis case study.",
+    "source": "Wellola Careers"
+  },
+  {
+    "title": "Machine Learning Engineer Intern \u2014 NLU",
+    "company": "Conduent",
+    "location": "Dublin, Ireland",
+    "url": "https://www.conduent.com/careers",
+    "description": "Build natural language understanding models for document processing and extraction. You will fine-tune LLMs with Python, evaluate on benchmarks, and integrate models into enterprise workflows.",
+    "skills": [
+      "Python",
+      "NLP",
+      "LLMs",
+      "Transformers",
+      "Machine Learning",
+      "SQL"
+    ],
+    "next_step": "Technical interview on NLP and LLM fine-tuning, followed by a take-home task.",
+    "source": "Conduent Careers"
+  },
+  {
+    "title": "Intern \u2014 Cloud Data Architecture",
+    "company": "Version 1",
+    "location": "Dublin, Ireland",
+    "url": "https://www.version1.com/careers",
+    "description": "Design and implement cloud data architectures on AWS for enterprise clients. You will build data lakes, ETL pipelines with Python, and BI reporting layers on top of PostgreSQL and Redshift.",
+    "skills": [
+      "Python",
+      "AWS",
+      "SQL",
+      "PostgreSQL",
+      "ETL",
+      "Cloud Architecture"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a cloud architecture discussion.",
+    "source": "Version 1 Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Consumer Insights",
+    "company": "Kantar Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.kantar.com/careers",
+    "description": "Analyze consumer research and panel data to generate brand and market insights. You will use Python, R, and SQL to segment audiences, build predictive models, and deliver client-facing presentations.",
+    "skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Statistics",
+      "Data Visualization",
+      "Excel"
+    ],
+    "next_step": "Assessment day: quantitative exercise + individual and group interview.",
+    "source": "Kantar Careers"
+  },
+  {
+    "title": "LLM Evaluation Intern",
+    "company": "Anthropic (Contract via partner)",
+    "location": "Remote",
+    "url": "https://www.anthropic.com/careers",
+    "description": "Design and run systematic evaluations of large language model outputs for safety, helpfulness, and accuracy. You will write Python scripts to automate evaluation pipelines, analyze results, and report findings.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "AI Safety",
+      "Data Analysis",
+      "Prompt Engineering",
+      "Research"
+    ],
+    "next_step": "Technical interview on LLM evaluation methodology and Python, plus a take-home eval task.",
+    "source": "Anthropic Partner Listings"
+  },
+  {
+    "title": "Backend Intern \u2014 Java Spring",
+    "company": "Realex Payments (Global Payments)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.globalpayments.com/careers",
+    "description": "Build and maintain Java Spring microservices for payment processing APIs. You will write unit tests, review code, work with PostgreSQL, and contribute to PCI-compliant software.",
+    "skills": [
+      "Java",
+      "Spring",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL",
+      "Git"
+    ],
+    "next_step": "Technical Java coding round followed by a system design discussion.",
+    "source": "Global Payments Careers"
+  },
+  {
+    "title": "Applied AI Intern",
+    "company": "Gartner",
+    "location": "Dublin, Ireland",
+    "url": "https://jobs.gartner.com",
+    "description": "Develop AI and ML tools to enhance Gartner's research and data products. You will build Python pipelines, integrate LLMs for text analysis and summarization, and evaluate AI-powered research features.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "NLP",
+      "Data Analysis",
+      "SQL",
+      "REST APIs"
+    ],
+    "next_step": "Technical interview plus a short applied AI problem-solving session.",
+    "source": "Gartner Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Drug Discovery",
+    "company": "Genuity Science",
+    "location": "Dublin, Ireland",
+    "url": "https://www.genuityscience.com/careers",
+    "description": "Apply machine learning to genomics and drug discovery datasets. You will use Python, scikit-learn, and PyTorch to build predictive models, validate results, and contribute to research publications.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "PyTorch",
+      "Statistics",
+      "Research",
+      "NumPy"
+    ],
+    "next_step": "Research interview covering ML and bioinformatics concepts.",
+    "source": "Genuity Science Careers"
+  },
+  {
+    "title": "Python Intern \u2014 FinTech Automation",
+    "company": "Taxjar",
+    "location": "Remote",
+    "url": "https://www.taxjar.com/careers",
+    "description": "Build Python automation tools for tax compliance workflows. You will write scripts to interact with financial APIs, test integrations with SQL databases, and document automated solutions.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "SQL",
+      "Automation",
+      "Testing",
+      "Git"
+    ],
+    "next_step": "Take-home Python automation task followed by a technical walkthrough.",
+    "source": "TaxJar Careers"
+  },
+  {
+    "title": "Intern \u2014 Multimodal AI",
+    "company": "Huawei Research Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://career.huawei.com",
+    "description": "Research multimodal AI systems combining vision and language. You will implement experiments in Python and PyTorch, analyze model behavior on image-text benchmarks, and write technical reports.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Deep Learning",
+      "Computer Vision",
+      "NLP",
+      "Research"
+    ],
+    "next_step": "Research interview including presentation of a recent ML or AI project.",
+    "source": "Huawei Research Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Healthcare IT",
+    "company": "Health Service Executive (HSE)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.hse.ie/eng/staff/jobs",
+    "description": "Develop and maintain healthcare software systems for the HSE. You will write Java or Python code, contribute to patient data systems, work with SQL databases, and ensure software security and compliance.",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL",
+      "Healthcare IT",
+      "Git",
+      "Security"
+    ],
+    "next_step": "Competency-based interview followed by a technical programming exercise.",
+    "source": "HSE Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Real Estate",
+    "company": "MyHome.ie",
+    "location": "Dublin, Ireland",
+    "url": "https://www.myhome.ie/careers",
+    "description": "Build property price prediction models and market analytics tools. You will use Python, scikit-learn, and SQL to model property data, create visualizations with Seaborn, and present insights to product teams.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Pandas",
+      "Seaborn",
+      "Statistics"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, followed by a modelling case study.",
+    "source": "MyHome Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Media & Advertising",
+    "company": "News Ireland (Independent.ie)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.newsireland.com/careers",
+    "description": "Analyze reader engagement, content performance, and advertising data to inform editorial and commercial decisions. You will use Python, SQL, and Tableau to build dashboards and audience segmentation models.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Pandas",
+      "Data Analysis",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute Teams call followed by an analytics case study.",
+    "source": "News Ireland Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 Event-Driven Architecture",
+    "company": "Immedis",
+    "location": "Kilkenny, Ireland",
+    "url": "https://www.immedis.com/careers",
+    "description": "Build event-driven Python microservices for global payroll processing. You will design async REST APIs, work with PostgreSQL and message queues, and contribute to integration testing.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "Event-Driven",
+      "SQL",
+      "Docker"
+    ],
+    "next_step": "Take-home Python microservices task followed by a technical design interview.",
+    "source": "Immedis Careers"
+  },
+  {
+    "title": "Intern \u2014 Satellite Data Analytics",
+    "company": "Skytek",
+    "location": "Dublin, Ireland",
+    "url": "https://www.skytek.com/careers",
+    "description": "Process and analyze Earth observation satellite data for maritime and environmental monitoring. You will use Python, NumPy, and Pandas to build analysis pipelines and create geospatial visualizations.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Data Analysis",
+      "Visualization",
+      "Linux"
+    ],
+    "next_step": "Technical interview covering Python and data analysis fundamentals.",
+    "source": "Skytek Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Pricing",
+    "company": "Aer Lingus",
+    "location": "Dublin, Ireland",
+    "url": "https://www.aerlingus.com/about-us/careers",
+    "description": "Build dynamic pricing and demand forecasting models for Aer Lingus route network management. You will use Python, scikit-learn, and SQL to model booking data and validate revenue impact.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Forecasting",
+      "SQL",
+      "Statistics",
+      "Pandas"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a data science case study.",
+    "source": "Aer Lingus Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Smart Cities",
+    "company": "Dublin City Council",
+    "location": "Dublin, Ireland",
+    "url": "https://www.dublincity.ie/careers",
+    "description": "Analyze urban mobility, sensor, and planning data to support Dublin's smart city initiatives. You will use Python, SQL, and Tableau to model transport patterns and create dashboards for city planners.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Pandas",
+      "Statistics",
+      "Geospatial"
+    ],
+    "next_step": "Structured interview including a presentation of a data analysis project.",
+    "source": "Dublin City Council Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Energy Forecasting",
+    "company": "EirGrid",
+    "location": "Dublin, Ireland",
+    "url": "https://www.eirgrid.ie/about-us/careers",
+    "description": "Build ML models to forecast electricity demand and renewable energy generation on the Irish grid. You will use Python, scikit-learn, and time-series methods, and collaborate with grid operations engineers.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Time Series",
+      "Forecasting",
+      "NumPy",
+      "SQL"
+    ],
+    "next_step": "Technical phone screen followed by an in-depth modelling interview.",
+    "source": "EirGrid Careers"
+  },
+  {
+    "title": "Intern \u2014 AI Governance",
+    "company": "Data Protection Commission (DPC)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.dataprotection.ie/en/about/careers",
+    "description": "Support AI governance and compliance research, including auditing AI systems under the EU AI Act. You will analyze technical documentation, write policy reports, and use Python for data analysis.",
+    "skills": [
+      "Python",
+      "AI Ethics",
+      "Responsible AI",
+      "Research",
+      "Communication",
+      "Data Analysis"
+    ],
+    "next_step": "Competency-based interview plus a written analytical assessment.",
+    "source": "DPC Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Python/React",
+    "company": "Clio",
+    "location": "Dublin, Ireland",
+    "url": "https://www.clio.com/careers",
+    "description": "Build features for Clio's legal practice management SaaS platform. You will write Python backend services, develop React UI components, integrate REST APIs, and contribute to automated tests.",
+    "skills": [
+      "Python",
+      "React",
+      "REST APIs",
+      "PostgreSQL",
+      "JavaScript",
+      "Git"
+    ],
+    "next_step": "Take-home full-stack coding project followed by a technical interview.",
+    "source": "Clio Careers"
+  },
+  {
+    "title": "Data Analyst Intern \u2014 HR Analytics",
+    "company": "Aon Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.aon.com",
+    "description": "Analyze workforce and compensation data to support HR consulting engagements. You will use SQL, Python, and Excel to build models and present recommendations to client stakeholders.",
+    "skills": [
+      "SQL",
+      "Python",
+      "Excel",
+      "Statistics",
+      "Data Analysis",
+      "Communication"
+    ],
+    "next_step": "Case study interview: present an analysis of a provided HR dataset.",
+    "source": "Aon Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Retail",
+    "company": "Primark",
+    "location": "Dublin, Ireland",
+    "url": "https://www.primark.com/en/careers",
+    "description": "Build demand forecasting and inventory optimization models for Primark's global supply chain. You will use Python, Pandas, and scikit-learn to analyse retail transaction data and model seasonal trends.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "scikit-learn",
+      "SQL",
+      "Forecasting",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a retail analytics task.",
+    "source": "Primark Careers"
+  },
+  {
+    "title": "Cloud Security Intern",
+    "company": "Experian Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.experian.com",
+    "description": "Support cloud security monitoring and incident response for Experian's AWS environments. You will write Python automation for security log analysis, assist with vulnerability scanning, and document security controls.",
+    "skills": [
+      "Python",
+      "AWS",
+      "Cybersecurity",
+      "Linux",
+      "SQL",
+      "Automation"
+    ],
+    "next_step": "Technical interview covering cloud security and Python scripting.",
+    "source": "Experian Careers"
+  },
+  {
+    "title": "Junior Data Engineer \u2014 Streaming",
+    "company": "Everi",
+    "location": "Dublin, Ireland",
+    "url": "https://everi.com/careers",
+    "description": "Build real-time data streaming pipelines for gaming analytics using Python, Kafka, and AWS. You will design ETL jobs, optimize data schemas in PostgreSQL, and monitor data quality.",
+    "skills": [
+      "Python",
+      "Kafka",
+      "AWS",
+      "PostgreSQL",
+      "SQL",
+      "ETL"
+    ],
+    "next_step": "Technical interview covering streaming data concepts and Python/SQL skills.",
+    "source": "Everi Careers"
+  },
+  {
+    "title": "AI Intern \u2014 Predictive Maintenance",
+    "company": "Siemens Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://new.siemens.com/global/en/company/jobs.html",
+    "description": "Build predictive maintenance models using sensor and IoT data from industrial equipment. You will use Python, scikit-learn, and time-series analysis to detect anomalies and predict failures.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Time Series",
+      "IoT",
+      "NumPy",
+      "SQL"
+    ],
+    "next_step": "Technical interview on ML and time-series methods followed by a data challenge.",
+    "source": "Siemens Careers"
+  },
+  {
+    "title": "Intern \u2014 Mobile App Development",
+    "company": "Three Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.three.ie/careers",
+    "description": "Build features for Three Ireland's mobile and web applications. You will write React or React Native code, integrate REST APIs, debug issues across platforms, and collaborate with UX designers.",
+    "skills": [
+      "React",
+      "JavaScript",
+      "REST APIs",
+      "SQL",
+      "Git",
+      "Mobile Development"
+    ],
+    "next_step": "Take-home React task followed by a live technical interview.",
+    "source": "Three Ireland Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Water Utilities",
+    "company": "Irish Water (Uisce \u00c9ireann)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.water.ie/careers",
+    "description": "Build predictive models for water demand forecasting and network leak detection. You will use Python, scikit-learn, and SQL to analyze sensor and network data, and visualize results for engineering teams.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Forecasting",
+      "Data Analysis",
+      "Visualization"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute call followed by a technical Python task.",
+    "source": "Irish Water Careers"
+  },
+  {
+    "title": "ML Research Intern \u2014 Explainable AI",
+    "company": "Accenture Labs Dublin",
+    "location": "Dublin, Ireland",
+    "url": "https://www.accenture.com/ie-en/careers",
+    "description": "Research explainability techniques for ML models used in high-stakes decisions. You will use Python, SHAP, LIME, and scikit-learn, design experiments, and produce research reports for clients.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Explainable AI",
+      "SHAP",
+      "Statistics",
+      "Research"
+    ],
+    "next_step": "Research interview plus a short presentation on an explainability technique.",
+    "source": "Accenture Labs Careers"
+  },
+  {
+    "title": "Intern \u2014 Spatial Data Engineering",
+    "company": "Ordnance Survey Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.osi.ie/about/careers",
+    "description": "Build geospatial data pipelines and analysis tools for Ireland's national mapping service. You will use Python, PostGIS, and SQL to process geographic datasets and build visualization layers.",
+    "skills": [
+      "Python",
+      "SQL",
+      "PostgreSQL",
+      "PostGIS",
+      "Geospatial",
+      "Data Engineering"
+    ],
+    "next_step": "Technical interview covering Python and spatial data concepts.",
+    "source": "OSI Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Blockchain",
+    "company": "Consensys",
+    "location": "Remote",
+    "url": "https://consensys.io/open-roles",
+    "description": "Build developer tooling and APIs for Ethereum-based blockchain applications. You will write Python and JavaScript code, work with smart contract APIs, design REST services, and contribute to open-source projects.",
+    "skills": [
+      "Python",
+      "JavaScript",
+      "REST APIs",
+      "SQL",
+      "Git",
+      "Blockchain"
+    ],
+    "next_step": "Take-home coding challenge followed by a technical interview.",
+    "source": "Consensys Careers"
+  },
+  {
+    "title": "Software Engineer Intern \u2014 ML Tooling",
+    "company": "Telnyx",
+    "location": "Remote (EU)",
+    "url": "https://telnyx.com/careers",
+    "description": "Build internal ML tooling and evaluation infrastructure for Telnyx's voice AI products. You will use Python, design data pipelines, integrate LLM APIs, and help automate model evaluation workflows.",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "LLMs",
+      "Data Pipelines",
+      "REST APIs",
+      "SQL"
+    ],
+    "next_step": "Technical interview covering Python and ML tooling, plus a take-home Python task.",
+    "source": "Telnyx Careers"
+  },
+  {
+    "title": "Intern \u2014 Graph Database Engineering",
+    "company": "Neo4j (via partner)",
+    "location": "Remote (EU)",
+    "url": "https://neo4j.com/careers",
+    "description": "Build applications using Neo4j graph databases for knowledge management and relationship analytics. You will write Python clients, design Cypher queries, model graph schemas, and build REST API layers.",
+    "skills": [
+      "Python",
+      "Graph Databases",
+      "SQL",
+      "REST APIs",
+      "Git",
+      "Data Modeling"
+    ],
+    "next_step": "Technical interview on graph database concepts and Python coding.",
+    "source": "Neo4j Partner Listings"
+  },
+  {
+    "title": "Junior AI Engineer \u2014 Voice Interfaces",
+    "company": "Cemplicity",
+    "location": "Dublin, Ireland",
+    "url": "https://cemplicity.com/careers",
+    "description": "Build AI-powered voice survey and feedback systems. You will integrate LLM and speech APIs, design conversational flows in Python, and evaluate response quality for healthcare clients.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "NLP",
+      "REST APIs",
+      "Speech AI",
+      "Git"
+    ],
+    "next_step": "Technical interview plus a live voice AI integration demo.",
+    "source": "Cemplicity Careers"
+  },
+  {
+    "title": "Intern \u2014 Applied Statistics",
+    "company": "HRB (Health Research Board)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.hrb.ie/about-hrb/careers",
+    "description": "Support health research projects with statistical analysis using R and Python. You will build regression and survival models, validate results, and write clear statistical reports for research teams.",
+    "skills": [
+      "R",
+      "Python",
+      "Statistics",
+      "SciPy",
+      "NumPy",
+      "Data Analysis"
+    ],
+    "next_step": "Interview covering statistical knowledge and a short R/Python analysis task.",
+    "source": "HRB Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Social Media",
+    "company": "TikTok (via Dublin hub)",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.tiktok.com",
+    "description": "Work on content ranking and recommendation ML systems for TikTok's platform. You will use Python and PyTorch to prototype models, run offline evaluations, and contribute to feature engineering pipelines.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Machine Learning",
+      "SQL",
+      "Feature Engineering",
+      "Statistics"
+    ],
+    "next_step": "Online coding assessment followed by two rounds of technical ML interviews.",
+    "source": "TikTok Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 EdTech",
+    "company": "Educate.ie",
+    "location": "Dublin, Ireland",
+    "url": "https://www.educate.ie/careers",
+    "description": "Analyze student learning data to build personalized recommendation models and progress analytics. You will use Python, Pandas, and scikit-learn to model engagement patterns and visualize insights.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "scikit-learn",
+      "SQL",
+      "Data Visualization",
+      "Statistics"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a data analysis task.",
+    "source": "Educate.ie Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 Python/PostgreSQL",
+    "company": "Voxpro (TELUS Digital)",
+    "location": "Cork, Ireland",
+    "url": "https://telusdigital.com/careers",
+    "description": "Build Python backend APIs and data processing services for TELUS Digital's CX platform. You will work with FastAPI, PostgreSQL, and REST integrations, and write unit and integration tests.",
+    "skills": [
+      "Python",
+      "PostgreSQL",
+      "FastAPI",
+      "REST APIs",
+      "SQL",
+      "Git"
+    ],
+    "next_step": "Take-home Python REST API task followed by a code walkthrough with the team.",
+    "source": "TELUS Digital Careers"
+  },
+  {
+    "title": "Intern \u2014 AI-Powered Code Review",
+    "company": "Codacy (via Dublin partner)",
+    "location": "Remote",
+    "url": "https://www.codacy.com/careers",
+    "description": "Help build AI-powered code review features using LLMs and static analysis. You will write Python tooling, design evaluation benchmarks, and test model-generated code review comments for accuracy.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Prompt Engineering",
+      "Git",
+      "Testing",
+      "Code Quality"
+    ],
+    "next_step": "Technical interview plus a take-home code review automation task.",
+    "source": "Codacy Careers"
+  },
+  {
+    "title": "Research Intern \u2014 Causal ML",
+    "company": "Zalando Research",
+    "location": "Remote (EU)",
+    "url": "https://research.zalando.com/careers",
+    "description": "Research causal inference and causal machine learning methods for A/B test analysis and recommendation systems. You will implement experiments in Python, run simulations, and co-author research papers.",
+    "skills": [
+      "Python",
+      "Causal Inference",
+      "Machine Learning",
+      "Statistics",
+      "Research",
+      "NumPy"
+    ],
+    "next_step": "Research interview covering causal inference fundamentals and prior project experience.",
+    "source": "Zalando Research Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Broadcast",
+    "company": "RT\u00c9",
+    "location": "Dublin, Ireland",
+    "url": "https://rte.ie/about/jobs",
+    "description": "Analyze audience viewing data and digital engagement metrics to support programming and editorial decisions. You will use Python, SQL, and Tableau to build dashboards and predictive models for RT\u00c9's digital teams.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Pandas",
+      "Statistics",
+      "Data Visualization"
+    ],
+    "next_step": "Interview including a data challenge based on a sample broadcast analytics dataset.",
+    "source": "RT\u00c9 Careers"
+  },
+  {
+    "title": "Full-Stack AI Intern",
+    "company": "Continuum AI",
+    "location": "Dublin, Ireland",
+    "url": "https://continuum.ai/careers",
+    "description": "Build AI-powered SaaS features end-to-end: Python FastAPI backend, React frontend, and LLM integrations. You will contribute to product features from design to deployment and test in a startup environment.",
+    "skills": [
+      "Python",
+      "React",
+      "FastAPI",
+      "LLMs",
+      "REST APIs",
+      "PostgreSQL"
+    ],
+    "next_step": "Take-home full-stack AI project followed by a live walkthrough with the founders.",
+    "source": "Continuum AI Careers"
+  },
+  {
+    "title": "Intern \u2014 Data Science & Machine Learning",
+    "company": "Science Foundation Ireland (SFI)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.sfi.ie/careers",
+    "description": "Support SFI's analytics team by building models to evaluate research impact and funding outcomes. You will use Python, Pandas, scikit-learn, and SQL, and present findings to policy and strategy teams.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Excel"
+    ],
+    "next_step": "Structured interview with the analytics team plus a short Python data task.",
+    "source": "SFI Careers"
+  },
+  {
+    "title": "Software Engineer Intern \u2014 Security",
+    "company": "BidX1",
+    "location": "Dublin, Ireland",
+    "url": "https://www.bidx1.com/en/contact-us",
+    "description": "Build and harden security features in BidX1's online property auction platform. You will work with Python and Java, conduct code reviews for security vulnerabilities, and write automated security tests.",
+    "skills": [
+      "Python",
+      "Java",
+      "Security",
+      "SQL",
+      "Git",
+      "Testing"
+    ],
+    "next_step": "Technical interview including a secure code review exercise.",
+    "source": "BidX1 Careers"
+  },
+  {
+    "title": "Intern \u2014 Vector Search & RAG",
+    "company": "MongoDB Atlas (Internal Tools Team)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.mongodb.com/company/careers",
+    "description": "Build and evaluate Retrieval-Augmented Generation (RAG) pipelines using MongoDB Atlas Vector Search and Python. You will design embedding strategies, benchmark search quality, and integrate LLM APIs.",
+    "skills": [
+      "Python",
+      "MongoDB",
+      "Vector Search",
+      "LLMs",
+      "Embeddings",
+      "RAG"
+    ],
+    "next_step": "Technical interview on vector search and RAG architecture, followed by a Python implementation task.",
+    "source": "MongoDB Careers"
+  },
+  {
+    "title": "Software Engineer Intern \u2014 Python/AI",
+    "company": "Zartis",
+    "location": "Dublin, Ireland",
+    "url": "https://www.zartis.com/careers",
+    "description": "Build AI-powered features for enterprise software clients. You will write Python backends, integrate ML and LLM APIs, design REST APIs, and collaborate with cross-functional agile teams.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "REST APIs",
+      "SQL",
+      "Git",
+      "Agile"
+    ],
+    "next_step": "Technical coding interview followed by a system design and culture-fit discussion.",
+    "source": "Zartis Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Biotech",
+    "company": "Eli Lilly Ireland",
+    "location": "Limerick, Ireland",
+    "url": "https://jobs.lilly.com",
+    "description": "Apply statistical modelling and ML to biotech manufacturing and clinical datasets. You will use Python, scikit-learn, and R to build quality prediction models, validate results, and report findings to engineering teams.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "R",
+      "Statistics",
+      "Pandas",
+      "SQL"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a technical statistics screen.",
+    "source": "Eli Lilly Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Retail Forecasting",
+    "company": "Tesco Technology",
+    "location": "Dublin, Ireland",
+    "url": "https://www.tescoplc.com/careers",
+    "description": "Build demand forecasting and shelf optimization models using Python and ML. You will work with large transactional datasets, apply time-series methods, and collaborate with supply chain analysts.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Time Series",
+      "SQL",
+      "Pandas",
+      "Forecasting"
+    ],
+    "next_step": "Take-home forecasting task in Python followed by a technical review session.",
+    "source": "Tesco Technology Careers"
+  },
+  {
+    "title": "Backend Engineering Intern \u2014 Rust/Python",
+    "company": "Cloudflare",
+    "location": "Remote",
+    "url": "https://www.cloudflare.com/careers",
+    "description": "Build high-performance backend systems for Cloudflare's edge network. You will write Python or Rust, work with distributed systems, design APIs, and contribute to infrastructure automation.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "Linux",
+      "Docker",
+      "Systems Programming",
+      "Git"
+    ],
+    "next_step": "Online coding assessment followed by two technical interview rounds.",
+    "source": "Cloudflare Careers"
+  },
+  {
+    "title": "NLP Research Intern",
+    "company": "Adaptavist",
+    "location": "Remote (EU)",
+    "url": "https://www.adaptavist.com/careers",
+    "description": "Research and build NLP models for Jira/Confluence text analysis and intelligent automation. You will use Python, spaCy, and Hugging Face Transformers to prototype and evaluate language models.",
+    "skills": [
+      "Python",
+      "NLP",
+      "Transformers",
+      "spaCy",
+      "Machine Learning",
+      "SQL"
+    ],
+    "next_step": "Technical phone screen on NLP followed by a take-home NLP mini project.",
+    "source": "Adaptavist Careers"
+  },
+  {
+    "title": "Data Engineer Intern \u2014 Cloud Warehouse",
+    "company": "Paddy Power Betfair",
+    "location": "Dublin, Ireland",
+    "url": "https://www.paddypowerbetfair.com/careers",
+    "description": "Build and maintain cloud data warehouse pipelines on AWS Redshift. You will write Python ETL scripts, design SQL data models, and support BI teams with clean, reliable data.",
+    "skills": [
+      "Python",
+      "SQL",
+      "AWS",
+      "ETL",
+      "PostgreSQL",
+      "Data Engineering"
+    ],
+    "next_step": "Technical screen covering SQL and Python data engineering fundamentals.",
+    "source": "Paddy Power Betfair Careers"
+  },
+  {
+    "title": "AI/LLM Developer Intern",
+    "company": "Personio",
+    "location": "Dublin, Ireland",
+    "url": "https://www.personio.com/careers",
+    "description": "Build LLM-powered HR automation features for Personio's platform. You will design prompts, integrate Anthropic and OpenAI APIs in Python, evaluate model outputs, and ship AI features to production.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Prompt Engineering",
+      "REST APIs",
+      "SQL",
+      "Git"
+    ],
+    "next_step": "Take-home LLM integration task followed by a technical interview.",
+    "source": "Personio Careers"
+  },
+  {
+    "title": "Data Analyst Intern \u2014 Product",
+    "company": "Kajabi",
+    "location": "Remote",
+    "url": "https://kajabi.com/careers",
+    "description": "Analyze product usage metrics and funnel data to drive growth decisions. You will write SQL, use Python for data analysis, build Tableau dashboards, and present findings to product managers.",
+    "skills": [
+      "SQL",
+      "Python",
+      "Tableau",
+      "Pandas",
+      "Statistics",
+      "Excel"
+    ],
+    "next_step": "Take-home product analytics case study followed by a presentation interview.",
+    "source": "Kajabi Careers"
+  },
+  {
+    "title": "Intern \u2014 Time Series Forecasting",
+    "company": "Bord G\u00e1is Energy",
+    "location": "Dublin, Ireland",
+    "url": "https://www.bordgaisenergy.ie/careers",
+    "description": "Build energy consumption forecasting models using Python and ML. You will apply time-series techniques to smart meter data, evaluate model accuracy, and create dashboards for operations teams.",
+    "skills": [
+      "Python",
+      "Time Series",
+      "scikit-learn",
+      "SQL",
+      "Pandas",
+      "Visualization"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute call followed by a Python time-series task.",
+    "source": "Bord G\u00e1is Careers"
+  },
+  {
+    "title": "ML Intern \u2014 Graph ML",
+    "company": "Zalando Research",
+    "location": "Remote (EU)",
+    "url": "https://research.zalando.com/careers",
+    "description": "Research and implement graph machine learning methods for product recommendation and customer graph analytics. You will use Python, PyTorch Geometric, and contribute to research publications.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Graph Neural Networks",
+      "Machine Learning",
+      "Research",
+      "NumPy"
+    ],
+    "next_step": "Research interview including a discussion of graph ML fundamentals.",
+    "source": "Zalando Research Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Python CLI Tools",
+    "company": "Boxfish Analytics",
+    "location": "Dublin, Ireland",
+    "url": "https://boxfish.com/careers",
+    "description": "Build command-line tools and automation scripts in Python for media analytics workflows. You will design clean CLI interfaces, write tested Python packages, and integrate REST APIs.",
+    "skills": [
+      "Python",
+      "CLI Tools",
+      "REST APIs",
+      "SQL",
+      "Linux",
+      "Git"
+    ],
+    "next_step": "Technical Python coding interview followed by a code review exercise.",
+    "source": "Boxfish Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Financial Services",
+    "company": "Davy Group",
+    "location": "Dublin, Ireland",
+    "url": "https://www.davy.ie/about-davy/careers.html",
+    "description": "Apply data science to wealth management and investment analytics. You will use Python and SQL to model client portfolios, build risk dashboards in Tableau, and present insights to financial advisors.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Statistics",
+      "Pandas",
+      "Excel"
+    ],
+    "next_step": "Phone screen with the data team followed by a quantitative case study.",
+    "source": "Davy Careers"
+  },
+  {
+    "title": "Cloud ML Intern \u2014 AWS SageMaker",
+    "company": "Version 1",
+    "location": "Dublin, Ireland",
+    "url": "https://www.version1.com/careers",
+    "description": "Build and deploy ML models on AWS SageMaker for enterprise clients. You will write Python training scripts, configure SageMaker pipelines, monitor deployed models, and document solutions.",
+    "skills": [
+      "Python",
+      "AWS",
+      "SageMaker",
+      "Machine Learning",
+      "Docker",
+      "MLOps"
+    ],
+    "next_step": "Technical interview covering AWS and ML deployment concepts.",
+    "source": "Version 1 Careers"
+  },
+  {
+    "title": "Data Visualization Intern \u2014 BI",
+    "company": "Permanent TSB",
+    "location": "Dublin, Ireland",
+    "url": "https://www.permanenttsb.ie/about-us/careers",
+    "description": "Build Power BI and Tableau dashboards for Permanent TSB's retail banking analytics. You will write SQL to prepare data, design interactive reports, and present insights to senior leadership.",
+    "skills": [
+      "Power BI",
+      "Tableau",
+      "SQL",
+      "Excel",
+      "Data Visualization",
+      "Python"
+    ],
+    "next_step": "Dashboard design interview: build a sample BI report and present it to the team.",
+    "source": "Permanent TSB Careers"
+  },
+  {
+    "title": "Java Intern \u2014 Enterprise Integration",
+    "company": "Accenture Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.accenture.com/ie-en/careers",
+    "description": "Build Java-based integration middleware connecting enterprise systems (SAP, Salesforce, Oracle). You will write clean Java OOP code, design REST and SOAP interfaces, and unit test integrations.",
+    "skills": [
+      "Java",
+      "OOP",
+      "REST APIs",
+      "SQL",
+      "SAP",
+      "Git"
+    ],
+    "next_step": "Assessment centre: written Java test + technical and competency interviews.",
+    "source": "Accenture Careers"
+  },
+  {
+    "title": "Intern \u2014 Satellite Image Classification",
+    "company": "Skytek",
+    "location": "Dublin, Ireland",
+    "url": "https://www.skytek.com/careers",
+    "description": "Build deep learning models to classify objects in satellite imagery for maritime surveillance. You will use Python, PyTorch, and computer vision techniques to train, evaluate, and visualize CNN models.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Computer Vision",
+      "Deep Learning",
+      "NumPy",
+      "Linux"
+    ],
+    "next_step": "Technical interview on deep learning and computer vision, plus a PyTorch coding exercise.",
+    "source": "Skytek Careers"
+  },
+  {
+    "title": "Intern \u2014 Predictive Analytics",
+    "company": "Zurich Insurance",
+    "location": "Dublin, Ireland",
+    "url": "https://www.zurich.ie/about-us/careers",
+    "description": "Develop predictive models for customer retention and cross-selling in insurance. You will use Python, scikit-learn, and SQL, validate models, and present results to actuarial stakeholders.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Pandas",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a modelling case study.",
+    "source": "Zurich Insurance Careers"
+  },
+  {
+    "title": "Intern \u2014 Data Quality Engineering",
+    "company": "CurrencyFair",
+    "location": "Dublin, Ireland",
+    "url": "https://www.currencyfair.com/careers",
+    "description": "Build data quality monitoring frameworks for financial data pipelines. You will write Python validation scripts, design SQL checks, create alerting dashboards, and document data contracts.",
+    "skills": [
+      "Python",
+      "SQL",
+      "PostgreSQL",
+      "Data Quality",
+      "Automation",
+      "Git"
+    ],
+    "next_step": "Technical interview on data quality and Python, followed by a SQL task.",
+    "source": "CurrencyFair Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 AI Research Tools",
+    "company": "ADAPT Centre (TCD)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.adaptcentre.ie/careers",
+    "description": "Build research software tools for AI and NLP experiments. You will write Python, design APIs, manage research datasets, and contribute to open-source NLP tooling used by the research community.",
+    "skills": [
+      "Python",
+      "NLP",
+      "REST APIs",
+      "SQL",
+      "Git",
+      "Research"
+    ],
+    "next_step": "Interview with the research team plus a brief coding exercise in Python.",
+    "source": "ADAPT Centre Careers"
+  },
+  {
+    "title": "Full-Stack Engineering Intern",
+    "company": "Logentries (Rapid7)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.rapid7.com/company/careers",
+    "description": "Build full-stack features for Rapid7's cloud security and log analytics platform. You will write Python backend services, React frontend components, integrate REST APIs, and ship production features.",
+    "skills": [
+      "Python",
+      "React",
+      "REST APIs",
+      "PostgreSQL",
+      "JavaScript",
+      "Git"
+    ],
+    "next_step": "Take-home full-stack project followed by a technical interview with the engineering team.",
+    "source": "Rapid7 Careers"
+  },
+  {
+    "title": "Intern \u2014 AI-Powered Search",
+    "company": "Eolas Technologies",
+    "location": "Dublin, Ireland",
+    "url": "https://eolastechnologies.com/careers",
+    "description": "Build semantic search and document retrieval systems using vector embeddings and LLMs. You will implement RAG pipelines in Python, evaluate search quality, and integrate MongoDB Atlas Vector Search.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Vector Search",
+      "Embeddings",
+      "MongoDB",
+      "REST APIs"
+    ],
+    "next_step": "Technical interview on semantic search and a live Python implementation task.",
+    "source": "Eolas Technologies Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 NLU for Finance",
+    "company": "Fenergo",
+    "location": "Dublin, Ireland",
+    "url": "https://www.fenergo.com/careers",
+    "description": "Build NLU models to extract structured information from financial compliance documents. You will use Python, Hugging Face Transformers, and fine-tune LLMs on domain-specific datasets.",
+    "skills": [
+      "Python",
+      "NLP",
+      "Transformers",
+      "LLMs",
+      "Machine Learning",
+      "SQL"
+    ],
+    "next_step": "Technical interview on NLP and LLMs followed by a document extraction mini project.",
+    "source": "Fenergo Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Data Pipelines",
+    "company": "Profitero",
+    "location": "Dublin, Ireland",
+    "url": "https://www.profitero.com/careers",
+    "description": "Build Python data pipelines for e-commerce analytics across major retail platforms. You will design ETL processes, work with PostgreSQL, automate data collection, and monitor pipeline health.",
+    "skills": [
+      "Python",
+      "ETL",
+      "PostgreSQL",
+      "SQL",
+      "AWS",
+      "Data Engineering"
+    ],
+    "next_step": "Technical interview: Python data pipeline design and SQL querying.",
+    "source": "Profitero Careers"
+  },
+  {
+    "title": "Deep Learning Intern \u2014 Medical Imaging",
+    "company": "Radiology AI",
+    "location": "Dublin, Ireland",
+    "url": "https://radiologyai.com/careers",
+    "description": "Build CNN and transformer models for medical image segmentation and classification. You will use Python, PyTorch, and medical imaging datasets, evaluate model performance, and write technical reports.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Deep Learning",
+      "Computer Vision",
+      "NumPy",
+      "Research"
+    ],
+    "next_step": "Research interview: discuss a deep learning model architecture and your prior ML experience.",
+    "source": "Radiology AI Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 MarTech",
+    "company": "Altify",
+    "location": "Dublin, Ireland",
+    "url": "https://www.altify.com/company/careers",
+    "description": "Build ML models for sales intelligence and customer propensity scoring. You will use Python, scikit-learn, and SQL to model CRM data, evaluate models, and integrate predictions into sales tools.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Machine Learning",
+      "Pandas",
+      "Statistics"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a modelling exercise.",
+    "source": "Altify Careers"
+  },
+  {
+    "title": "Intern \u2014 Generative AI for Documentation",
+    "company": "Ergo",
+    "location": "Dublin, Ireland",
+    "url": "https://www.ergogroup.ie/careers",
+    "description": "Build generative AI tools that automate technical documentation and knowledge base creation. You will use Python, LLMs, and prompt engineering to design, evaluate, and deploy documentation assistants.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Prompt Engineering",
+      "REST APIs",
+      "Git",
+      "Documentation"
+    ],
+    "next_step": "Technical interview plus a live LLM documentation demo.",
+    "source": "Ergo Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Backend Java",
+    "company": "Atos Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://atos.net/en/careers",
+    "description": "Develop Java microservices for Atos enterprise clients in financial and public sector. You will write OOP Java, design REST APIs, work with SQL databases, and contribute to CI/CD pipelines.",
+    "skills": [
+      "Java",
+      "OOP",
+      "REST APIs",
+      "SQL",
+      "Git",
+      "Microservices"
+    ],
+    "next_step": "Technical Java coding round followed by a behavioral interview.",
+    "source": "Atos Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Autonomous Vehicles",
+    "company": "Mobileye (via Dublin partner)",
+    "location": "Remote (EU)",
+    "url": "https://mobileye.com/careers",
+    "description": "Work on perception and object detection models for autonomous driving. You will use Python, PyTorch, and large-scale computer vision datasets, run evaluation pipelines, and present results to the research team.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Computer Vision",
+      "Deep Learning",
+      "NumPy",
+      "Linux"
+    ],
+    "next_step": "Technical interview on computer vision and deep learning, followed by a PyTorch task.",
+    "source": "Mobileye Careers"
+  },
+  {
+    "title": "Intern \u2014 Explainable ML for Healthcare",
+    "company": "Crospon",
+    "location": "Galway, Ireland",
+    "url": "https://www.crospon.com/careers",
+    "description": "Build explainable machine learning models for diagnostic medical device data. You will use Python, scikit-learn, SHAP, and statistical validation to build interpretable models for clinical engineers.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Explainable AI",
+      "SHAP",
+      "Statistics",
+      "NumPy"
+    ],
+    "next_step": "Technical interview covering ML explainability and Python fundamentals.",
+    "source": "Crospon Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Sustainability",
+    "company": "Coillte",
+    "location": "Dublin, Ireland",
+    "url": "https://www.coillte.ie/careers",
+    "description": "Analyze forest and carbon sequestration data to build sustainability measurement models. You will use Python, R, and SQL to process geospatial and environmental datasets, and present findings to sustainability teams.",
+    "skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Statistics",
+      "Pandas",
+      "Geospatial"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, followed by a data analysis task.",
+    "source": "Coillte Careers"
+  },
+  {
+    "title": "Intern \u2014 Large Scale Data Processing",
+    "company": "Ericsson",
+    "location": "Athlone, Ireland",
+    "url": "https://www.ericsson.com/en/careers",
+    "description": "Build Python data processing pipelines for network telemetry at scale. You will work with Pandas, NumPy, SQL, and AWS to process billions of network events and produce real-time analytics.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "SQL",
+      "AWS",
+      "Linux"
+    ],
+    "next_step": "Technical phone screen on Python and data engineering fundamentals.",
+    "source": "Ericsson Careers"
+  },
+  {
+    "title": "AI Content Intern \u2014 LLM Applications",
+    "company": "Lonely Planet (via Dublin partner)",
+    "location": "Remote",
+    "url": "https://lonelyplanet.com/careers",
+    "description": "Build and evaluate LLM-powered travel content generation tools. You will design prompts, evaluate content quality, integrate APIs in Python, and build automation pipelines for travel content workflows.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Prompt Engineering",
+      "REST APIs",
+      "Git",
+      "Content AI"
+    ],
+    "next_step": "Practical LLM task: build a content generation pipeline, reviewed with the team.",
+    "source": "Lonely Planet Partner Listings"
+  },
+  {
+    "title": "Intern \u2014 Python Scientific Computing",
+    "company": "Met \u00c9ireann",
+    "location": "Dublin, Ireland",
+    "url": "https://www.met.ie/careers",
+    "description": "Process and analyze meteorological datasets to support weather forecasting systems. You will use Python, NumPy, SciPy, and Pandas to clean data, build statistical models, and visualize weather patterns.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "SciPy",
+      "Pandas",
+      "Statistics",
+      "Visualization"
+    ],
+    "next_step": "Structured interview including a Python scientific computing knowledge check.",
+    "source": "Met \u00c9ireann Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 AWS Lambda",
+    "company": "Boxever (Sitecore)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.sitecore.com/company/careers",
+    "description": "Build serverless data processing functions on AWS Lambda for Sitecore's CDP platform. You will write Python Lambdas, integrate with S3 and DynamoDB, deploy via CI/CD, and monitor in production.",
+    "skills": [
+      "Python",
+      "AWS",
+      "Lambda",
+      "Serverless",
+      "Docker",
+      "Git"
+    ],
+    "next_step": "Technical interview on AWS serverless and Python, plus a Lambda coding task.",
+    "source": "Sitecore Careers"
+  },
+  {
+    "title": "Intern \u2014 Recommendation System",
+    "company": "Distilled SCH",
+    "location": "Dublin, Ireland",
+    "url": "https://distilledsch.com/careers",
+    "description": "Build content and product recommendation systems for digital media clients. You will use Python, scikit-learn, and collaborative filtering techniques, evaluate recommendation quality, and deploy models via APIs.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Machine Learning",
+      "SQL",
+      "REST APIs",
+      "Statistics"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a Python recommendation task.",
+    "source": "Distilled SCH Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Healthcare Risk",
+    "company": "Optum",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.unitedhealthgroup.com",
+    "description": "Build ML models for patient risk stratification and healthcare utilization prediction. You will use Python, scikit-learn, and SQL, validate models against clinical benchmarks, and present to stakeholders.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Machine Learning",
+      "Pandas"
+    ],
+    "next_step": "Technical interview on ML and healthcare analytics, followed by a modelling exercise.",
+    "source": "Optum Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 GraphQL API",
+    "company": "Shopify (Expansion)",
+    "location": "Remote",
+    "url": "https://www.shopify.com/careers",
+    "description": "Build GraphQL APIs powering Shopify's merchant platform features. You will design schemas, write Python or Ruby resolvers, optimize queries, and work with PostgreSQL.",
+    "skills": [
+      "Python",
+      "GraphQL",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL",
+      "Git"
+    ],
+    "next_step": "Take-home API design task followed by a live code review with senior engineers.",
+    "source": "Shopify Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Transport",
+    "company": "National Transport Authority",
+    "location": "Dublin, Ireland",
+    "url": "https://www.nationaltransport.ie/careers",
+    "description": "Analyze public transport ridership and service quality data to improve bus and rail networks. You will use Python, SQL, and Tableau to build models, produce dashboards, and present to government stakeholders.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Pandas",
+      "Statistics",
+      "Excel"
+    ],
+    "next_step": "Competency interview plus a short data analysis exercise.",
+    "source": "NTA Careers"
+  },
+  {
+    "title": "Intern \u2014 Knowledge Base AI",
+    "company": "TeamViewer",
+    "location": "Remote (EU)",
+    "url": "https://www.teamviewer.com/en/careers",
+    "description": "Build AI-powered knowledge base search and Q&A features. You will implement RAG pipelines using LLMs and vector search in Python, evaluate retrieval quality, and integrate into product APIs.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Vector Search",
+      "RAG",
+      "REST APIs",
+      "SQL"
+    ],
+    "next_step": "Technical interview on RAG systems followed by a Python implementation task.",
+    "source": "TeamViewer Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Systems",
+    "company": "Wind River",
+    "location": "Cork, Ireland",
+    "url": "https://www.windriver.com/company/careers",
+    "description": "Write C and Python software for embedded and real-time operating systems. You will debug system-level code, write automated tests, and contribute to tooling for Wind River's RTOS products.",
+    "skills": [
+      "C",
+      "Python",
+      "Linux",
+      "Embedded Systems",
+      "Git",
+      "Testing"
+    ],
+    "next_step": "Technical interview: C and systems-level programming concepts.",
+    "source": "Wind River Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Cycling & Mobility",
+    "company": "Bleeper Bikes",
+    "location": "Dublin, Ireland",
+    "url": "https://bleeperbike.ie/careers",
+    "description": "Analyze bike usage, weather, and urban mobility data to optimize station placement and pricing. You will use Python, Pandas, and scikit-learn to build predictive models and geospatial visualizations.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "scikit-learn",
+      "Geospatial",
+      "Matplotlib",
+      "SQL"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, followed by a brief Python analysis task.",
+    "source": "Bleeper Bikes Careers"
+  },
+  {
+    "title": "Research Intern \u2014 Multi-Agent AI",
+    "company": "Lero (SFI)",
+    "location": "Dublin, Ireland",
+    "url": "https://lero.ie/careers",
+    "description": "Research multi-agent AI systems for coordination and task delegation. You will implement agent frameworks using Python and LLMs (Anthropic/OpenAI APIs), evaluate agent performance, and write research summaries.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Multi-Agent AI",
+      "REST APIs",
+      "Research",
+      "Generative AI"
+    ],
+    "next_step": "Research interview covering multi-agent and LLM system design.",
+    "source": "Lero Careers"
+  },
+  {
+    "title": "BI & Analytics Intern",
+    "company": "Experian Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.experian.com",
+    "description": "Build BI dashboards and analytical models for Experian's credit and identity products. You will write SQL, use Power BI, and automate reporting with Python. Strong attention to data accuracy required.",
+    "skills": [
+      "SQL",
+      "Power BI",
+      "Python",
+      "Excel",
+      "Data Analysis",
+      "PostgreSQL"
+    ],
+    "next_step": "SQL online test followed by an interview with the analytics team.",
+    "source": "Experian Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 TypeScript/Python",
+    "company": "Zendesk",
+    "location": "Dublin, Ireland",
+    "url": "https://www.zendesk.com/jobs",
+    "description": "Build backend features for Zendesk's customer service platform. You will write TypeScript and Python services, design REST APIs, work with PostgreSQL, and contribute to automated test suites.",
+    "skills": [
+      "Python",
+      "TypeScript",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL",
+      "Git"
+    ],
+    "next_step": "Take-home coding task in Python or TypeScript followed by a technical interview.",
+    "source": "Zendesk Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Fintech Risk",
+    "company": "Prepay Power",
+    "location": "Dublin, Ireland",
+    "url": "https://prepaypower.ie/careers",
+    "description": "Build credit risk and payment default prediction models for Irish energy customers. You will use Python, scikit-learn, and SQL to analyze transactional data, and visualize model outputs.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Pandas",
+      "Visualization"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a data modelling task.",
+    "source": "Prepay Power Careers"
+  },
+  {
+    "title": "Intern \u2014 Statistical Process Control",
+    "company": "Johnson & Johnson Ireland",
+    "location": "Cork, Ireland",
+    "url": "https://jobs.jnj.com",
+    "description": "Apply statistical process control and data analysis to pharmaceutical manufacturing quality. You will use Python, R, and SQL to build control charts, analyse batch data, and write quality reports.",
+    "skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Statistics",
+      "SciPy",
+      "NumPy"
+    ],
+    "next_step": "Technical interview covering statistics and Python, plus a quality data analysis task.",
+    "source": "J&J Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Graph Fraud Detection",
+    "company": "Stripe",
+    "location": "Dublin, Ireland",
+    "url": "https://stripe.com/jobs",
+    "description": "Build graph-based ML models to detect fraud rings and collusion patterns in payment networks. You will use Python, PyTorch Geometric, and SQL to engineer features, train models, and evaluate detection metrics.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Graph Neural Networks",
+      "SQL",
+      "Machine Learning",
+      "Statistics"
+    ],
+    "next_step": "Take-home graph ML task followed by a two-round technical interview loop.",
+    "source": "Stripe Careers"
+  },
+  {
+    "title": "Intern \u2014 AI Benchmarking",
+    "company": "Hugging Face (via partner)",
+    "location": "Remote",
+    "url": "https://huggingface.co/jobs",
+    "description": "Design and run systematic benchmarks evaluating language model performance on diverse tasks. You will write Python evaluation scripts, analyze results statistically, and publish benchmark reports.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Transformers",
+      "Data Analysis",
+      "Statistics",
+      "Research"
+    ],
+    "next_step": "Technical interview on LLM evaluation methodology plus a benchmark design exercise.",
+    "source": "HuggingFace Partner Listings"
+  },
+  {
+    "title": "Data Science Intern \u2014 Insurance Telematics",
+    "company": "AIG Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.aig.com/careers",
+    "description": "Build telematics-based driver risk scoring models using GPS and accelerometer data. You will use Python, scikit-learn, and SQL, validate models against claims data, and present findings to actuarial teams.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Pandas",
+      "Visualization"
+    ],
+    "next_step": "Phone screen with the data team followed by a Python modelling case study.",
+    "source": "AIG Careers"
+  },
+  {
+    "title": "Backend Engineering Intern \u2014 AI Tooling",
+    "company": "Twilio",
+    "location": "Remote (EU)",
+    "url": "https://www.twilio.com/company/jobs",
+    "description": "Build backend AI tooling and APIs supporting Twilio's conversational AI platform. You will write Python, integrate LLM APIs, design REST endpoints, work with PostgreSQL, and ship production features.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL",
+      "Docker"
+    ],
+    "next_step": "Take-home Python/API coding task followed by a technical interview loop.",
+    "source": "Twilio Careers"
+  },
+  {
+    "title": "Software Intern \u2014 Python Testing",
+    "company": "Aquatec Group",
+    "location": "Limerick, Ireland",
+    "url": "https://aquatec.ie/careers",
+    "description": "Build automated test suites for water treatment software. You will write Python test scripts, design integration tests, maintain CI pipelines, and document test coverage.",
+    "skills": [
+      "Python",
+      "Test Automation",
+      "CI/CD",
+      "SQL",
+      "Git",
+      "Linux"
+    ],
+    "next_step": "Technical interview: Python test automation fundamentals and a live coding exercise.",
+    "source": "Aquatec Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Legal AI",
+    "company": "Clio",
+    "location": "Dublin, Ireland",
+    "url": "https://www.clio.com/careers",
+    "description": "Build ML and NLP features for Clio's AI legal research assistant. You will fine-tune language models, design document search pipelines with Python, and evaluate AI output quality for legal accuracy.",
+    "skills": [
+      "Python",
+      "NLP",
+      "LLMs",
+      "Machine Learning",
+      "SQL",
+      "REST APIs"
+    ],
+    "next_step": "Technical interview on NLP and LLMs followed by a legal AI mini project.",
+    "source": "Clio Careers"
+  },
+  {
+    "title": "Intern \u2014 Data Governance",
+    "company": "Bank of Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.bankofireland.com",
+    "description": "Support data governance and data quality initiatives across Bank of Ireland's data estate. You will write SQL and Python scripts to audit datasets, document data lineage, and build quality dashboards.",
+    "skills": [
+      "SQL",
+      "Python",
+      "Power BI",
+      "Data Quality",
+      "PostgreSQL",
+      "Excel"
+    ],
+    "next_step": "Structured competency interview including a SQL and data analysis exercise.",
+    "source": "Bank of Ireland Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Real Estate",
+    "company": "Property District",
+    "location": "Dublin, Ireland",
+    "url": "https://propertydistrict.ie/careers",
+    "description": "Build automated property valuation models for the Irish market using ML and geospatial data. You will use Python, scikit-learn, and Pandas, visualize model outputs with Seaborn, and evaluate accuracy.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Pandas",
+      "Seaborn",
+      "Geospatial",
+      "SQL"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute call followed by a Python property valuation task.",
+    "source": "Property District Careers"
+  },
+  {
+    "title": "Intern \u2014 LLM Fine-Tuning",
+    "company": "Sigmoid Analytics",
+    "location": "Dublin, Ireland",
+    "url": "https://sigmoid.com/careers",
+    "description": "Fine-tune and evaluate large language models for domain-specific classification and extraction. You will use Python, Hugging Face, and PEFT techniques, measure performance on custom benchmarks.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Transformers",
+      "Fine-Tuning",
+      "Deep Learning",
+      "Research"
+    ],
+    "next_step": "Technical interview on LLM fine-tuning followed by a Hugging Face coding task.",
+    "source": "Sigmoid Analytics Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Event Sourcing",
+    "company": "Immedis",
+    "location": "Kilkenny, Ireland",
+    "url": "https://www.immedis.com/careers",
+    "description": "Build event-sourced Python microservices for global payroll audit trails. You will design event schemas, implement CQRS patterns, work with PostgreSQL event stores, and write integration tests.",
+    "skills": [
+      "Python",
+      "PostgreSQL",
+      "SQL",
+      "Event-Driven",
+      "REST APIs",
+      "Git"
+    ],
+    "next_step": "Take-home Python backend project followed by a system design discussion.",
+    "source": "Immedis Careers"
+  },
+  {
+    "title": "Intern \u2014 Keras and TensorFlow",
+    "company": "Tyndall National Institute",
+    "location": "Cork, Ireland",
+    "url": "https://www.tyndall.ie/careers",
+    "description": "Build deep learning models using Keras and TensorFlow for photonics and sensor data. You will train, evaluate, and optimize neural networks, write Python experiment scripts, and document results.",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "Deep Learning",
+      "NumPy",
+      "Research"
+    ],
+    "next_step": "Technical interview on deep learning and TensorFlow/Keras fundamentals.",
+    "source": "Tyndall Careers"
+  },
+  {
+    "title": "Intern \u2014 Automated Reporting",
+    "company": "Diageo Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.diageo.com/en/careers",
+    "description": "Automate financial and commercial reporting using Python and SQL. You will build data pipelines, create Power BI dashboards, write Python scripts to schedule and distribute reports, and maintain data quality.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Power BI",
+      "Automation",
+      "PostgreSQL",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, then a Python and SQL assessment.",
+    "source": "Diageo Careers"
+  },
+  {
+    "title": "ML Intern \u2014 Personalisation Engine",
+    "company": "Zalando",
+    "location": "Remote (EU)",
+    "url": "https://jobs.zalando.com",
+    "description": "Build and evaluate personalisation models that drive fashion recommendations across Zalando's platform. You will use Python, PyTorch, and SQL to model user behaviour and run controlled experiments.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Machine Learning",
+      "SQL",
+      "Statistics",
+      "A/B Testing"
+    ],
+    "next_step": "Take-home ML modelling task followed by a technical interview with the personalisation team.",
+    "source": "Zalando Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 OTT Streaming",
+    "company": "Virgin Media Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.virginmedia.ie/careers",
+    "description": "Analyze viewer engagement and content performance data to improve Virgin Media's streaming recommendations. You will use Python, SQL, and Tableau to build models and dashboards for the product team.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Pandas",
+      "Statistics",
+      "Visualization"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, followed by a data analysis exercise.",
+    "source": "Virgin Media Careers"
+  },
+  {
+    "title": "Intern \u2014 AI-Powered HR Tools",
+    "company": "Workhuman",
+    "location": "Dublin, Ireland",
+    "url": "https://www.workhuman.com/careers",
+    "description": "Build LLM-based HR automation tools: performance review summarisation, engagement sentiment analysis, and intelligent Q&A. You will write Python, integrate LLM APIs, and evaluate outputs for quality.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "NLP",
+      "REST APIs",
+      "SQL",
+      "Prompt Engineering"
+    ],
+    "next_step": "Technical interview plus a live LLM integration demo you have built.",
+    "source": "Workhuman Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Financial Crime",
+    "company": "Mastercard",
+    "location": "Dublin, Ireland",
+    "url": "https://careers.mastercard.com",
+    "description": "Build transaction fraud and money laundering detection models. You will use Python, scikit-learn, and SQL to engineer features from transaction graphs and validate model performance on real-world data.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Machine Learning",
+      "Graph Analysis"
+    ],
+    "next_step": "Technical interview on ML and financial crime detection, followed by a Python modelling task.",
+    "source": "Mastercard Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 API Gateway",
+    "company": "Evervault",
+    "location": "Dublin, Ireland",
+    "url": "https://evervault.com/careers",
+    "description": "Build Python API gateway services for Evervault's data privacy platform. You will design REST APIs, work with Docker and PostgreSQL, implement authentication middleware, and write unit tests.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "Docker",
+      "Security",
+      "Git"
+    ],
+    "next_step": "Technical interview covering Python, security, and API design principles.",
+    "source": "Evervault Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 B2B SaaS",
+    "company": "Salesforce Dublin",
+    "location": "Dublin, Ireland",
+    "url": "https://www.salesforce.com/company/careers",
+    "description": "Analyze B2B customer adoption and success data to build early-warning churn models. You will use Python, scikit-learn, and SQL, create visualizations with Seaborn, and present findings to customer success leadership.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Pandas",
+      "Seaborn",
+      "Statistics"
+    ],
+    "next_step": "Phone screen followed by a take-home Python churn modelling task.",
+    "source": "Salesforce Careers"
+  },
+  {
+    "title": "Intern \u2014 AI Evaluation & Red-Teaming",
+    "company": "Lero (SFI)",
+    "location": "Dublin, Ireland",
+    "url": "https://lero.ie/careers",
+    "description": "Evaluate and red-team AI systems for safety, robustness, and alignment. You will write Python test harnesses, design adversarial prompts, analyze failure modes, and publish research findings.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "AI Safety",
+      "Prompt Engineering",
+      "Research",
+      "Statistics"
+    ],
+    "next_step": "Research interview including a live red-teaming exercise on an LLM.",
+    "source": "Lero Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Aviation",
+    "company": "Dublin Airport Authority (DAA)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.daa.ie/careers",
+    "description": "Analyze passenger flow, terminal capacity, and revenue data to support DAA's commercial decisions. You will use Python, SQL, and Power BI to build models and dashboards for operations and strategy teams.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Power BI",
+      "Pandas",
+      "Statistics",
+      "Excel"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, followed by a data analysis task.",
+    "source": "DAA Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 Python Async",
+    "company": "Kitman Labs",
+    "location": "Dublin, Ireland",
+    "url": "https://www.kitmanlabs.com/careers",
+    "description": "Build async Python backend services for real-time sports analytics. You will use FastAPI and async patterns, design REST APIs, work with PostgreSQL, and integrate athlete wearable data streams.",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "Async",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL"
+    ],
+    "next_step": "Take-home async Python task followed by a technical interview.",
+    "source": "Kitman Labs Careers"
+  },
+  {
+    "title": "Intern \u2014 LLM Agents",
+    "company": "Continuum AI",
+    "location": "Dublin, Ireland",
+    "url": "https://continuum.ai/careers",
+    "description": "Build and evaluate LLM agent systems using tool-use, memory, and planning capabilities. You will implement agent loops in Python with Anthropic or OpenAI APIs, design tool integrations, and evaluate agent performance.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "AI Agents",
+      "REST APIs",
+      "Prompt Engineering",
+      "Generative AI"
+    ],
+    "next_step": "Technical interview on LLM agents followed by a live Python agent demo.",
+    "source": "Continuum AI Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 PropTech",
+    "company": "Sherry FitzGerald",
+    "location": "Dublin, Ireland",
+    "url": "https://www.sherryfitz.ie/about/careers",
+    "description": "Build property price prediction and market trend models for Ireland's leading estate agency. You will use Python, Pandas, and scikit-learn, visualize insights with Matplotlib, and present results to the commercial team.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "scikit-learn",
+      "Matplotlib",
+      "SQL",
+      "Statistics"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, followed by a PropTech data analysis task.",
+    "source": "Sherry FitzGerald Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Ad Tech",
+    "company": "Core Media",
+    "location": "Dublin, Ireland",
+    "url": "https://www.coremedia.com/careers",
+    "description": "Build audience segmentation and bid optimization models for digital advertising campaigns. You will use Python, scikit-learn, and SQL to analyze impression and click data, and evaluate campaign ML models.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "A/B Testing",
+      "Pandas"
+    ],
+    "next_step": "Technical interview on ML and ad tech concepts, plus a Python modelling exercise.",
+    "source": "Core Media Careers"
+  },
+  {
+    "title": "Intern \u2014 Python Package Development",
+    "company": "Insight Centre (UCD)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.insight-centre.org/content/positions-available",
+    "description": "Develop and maintain open-source Python packages for NLP and data science research. You will write well-tested, documented Python code, review pull requests, and publish package releases.",
+    "skills": [
+      "Python",
+      "NLP",
+      "Testing",
+      "Git",
+      "Documentation",
+      "Data Science"
+    ],
+    "next_step": "Technical interview with the research team plus a code review of a Python module.",
+    "source": "Insight Centre Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Charity & Fundraising",
+    "company": "Pieta House",
+    "location": "Dublin, Ireland",
+    "url": "https://www.pieta.ie/get-involved/careers",
+    "description": "Analyze donor behaviour and campaign performance data to support fundraising strategy. You will use Python, SQL, and Tableau to build models and dashboards for the fundraising team.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Excel",
+      "Data Analysis",
+      "Statistics"
+    ],
+    "next_step": "Interview with the fundraising and data team followed by a brief data task.",
+    "source": "Pieta House Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Speech AI",
+    "company": "Speechmatics",
+    "location": "Remote (EU)",
+    "url": "https://www.speechmatics.com/careers",
+    "description": "Improve speech recognition models for diverse accents and languages. You will use Python, PyTorch, and audio processing tools to train and evaluate acoustic models, and analyse model errors.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Deep Learning",
+      "Audio Processing",
+      "NLP",
+      "Linux"
+    ],
+    "next_step": "Technical interview on ML and speech processing, followed by a take-home audio task.",
+    "source": "Speechmatics Careers"
+  },
+  {
+    "title": "Intern \u2014 Data Science & AI (Graduate)",
+    "company": "Enterprise Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.enterprise-ireland.com/careers",
+    "description": "Analyze industry and investment data to inform Enterprise Ireland's strategy for Irish tech SMEs. You will use Python, SQL, and Tableau to build dashboards, run statistical analyses, and present to directors.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Statistics",
+      "Excel",
+      "Data Analysis"
+    ],
+    "next_step": "Structured competency interview including an analytical case study presentation.",
+    "source": "Enterprise Ireland Careers"
+  },
+  {
+    "title": "Intern \u2014 AI Feature Engineering",
+    "company": "Profitero",
+    "location": "Dublin, Ireland",
+    "url": "https://www.profitero.com/careers",
+    "description": "Build and evaluate feature engineering pipelines for retail ML models. You will use Python, Pandas, and SQL to create predictive features from e-commerce data, and evaluate their impact on model accuracy.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "SQL",
+      "Feature Engineering",
+      "Machine Learning",
+      "scikit-learn"
+    ],
+    "next_step": "Technical interview: Python feature engineering and ML fundamentals.",
+    "source": "Profitero Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Scala/Python",
+    "company": "Zalando",
+    "location": "Remote (EU)",
+    "url": "https://jobs.zalando.com",
+    "description": "Build data platform services in Scala and Python for Zalando's data infrastructure. You will design ETL pipelines, work with Spark and PostgreSQL, and contribute to data quality monitoring tools.",
+    "skills": [
+      "Python",
+      "SQL",
+      "ETL",
+      "PostgreSQL",
+      "Data Engineering",
+      "Linux"
+    ],
+    "next_step": "Take-home coding task in Python/SQL, followed by a technical data platform interview.",
+    "source": "Zalando Careers"
+  },
+  {
+    "title": "Intern \u2014 AI Safety Research",
+    "company": "ALIGN Lab (TCD)",
+    "location": "Dublin, Ireland",
+    "url": "https://align.tcd.ie/careers",
+    "description": "Research AI alignment, interpretability, and safety evaluation methods. You will implement Python experiments to probe model behaviour, analyse safety benchmarks, and contribute to academic papers.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "AI Safety",
+      "Deep Learning",
+      "Research",
+      "Statistics"
+    ],
+    "next_step": "Research interview including a discussion of AI safety concepts and prior research.",
+    "source": "ALIGN Lab Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Climate Analytics",
+    "company": "Codema (Dublin Energy Agency)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.codema.ie/about-codema/careers",
+    "description": "Analyze energy consumption, building performance, and emissions data to support Dublin's climate action plan. You will use Python, Pandas, and Tableau to build models, dashboards, and reports for policymakers.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "Tableau",
+      "SQL",
+      "Statistics",
+      "Geospatial"
+    ],
+    "next_step": "Interview with the data team plus a brief energy analytics case study.",
+    "source": "Codema Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Customer Analytics",
+    "company": "Virgin Media Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.virginmedia.ie/careers",
+    "description": "Build customer lifetime value and churn prediction models for Virgin Media Ireland. You will use Python, scikit-learn, and SQL to model subscriber data, validate models, and present findings.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Machine Learning",
+      "Pandas"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a Python modelling task.",
+    "source": "Virgin Media Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Internal Tools",
+    "company": "Glofox",
+    "location": "Dublin, Ireland",
+    "url": "https://www.glofox.com/careers",
+    "description": "Build internal tooling and automation for Glofox's engineering teams. You will write Python scripts, design small web UIs with React, integrate REST APIs, and maintain CI/CD pipelines.",
+    "skills": [
+      "Python",
+      "React",
+      "REST APIs",
+      "SQL",
+      "Docker",
+      "Git"
+    ],
+    "next_step": "Technical interview plus a small Python or React internal tool demo.",
+    "source": "Glofox Careers"
+  },
+  {
+    "title": "Intern \u2014 Data Science TechStart",
+    "company": "Deloitte Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www2.deloitte.com/ie/en/careers",
+    "description": "Apply data science skills to real consulting projects across financial services, retail, and public sector clients. You will use Python, SQL, and Tableau, and present insights to senior client stakeholders.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Machine Learning",
+      "Data Analysis",
+      "Communication"
+    ],
+    "next_step": "Assessment centre with a group case study, analytical test, and individual interviews.",
+    "source": "Deloitte Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 Payments Infrastructure",
+    "company": "Stripe",
+    "location": "Dublin, Ireland",
+    "url": "https://stripe.com/jobs",
+    "description": "Build and maintain Python microservices powering Stripe's payments infrastructure. You will design REST APIs, work with PostgreSQL, implement idempotency patterns, and contribute to reliability improvements.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "SQL",
+      "Docker",
+      "Git"
+    ],
+    "next_step": "Online coding screen followed by a systems design and technical interview loop.",
+    "source": "Stripe Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Demand Sensing",
+    "company": "Musgrave Group",
+    "location": "Cork, Ireland",
+    "url": "https://www.musgravegroup.com/careers",
+    "description": "Build demand sensing and inventory forecast models for Musgrave's retail supply chain. You will use Python, scikit-learn, and SQL to process point-of-sale data and evaluate model accuracy.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Time Series",
+      "Forecasting",
+      "Pandas"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a supply chain analytics task.",
+    "source": "Musgrave Careers"
+  },
+  {
+    "title": "Intern \u2014 AI Writing Tools",
+    "company": "Workvivo",
+    "location": "Cork, Ireland",
+    "url": "https://www.workvivo.com/careers",
+    "description": "Build LLM-powered writing assistance features for Workvivo's employee communications platform. You will design prompts, integrate Anthropic and OpenAI APIs in Python, and evaluate generated content quality.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Prompt Engineering",
+      "REST APIs",
+      "Git",
+      "NLP"
+    ],
+    "next_step": "Technical interview plus a live LLM writing tool integration demo.",
+    "source": "Workvivo Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Go/Python",
+    "company": "Telnyx",
+    "location": "Remote (EU)",
+    "url": "https://telnyx.com/careers",
+    "description": "Build high-throughput backend services in Go or Python for Telnyx's communications platform. You will design REST APIs, work with PostgreSQL, write unit tests, and deploy via Docker.",
+    "skills": [
+      "Python",
+      "REST APIs",
+      "PostgreSQL",
+      "Docker",
+      "Linux",
+      "Git"
+    ],
+    "next_step": "Technical coding interview in Python or Go followed by a system design discussion.",
+    "source": "Telnyx Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 AI for Insurance",
+    "company": "Zurich Innovation Centre",
+    "location": "Dublin, Ireland",
+    "url": "https://www.zurich.ie/about-us/careers",
+    "description": "Build generative AI and ML tools for insurance product innovation. You will use Python, LLMs, and scikit-learn to prototype AI features, evaluate outputs, and present demos to the innovation team.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "scikit-learn",
+      "Machine Learning",
+      "SQL",
+      "Prompt Engineering"
+    ],
+    "next_step": "Technical interview plus a live AI prototype demo on an insurance problem.",
+    "source": "Zurich Innovation Careers"
+  },
+  {
+    "title": "Intern \u2014 AI-Assisted Software Testing",
+    "company": "Mabl",
+    "location": "Remote (EU)",
+    "url": "https://www.mabl.com/company/jobs",
+    "description": "Build AI-powered test generation and failure analysis features for Mabl's testing platform. You will write Python, integrate LLM APIs, evaluate test generation quality, and contribute to CI/CD tooling.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Test Automation",
+      "REST APIs",
+      "Git",
+      "CI/CD"
+    ],
+    "next_step": "Technical interview on test automation and LLM integration, plus a Python coding task.",
+    "source": "Mabl Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Gambling Harm Prevention",
+    "company": "Gambling Regulation Authority",
+    "location": "Dublin, Ireland",
+    "url": "https://www.gov.ie/careers",
+    "description": "Apply data science to identify problem gambling patterns and support regulatory decision-making. You will use Python, scikit-learn, and SQL to model behavioural data and write analytical reports for regulators.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Statistics",
+      "Pandas",
+      "Data Analysis"
+    ],
+    "next_step": "Structured competency interview including an analytical data exercise.",
+    "source": "Government of Ireland Careers"
+  },
+  {
+    "title": "Software Engineering Intern \u2014 Kubernetes",
+    "company": "Red Hat",
+    "location": "Waterford, Ireland",
+    "url": "https://www.redhat.com/en/jobs",
+    "description": "Contribute to Red Hat's OpenShift Kubernetes platform. You will write Python and Go tooling, automate cluster operations, work with Linux, and contribute to open-source Red Hat projects.",
+    "skills": [
+      "Python",
+      "Kubernetes",
+      "Docker",
+      "Linux",
+      "Go",
+      "Git"
+    ],
+    "next_step": "Technical interview covering Kubernetes and Python, plus an open-source contribution exercise.",
+    "source": "Red Hat Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Biomedical NLP",
+    "company": "Genomics Medicine Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://genomicsmedicineireland.ie/careers",
+    "description": "Build NLP models to extract clinical phenotypes and genetic findings from medical records. You will use Python, Hugging Face Transformers, and domain-adapted LLMs, evaluate precision and recall on biomedical tasks.",
+    "skills": [
+      "Python",
+      "NLP",
+      "Transformers",
+      "LLMs",
+      "Machine Learning",
+      "Research"
+    ],
+    "next_step": "Research interview on biomedical NLP, followed by a short text extraction task.",
+    "source": "Genomics Medicine Ireland Careers"
+  },
+  {
+    "title": "Intern \u2014 Python Scripting & Automation",
+    "company": "Trigon Hotels",
+    "location": "Cork, Ireland",
+    "url": "https://trigonhotels.com/careers",
+    "description": "Automate operations reporting, staff scheduling, and financial reconciliation workflows with Python. You will write scripts, integrate REST APIs, build SQL queries, and produce dashboards for hotel management.",
+    "skills": [
+      "Python",
+      "SQL",
+      "REST APIs",
+      "Automation",
+      "Excel",
+      "Git"
+    ],
+    "next_step": "Practical Python scripting interview followed by a short take-home automation task.",
+    "source": "Trigon Hotels Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Logistics Optimisation",
+    "company": "CarTrawler",
+    "location": "Dublin, Ireland",
+    "url": "https://www.cartrawler.com/ct/careers",
+    "description": "Build ML models to optimize car rental pricing and availability across global markets. You will use Python, scikit-learn, and SQL to model booking and pricing data, and evaluate model impact on revenue.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Optimization",
+      "Statistics",
+      "Pandas"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a Python pricing modelling task.",
+    "source": "CarTrawler Careers"
+  },
+  {
+    "title": "Data Engineer Intern \u2014 dbt & SQL",
+    "company": "Glofox",
+    "location": "Dublin, Ireland",
+    "url": "https://www.glofox.com/careers",
+    "description": "Build and maintain dbt data models and SQL pipelines for Glofox's analytics warehouse. You will write SQL transformations, design data tests, document schemas, and support BI reporting.",
+    "skills": [
+      "SQL",
+      "dbt",
+      "PostgreSQL",
+      "Python",
+      "Data Engineering",
+      "Analytics"
+    ],
+    "next_step": "Technical interview: SQL and dbt data modelling exercise.",
+    "source": "Glofox Careers"
+  },
+  {
+    "title": "Junior AI Engineer \u2014 Document Intelligence",
+    "company": "IQVIA",
+    "location": "Dublin, Ireland",
+    "url": "https://jobs.iqvia.com",
+    "description": "Build AI document intelligence pipelines to extract and classify clinical trial data. You will use Python, LLMs, and NLP to design extraction schemas, evaluate accuracy, and integrate into product APIs.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "NLP",
+      "REST APIs",
+      "SQL",
+      "Prompt Engineering"
+    ],
+    "next_step": "Technical interview on LLM document extraction, followed by a take-home NLP task.",
+    "source": "IQVIA Careers"
+  },
+  {
+    "title": "Intern \u2014 Generative AI Product",
+    "company": "HubSpot",
+    "location": "Dublin, Ireland",
+    "url": "https://www.hubspot.com/careers",
+    "description": "Help build generative AI features for HubSpot's CRM and marketing platform. You will prototype LLM-powered features in Python, conduct user studies, evaluate AI output quality, and collaborate with product and engineering.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Generative AI",
+      "REST APIs",
+      "SQL",
+      "Product Thinking"
+    ],
+    "next_step": "Product and technical interview including a live generative AI feature demo.",
+    "source": "HubSpot Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 AgriFood",
+    "company": "Teagasc",
+    "location": "Carlow, Ireland",
+    "url": "https://www.teagasc.ie/employment",
+    "description": "Analyze soil, crop, and climate data to build agricultural yield prediction models. You will use Python, R, and SQL to develop and validate ML models, and present results to agri-science teams.",
+    "skills": [
+      "Python",
+      "R",
+      "SQL",
+      "scikit-learn",
+      "Statistics",
+      "Pandas"
+    ],
+    "next_step": "Technical interview covering Python and statistics, followed by a brief agricultural data task.",
+    "source": "Teagasc Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 Auth & Identity",
+    "company": "Okta",
+    "location": "Dublin, Ireland",
+    "url": "https://www.okta.com/company/careers",
+    "description": "Build and maintain Python and Java backend services for Okta's identity platform. You will design REST APIs, implement OAuth/OIDC flows, work with PostgreSQL, and write security-focused unit tests.",
+    "skills": [
+      "Python",
+      "Java",
+      "REST APIs",
+      "PostgreSQL",
+      "Security",
+      "OAuth"
+    ],
+    "next_step": "Technical interview on authentication concepts and Python/Java coding.",
+    "source": "Okta Careers"
+  },
+  {
+    "title": "Intern \u2014 AI for Accessibility",
+    "company": "AbilityNet",
+    "location": "Remote (EU)",
+    "url": "https://abilitynet.org.uk/careers",
+    "description": "Research and build AI tools that improve digital accessibility for users with disabilities. You will use Python and LLMs to prototype assistive technology features, evaluate outputs, and write accessibility reports.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Accessibility",
+      "NLP",
+      "Research",
+      "Communication"
+    ],
+    "next_step": "Interview covering accessibility and AI concepts, plus a brief assistive technology demo.",
+    "source": "AbilityNet Careers"
+  },
+  {
+    "title": "Intern \u2014 Computational Mathematics",
+    "company": "Hamilton Institute (Maynooth)",
+    "location": "Maynooth, Ireland",
+    "url": "https://www.maynoothuniversity.ie/hamilton/vacancies",
+    "description": "Support mathematical modelling and simulation research projects using Python and NumPy. You will implement numerical algorithms, validate results, and write clear mathematical documentation.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "SciPy",
+      "Mathematics",
+      "Linear Algebra",
+      "Research"
+    ],
+    "next_step": "Technical interview covering mathematical computing and Python fundamentals.",
+    "source": "Hamilton Institute Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Recruitment AI",
+    "company": "RecruitIreland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.recruitireland.com/careers",
+    "description": "Build ML models to match job seekers to roles and predict application success. You will use Python, scikit-learn, and SQL, evaluate recommendation quality, and work with NLP to understand CV and job description text.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "NLP",
+      "SQL",
+      "Machine Learning",
+      "Pandas"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call, then a Python matching model task.",
+    "source": "RecruitIreland Careers"
+  },
+  {
+    "title": "Machine Learning Intern \u2014 Materials Science",
+    "company": "Stryker Ireland",
+    "location": "Limerick, Ireland",
+    "url": "https://www.stryker.com/us/en/careers.html",
+    "description": "Apply ML to materials characterization and manufacturing quality data. You will use Python, scikit-learn, and NumPy to build predictive models, design experiments, and validate results with engineers.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "NumPy",
+      "Statistics",
+      "Data Analysis",
+      "SQL"
+    ],
+    "next_step": "Technical interview on ML and Python, followed by a data analysis exercise.",
+    "source": "Stryker Careers"
+  },
+  {
+    "title": "Backend Intern \u2014 Rust Systems",
+    "company": "Codesmith",
+    "location": "Remote",
+    "url": "https://codesmith.io/careers",
+    "description": "Build systems software and developer tooling in Rust and Python. You will implement CLI tools, design REST APIs, work with Linux systems, and contribute to open-source infrastructure projects.",
+    "skills": [
+      "Python",
+      "Linux",
+      "REST APIs",
+      "Systems Programming",
+      "Git",
+      "Docker"
+    ],
+    "next_step": "Technical interview: Python and systems-level coding challenge.",
+    "source": "Codesmith Careers"
+  },
+  {
+    "title": "AI Intern \u2014 Procurement Intelligence",
+    "company": "SAP Ariba (via SAP Ireland)",
+    "location": "Dublin, Ireland",
+    "url": "https://www.sap.com/careers",
+    "description": "Build AI features for SAP Ariba's procurement analytics platform. You will use Python, LLMs, and prompt engineering to develop intelligent spend classification and supplier matching tools.",
+    "skills": [
+      "Python",
+      "LLMs",
+      "Prompt Engineering",
+      "SAP",
+      "SQL",
+      "REST APIs"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a technical AI task.",
+    "source": "SAP Careers"
+  },
+  {
+    "title": "Data Science Intern \u2014 Events & Ticketing",
+    "company": "Ticketmaster Ireland",
+    "location": "Dublin, Ireland",
+    "url": "https://www.ticketmaster.ie/discover/careers",
+    "description": "Analyze event and ticket sales data to build demand forecasting and dynamic pricing models. You will use Python, scikit-learn, and SQL, visualize insights with Seaborn, and present to the analytics team.",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "SQL",
+      "Pandas",
+      "Seaborn",
+      "Forecasting"
+    ],
+    "next_step": "Recruiter will schedule a 30-minute intro call followed by a Python forecasting task.",
+    "source": "Ticketmaster Careers"
+  }
+]
