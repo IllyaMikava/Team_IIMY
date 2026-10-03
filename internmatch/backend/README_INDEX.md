@@ -16,7 +16,7 @@ It creates the `listings` collection if needed, creates the index, and waits unt
 
 1. Atlas → your cluster → **Search & Vector Search** (or the **Atlas Search** tab) → **Create Search Index**.
 2. Choose **Vector Search** → **JSON Editor**.
-3. Database: `internmatch` · Collection: `listings` · Index name: **`vector_index`**
+3. Database: `internmatch` (or whatever `MONGODB_DB` is set to) · Collection: `listings` · Index name: **`vector_index`**
 4. Paste:
 
 ```json
@@ -41,7 +41,7 @@ It creates the `listings` collection if needed, creates the index, and waits unt
 | Index name | `vector_index` | `app/search.py` → `VECTOR_INDEX` |
 | Field path | `embedding` | `scripts/ingest.py` writes it |
 | Dimensions | `1024` | `voyage-3` output (`app/embeddings.py` → `DIMENSIONS`) |
-| Similarity | `cosine` | `vectorSearchScore` = (1 + cosine) / 2, so scores run 0–1 and `MATCH_THRESHOLD=0.75` means cosine ≥ 0.5 |
+| Similarity | `cosine` | `vectorSearchScore` = (1 + cosine) / 2, so scores run 0–1. voyage-3 scores on our listings sit around 0.67–0.75, so `MATCH_THRESHOLD=0.70` (cosine ≥ 0.4) is the default |
 
 ## Check it works
 

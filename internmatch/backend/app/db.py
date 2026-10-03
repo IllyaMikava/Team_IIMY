@@ -7,8 +7,6 @@ from pymongo.database import Database
 
 from . import config
 
-DB_NAME = "internmatch"
-
 
 @lru_cache(maxsize=1)
 def get_client() -> MongoClient:
@@ -19,7 +17,7 @@ def get_client() -> MongoClient:
 
 
 def get_db() -> Database:
-    return get_client()[DB_NAME]
+    return get_client()[config.MONGODB_DB]
 
 
 def listings() -> Collection:

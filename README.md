@@ -26,7 +26,7 @@ Full spec: [Design dock.md](Design%20dock.md) · Build prompts: [InternMatch Imp
 2. The backend extracts plain text from the CV.
 3. The text is embedded with **Voyage AI** (`voyage-3`, 1024 dims, `input_type="query"`).
 4. Atlas **`$vectorSearch`** ranks the stored job descriptions (`numCandidates=100`, `limit=15`).
-5. Every match with `score >= MATCH_THRESHOLD` (default `0.75`) is kept, capped at `MAX_EMAILS` (default `5`). If none clear the bar, the single best match is returned and flagged "best available" (shown in the UI but not emailed).
+5. Every match with `score >= MATCH_THRESHOLD` (default `0.70`: voyage-3 scores on our listings sit around 0.67–0.75) is kept, capped at `MAX_EMAILS` (default `5`). If none clear the bar, the single best match is returned and flagged "best available" (shown in the UI but not emailed).
 6. *(Optional)* One Claude call (`claude-haiku-4-5`) writes a one-line "why this matched" for each result.
 7. For each match, **one email** goes out via Gmail SMTP:
    `You matched: {job_title} at {company}`, with the reason, **`Next step: {next_step}`** copied verbatim from the job, and the job link.
@@ -138,9 +138,10 @@ uvicorn app.main:app --reload --port 8000
 ### `backend/.env`
 ```
 MONGODB_URI=mongodb+srv://...
+MONGODB_DB=internmatch                  # shared cluster? give each teammate their own, e.g. internmatch_illia
 VOYAGE_API_KEY=...
 ANTHROPIC_API_KEY=...                    # optional: match reasons
-MATCH_THRESHOLD=0.75                     # vectorSearchScore = (1 + cosine) / 2
+MATCH_THRESHOLD=0.70                     # vectorSearchScore = (1 + cosine) / 2
 MAX_EMAILS=5
 GMAIL_ADDRESS=youraddr@gmail.com         # leave both Gmail values empty → MOCK mode (emails print to the console)
 GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx   # Google Account → Security → 2-Step Verification → App passwords

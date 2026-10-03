@@ -24,7 +24,7 @@ from pymongo import ASCENDING, UpdateOne  # noqa: E402
 from pymongo.errors import PyMongoError  # noqa: E402
 
 from app.db import listings  # noqa: E402
-from app.embeddings import MAX_BATCH, embed_texts  # noqa: E402
+from app.embeddings import DIMENSIONS, MAX_BATCH, embed_texts  # noqa: E402
 
 DATA_FILE = BACKEND_DIR / "data" / "listings.json"
 REQUIRED = ("title", "company", "location", "url", "description", "skills", "next_step")
@@ -71,10 +71,20 @@ def main() -> None:
 
     texts = [embedding_input(j) for j in jobs]
     hashes = [text_hash(t) for t in texts]
+    # Only trust stored embeddings that have the right size: a vector from another model
+    # (e.g. 384-dim) can't be searched by the 1024-dim vector_index, so it gets re-embedded.
     stored = {
         (d["title"], d["company"]): d.get("embed_hash")
-        for d in coll.find({"embedding": {"$exists": True}}, {"title": 1, "company": 1, "embed_hash": 1})
+        for d in coll.aggregate([
+            {"$match": {"embedding": {"$exists": True}}},
+            {"$project": {"title": 1, "company": 1, "embed_hash": 1,
+                          "dims": {"$cond": [{"$isArray": "$embedding"}, {"$size": "$embedding"}, 0]}}},
+        ])
+        if d["dims"] == DIMENSIONS
     }
+    wrong_size = coll.count_documents({"embedding": {"$exists": True}}) - len(stored)
+    if wrong_size:
+        print(f"! {wrong_size} stored embeddings aren't {DIMENSIONS}-dim (another model?) — re-embedding them")
     to_embed = [
         i for i, (job, h) in enumerate(zip(jobs, hashes)) if args.force or stored.get((job["title"], job["company"])) != h
     ]
