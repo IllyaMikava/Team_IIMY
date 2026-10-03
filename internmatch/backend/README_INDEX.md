@@ -25,7 +25,7 @@ It creates the `listings` collection if needed, creates the index, and waits unt
     {
       "type": "vector",
       "path": "embedding",
-      "numDimensions": 1024,
+      "numDimensions": 384,
       "similarity": "cosine"
     }
   ]
@@ -40,8 +40,8 @@ It creates the `listings` collection if needed, creates the index, and waits unt
 |---|---|---|
 | Index name | `vector_index` | `app/search.py` → `VECTOR_INDEX` |
 | Field path | `embedding` | `scripts/ingest.py` writes it |
-| Dimensions | `1024` | `voyage-3` output (`app/embeddings.py` → `DIMENSIONS`) |
-| Similarity | `cosine` | `vectorSearchScore` = (1 + cosine) / 2, so scores run 0–1. voyage-3 scores on our listings sit around 0.67–0.75, so `MATCH_THRESHOLD=0.70` (cosine ≥ 0.4) is the default |
+| Dimensions | `384` | `all-MiniLM-L6-v2` output (`app/embeddings.py` → `DIMENSIONS`) |
+| Similarity | `cosine` | `vectorSearchScore` = (1 + cosine) / 2, so scores run 0–1. `MATCH_THRESHOLD=0.73` (cosine ≥ 0.46) is tuned for MiniLM on our listings |
 
 ## Check it works
 

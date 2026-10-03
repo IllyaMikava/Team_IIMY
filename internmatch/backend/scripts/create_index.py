@@ -26,6 +26,11 @@ DEFINITION = {
 WAIT_SECONDS = 600
 
 
+def _index_dims(idx: dict) -> int | None:
+    fields = (idx.get("latestDefinition") or {}).get("fields", [])
+    return next((f.get("numDimensions") for f in fields if f.get("path") == "embedding"), None)
+
+
 def main() -> None:
     db = get_db()
     if "listings" not in db.list_collection_names():
@@ -34,7 +39,13 @@ def main() -> None:
 
     existing = {idx["name"]: idx for idx in coll.list_search_indexes()}
     if VECTOR_INDEX in existing:
-        print(f"✓ '{VECTOR_INDEX}' already exists (status: {existing[VECTOR_INDEX].get('status')})")
+        dims = _index_dims(existing[VECTOR_INDEX])
+        if dims == DIMENSIONS:
+            print(f"✓ '{VECTOR_INDEX}' already exists (status: {existing[VECTOR_INDEX].get('status')})")
+        else:
+            # The embedding model changed size (e.g. 1024 → 384): rebuild the index for the new size.
+            coll.update_search_index(VECTOR_INDEX, DEFINITION)
+            print(f"→ '{VECTOR_INDEX}' was {dims}-dim; updating it to {DIMENSIONS}-dim. Waiting for Atlas to rebuild...")
     else:
         try:
             coll.create_search_index(SearchIndexModel(definition=DEFINITION, name=VECTOR_INDEX, type="vectorSearch"))
@@ -45,7 +56,8 @@ def main() -> None:
     deadline = time.time() + WAIT_SECONDS
     while time.time() < deadline:
         idx = next(iter(coll.list_search_indexes(VECTOR_INDEX)), {})
-        if idx.get("queryable"):
+        # While rebuilding, the old version stays queryable, so also wait for the new definition to be live.
+        if idx.get("queryable") and idx.get("status") == "READY" and _index_dims(idx) == DIMENSIONS:
             print(f"✓ '{VECTOR_INDEX}' is {idx.get('status')} and queryable. Vector search is ready.")
             return
         print(f"  status: {idx.get('status', 'PENDING')}...")
