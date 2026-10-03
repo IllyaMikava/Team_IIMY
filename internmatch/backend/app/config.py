@@ -11,11 +11,12 @@ MONGODB_URI = os.getenv("MONGODB_URI", "").strip()
 # Database name inside the cluster. Give each teammate their own (e.g. internmatch_illia)
 # so one person's experiments can't overwrite another's embeddings.
 MONGODB_DB = os.getenv("MONGODB_DB", "").strip() or "internmatch"
+# Embeddings are now local (sentence-transformers) — no Voyage key needed. Kept for reference.
 VOYAGE_API_KEY = os.getenv("VOYAGE_API_KEY", "").strip()
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "").strip()
 
-# voyage-3 scores cluster tightly (~0.67–0.75 on our listings), so 0.70 is the useful cut-off.
-MATCH_THRESHOLD = float(os.getenv("MATCH_THRESHOLD", "0.70"))
+# Tuned for all-MiniLM-L6-v2 on our listings (vectorSearchScore = (1 + cosine) / 2).
+MATCH_THRESHOLD = float(os.getenv("MATCH_THRESHOLD", "0.73"))
 MAX_EMAILS = int(os.getenv("MAX_EMAILS", "5"))
 
 GMAIL_ADDRESS = os.getenv("GMAIL_ADDRESS", "").strip()
