@@ -1,6 +1,15 @@
+import { useEffect, useState } from 'react'
 import MatchCard from './MatchCard.jsx'
 
+const matchKey = (m, i) => m.url || `${m.job_title}-${i}`
+
 export default function Results({ data }) {
+  // { [matchKey]: 'accepted' | 'rejected' } — kept in the browser only.
+  const [decisions, setDecisions] = useState({})
+
+  // A new search starts with a clean slate.
+  useEffect(() => setDecisions({}), [data])
+
   // No search run yet.
   if (!data) return null
 
@@ -24,6 +33,20 @@ export default function Results({ data }) {
     )
   }
 
+  function decide(key, decision) {
+    setDecisions((prev) => {
+      const next = { ...prev }
+      if (decision) next[key] = decision
+      else delete next[key]
+      return next
+    })
+  }
+
+  const values = Object.values(decisions)
+  const accepted = values.filter((d) => d === 'accepted').length
+  const rejected = values.length - accepted
+  const pending = matches.length - values.length
+
   return (
     <section className="results-section">
       <div className="container">
@@ -35,11 +58,27 @@ export default function Results({ data }) {
           </span>
         </div>
 
-        <h2 className="results-title">Your matches</h2>
+        <div className="results-head">
+          <h2 className="results-title">Your matches</h2>
+          <p className="results-tally">
+            <span className="tally-accepted">{accepted} accepted</span>
+            <span className="tally-rejected">{rejected} rejected</span>
+            <span>{pending} to review</span>
+          </p>
+        </div>
         <div className="results-grid">
-          {matches.map((m, i) => (
-            <MatchCard key={m.url || `${m.job_title}-${i}`} match={m} />
-          ))}
+          {matches.map((m, i) => {
+            const key = matchKey(m, i)
+            return (
+              <MatchCard
+                key={key}
+                match={m}
+                index={i}
+                decision={decisions[key]}
+                onDecide={(d) => decide(key, d)}
+              />
+            )
+          })}
         </div>
       </div>
     </section>

@@ -1,10 +1,16 @@
-export default function MatchCard({ match }) {
+const DECISION_LABEL = { accepted: '✓ Accepted', rejected: '✕ Rejected' }
+
+export default function MatchCard({ match, index = 0, decision, onDecide }) {
   // score may come as 0..1 (cosine) or 0..100; normalise to a percentage.
   const raw = match.score ?? 0
   const pct = Math.round(raw <= 1 ? raw * 100 : raw)
 
   return (
-    <article className="match-card">
+    <article
+      className={`match-card${decision ? ` ${decision}` : ''}`}
+      // Cards arrive one after another rather than all at once.
+      style={{ animationDelay: `${index * 90}ms` }}
+    >
       <div className="match-head">
         <div>
           <h3 className="match-title">{match.job_title}</h3>
@@ -40,6 +46,39 @@ export default function MatchCard({ match }) {
         >
           View job →
         </a>
+      )}
+
+      {decision ? (
+        <div className="match-decision">
+          {/* key restarts the stamp animation when the decision flips */}
+          <span key={decision} className={`decision-stamp ${decision}`}>
+            {DECISION_LABEL[decision]}
+          </span>
+          <button
+            type="button"
+            className="decision-undo"
+            onClick={() => onDecide?.(null)}
+          >
+            Undo
+          </button>
+        </div>
+      ) : (
+        <div className="match-actions">
+          <button
+            type="button"
+            className="btn btn-reject"
+            onClick={() => onDecide?.('rejected')}
+          >
+            Reject
+          </button>
+          <button
+            type="button"
+            className="btn btn-accept"
+            onClick={() => onDecide?.('accepted')}
+          >
+            Accept
+          </button>
+        </div>
       )}
     </article>
   )
