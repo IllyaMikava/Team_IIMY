@@ -16,6 +16,7 @@ export default function PostRoleForm({ defaultCompany, onSubmit }) {
   const [form, setForm] = useState({ ...EMPTY, company: defaultCompany })
   const [error, setError] = useState('')
   const [saving, setSaving] = useState(false)
+  const [autoInvite, setAutoInvite] = useState(true)
 
   // Prefill company from the page filter until the recruiter types their own.
   useEffect(() => {
@@ -56,6 +57,7 @@ export default function PostRoleForm({ defaultCompany, onSubmit }) {
         description: form.description.trim(),
         skills,
         next_step: form.next_step.trim(),
+        invite_mode: autoInvite ? 'auto' : 'manual',
       })
       setForm({ ...EMPTY, company: form.company, companyTouched: form.companyTouched })
     } catch (err) {
@@ -133,6 +135,25 @@ export default function PostRoleForm({ defaultCompany, onSubmit }) {
         {error && <p className="field-error" role="alert">{error}</p>}
 
         <div className="rec-form-actions">
+          <label className="check">
+            <input
+              type="checkbox"
+              checked={autoInvite}
+              onChange={(e) => setAutoInvite(e.target.checked)}
+              aria-describedby="r-invite-hint"
+            />
+            <span className="check-box" aria-hidden="true" />
+            <span className="check-text">
+              <span className="check-label">
+                {autoInvite ? 'Auto invite' : 'Manual invite'}
+              </span>
+              <span id="r-invite-hint" className="field-hint">
+                {autoInvite
+                  ? 'Matching students get your next step by email straight away.'
+                  : "Matches wait for your review. You choose who gets invited."}
+              </span>
+            </span>
+          </label>
           <button type="submit" className="btn btn-primary" disabled={saving}>
             {saving ? <span className="spinner" aria-hidden="true" /> : null}
             {saving ? 'Posting…' : 'Post role'}

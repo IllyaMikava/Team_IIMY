@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { closeJob, createJob, listJobs, listMatches } from '../../api.js'
+import { closeJob, createJob, inviteCandidate, listJobs, listMatches, updateJob } from '../../api.js'
 import PostRoleForm from './PostRoleForm.jsx'
 import CandidatesTable from './CandidatesTable.jsx'
 import RolesList from './RolesList.jsx'
@@ -19,6 +19,7 @@ export default function RecruiterPage({ showToast }) {
   const [jobs, setJobs] = useState([])
   const [matches, setMatches] = useState([])
   const [loading, setLoading] = useState(true)
+  const [invitingId, setInvitingId] = useState(null)
 
   const refresh = useCallback(
     async (name = company) => {
@@ -66,9 +67,39 @@ export default function RecruiterPage({ showToast }) {
     }
   }
 
+  async function handleInvite(match) {
+    setInvitingId(match.id)
+    try {
+      const updated = await inviteCandidate(match.id)
+      setMatches((ms) => ms.map((m) => (m.id === updated.id ? updated : m)))
+      showToast(`Invited ${updated.candidate_email}. They've been emailed your next step.`, 'success')
+    } catch (e) {
+      showToast(e.message || "Couldn't send the invite.")
+    } finally {
+      setInvitingId(null)
+    }
+  }
+
+  async function handleToggleInvite(job) {
+    const invite_mode = job.invite_mode === 'manual' ? 'auto' : 'manual'
+    try {
+      const updated = await updateJob(job.id, { invite_mode })
+      setJobs((js) => js.map((j) => (j.id === updated.id ? updated : j)))
+      showToast(
+        invite_mode === 'manual'
+          ? `“${job.title}” now waits for your review before inviting.`
+          : `“${job.title}” now invites matching students automatically.`,
+        'success',
+      )
+    } catch (e) {
+      showToast(e.message || "Couldn't update that role.")
+    }
+  }
+
   const strong = matches.filter((m) => !m.best_available)
   const candidates = new Set(strong.map((m) => m.candidate_email)).size
-  const emailed = strong.filter((m) => m.emailed).length
+  const emailed = matches.filter((m) => m.emailed).length
+  const toReview = matches.filter((m) => m.awaiting_review).length
 
   return (
     <>
@@ -103,6 +134,7 @@ export default function RecruiterPage({ showToast }) {
               <Stat label="Open roles" value={jobs.length} loading={loading} />
               <Stat label="Candidates matched" value={candidates} loading={loading} />
               <Stat label="Emails sent" value={emailed} loading={loading} />
+              <Stat label="To review" value={toReview} loading={loading} highlight={toReview > 0} />
             </dl>
           </div>
         </div>
@@ -125,7 +157,7 @@ export default function RecruiterPage({ showToast }) {
               {loading ? 'Refreshing…' : 'Refresh'}
             </button>
           </div>
-          <CandidatesTable matches={matches} loading={loading} />
+          <CandidatesTable matches={matches} loading={loading} onInvite={handleInvite} invitingId={invitingId} />
         </div>
       </section>
 
@@ -137,16 +169,16 @@ export default function RecruiterPage({ showToast }) {
               <p className="section-sub">What candidates are being matched against right now.</p>
             </div>
           </div>
-          <RolesList jobs={jobs} loading={loading} onClose={handleClose} />
+          <RolesList jobs={jobs} loading={loading} onClose={handleClose} onToggleInvite={handleToggleInvite} />
         </div>
       </section>
     </>
   )
 }
 
-function Stat({ label, value, loading }) {
+function Stat({ label, value, loading, highlight }) {
   return (
-    <div className="stat">
+    <div className={`stat${highlight ? ' stat-highlight' : ''}`}>
       <dt>{label}</dt>
       <dd>{loading ? '–' : value}</dd>
     </div>

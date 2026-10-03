@@ -80,9 +80,11 @@ def upload_cv(file: UploadFile = File(...), email: str = Form(...)) -> UploadRes
     reasons = explain_matches(cv_text, strong)
     t = lap("reasons", t)
 
-    # 4. one email per strong match (the "best available" fallback isn't a strong match, so it isn't emailed)
+    # 4. one email per strong match. Not emailed: the "best available" fallback (not a strong match)
+    #    and roles set to manual invite (the recruiter reviews and invites from the recruiter page).
     matches: list[MatchResult] = []
     for doc, reason in zip(strong, reasons):
+        best_available = doc.get("best_available", False)
         match = MatchResult(
             job_title=doc["title"],
             company=doc["company"],
@@ -91,9 +93,10 @@ def upload_cv(file: UploadFile = File(...), email: str = Form(...)) -> UploadRes
             score=round(doc["score"], 4),
             next_step=doc["next_step"],
             match_reason=reason,
-            best_available=doc.get("best_available", False),
+            best_available=best_available,
+            awaiting_review=not best_available and doc.get("invite_mode") == "manual",
         )
-        if not match.best_available:
+        if not match.best_available and not match.awaiting_review:
             match.emailed = send_match_email(email, match)
         _record_match_event(email, doc, match)
         matches.append(match)
@@ -101,8 +104,9 @@ def upload_cv(file: UploadFile = File(...), email: str = Form(...)) -> UploadRes
 
     total_emailed = sum(m.emailed for m in matches)
     log.info(
-        "upload-cv: %d chars, %d candidates, %d matches, %d emailed, timings=%s total=%.2fs",
-        len(cv_text), len(results), len(matches), total_emailed, timings, time.perf_counter() - started,
+        "upload-cv: %d chars, %d candidates, %d matches, %d emailed, %d awaiting review, timings=%s total=%.2fs",
+        len(cv_text), len(results), len(matches), total_emailed, sum(m.awaiting_review for m in matches),
+        timings, time.perf_counter() - started,
     )
     return UploadResponse(candidate_email=email, matches=matches, total_emailed=total_emailed)
 
@@ -121,6 +125,8 @@ def _record_match_event(email: str, doc: dict, match: MatchResult) -> None:
                 "match_reason": match.match_reason,
                 "emailed": match.emailed,
                 "best_available": match.best_available,
+                "awaiting_review": match.awaiting_review,
+                "invite_mode": doc.get("invite_mode", "auto"),
                 "created_at": datetime.now(timezone.utc),
             }
         )

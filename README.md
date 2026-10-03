@@ -52,7 +52,7 @@ Full spec: [Design dock.md](Design%20dock.md) · Build prompts: [InternMatch Imp
 | **Backend: email** | `backend/app/emailer.py` | Gmail SMTP, one email per strong match with `Next step:` verbatim. **MOCK mode** (prints the email) when Gmail isn't configured. |
 | Match reasons (optional) | `backend/app/search.py` → `explain_matches` | One `claude-haiku-4-5` call with structured output; blank reasons if no key or on any error. |
 | Student page | `internmatch/frontend/src/` (React + Vite) | CV dropzone, email field, result cards, summary banner, empty state, toast. |
-| **Recruiter page** (`/recruiter`) | `frontend/src/components/recruiter/`, `backend/app/recruiter.py` | Post a role, including its **next step**. It's embedded immediately, so it's searchable straight away. See matched candidates (score, reason, next step, emailed) and roles with match counts; close a role. Filter everything by company. No login: accounts are a non-goal. |
+| **Recruiter page** (`/recruiter`) | `frontend/src/components/recruiter/`, `backend/app/recruiter.py` | Post a role, including its **next step**. It's embedded immediately, so it's searchable straight away. Choose **auto invite** (matching students are emailed straight away) or **manual invite** (matches wait for review and the recruiter clicks *Invite*). See matched candidates (score, reason, next step, status) and roles with match counts; switch a role's invite mode or close it. Filter everything by company. No login: accounts are a non-goal. |
 
 The backend passes an offline test run with the network services faked: CV parsing, threshold and fallback, reasons, email building, and every API success and error path.
 It has been run against a real Atlas cluster: ingest, index, search and the full upload flow. Real Gmail sending hasn't been tested yet.
@@ -141,7 +141,7 @@ Vite forwards `/api` to the backend on port 8000. Use `VITE_USE_MOCK=true` to ru
   "total_emailed": 3
 }
 ```
-- `matches` holds every result with `score >= MATCH_THRESHOLD`, best first, capped at `MAX_EMAILS`. Each one gets an email.
+- `matches` holds every result with `score >= MATCH_THRESHOLD`, best first, capped at `MAX_EMAILS`. Each one gets an email, except roles set to **manual invite**: those come back with `awaiting_review: true` and are emailed only when the recruiter clicks Invite.
 - If nothing clears the threshold, you get the single best result with `best_available: true`. It is **not emailed**, because it isn't a strong match.
 - Errors return `{"detail": "..."}`: `400` for a bad file type, unreadable file or bad email; `413` for a file over 5 MB; `503` when search is unavailable (MongoDB not configured or not reachable).
 
@@ -150,9 +150,11 @@ Vite forwards `/api` to the backend on port 8000. Use `VITE_USE_MOCK=true` to ru
 | Method | Path | What it does |
 |---|---|---|
 | `GET` | `/jobs?company=` | Roles, newest first, each with `match_count` (strong matches from `match_events`) |
-| `POST` | `/jobs` | JSON `{title, company, location, url, description, skills[], next_step}` → embeds it and saves it → `201`. `409` if the company already has that title; `422` if a field is missing or too short |
+| `POST` | `/jobs` | JSON `{title, company, location, url, description, skills[], next_step, invite_mode}` (`invite_mode` is `"auto"` or `"manual"`, default auto) → embeds it and saves it → `201`. `409` if the company already has that title; `422` if a field is missing or too short |
+| `PATCH` | `/jobs/{id}` | `{invite_mode: "auto" \| "manual"}`: switch how future matches are handled |
 | `DELETE` | `/jobs/{id}` | Close a role so it stops matching (past matches are kept) → `204` |
-| `GET` | `/matches?company=` | Matched candidates, newest first: email, role, score, next step, reason, emailed |
+| `GET` | `/matches?company=` | Matched candidates, newest first: email, role, score, next step, reason, `emailed`, `awaiting_review` |
+| `POST` | `/matches/{id}/invite` | Manual invite: email the candidate the role's next step now. `409` if they were already emailed |
 
 ### `backend/.env`
 ```

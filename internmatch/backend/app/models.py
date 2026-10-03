@@ -1,7 +1,12 @@
 """Request / response models for the API."""
 from datetime import datetime
+from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
+
+# "auto": matching students are emailed the next step straight away.
+# "manual": matches wait on the recruiter page until the recruiter clicks Invite.
+InviteMode = Literal["auto", "manual"]
 
 
 class MatchResult(BaseModel):
@@ -14,6 +19,7 @@ class MatchResult(BaseModel):
     match_reason: str = ""       # optional one-liner from Claude; "" if unavailable
     emailed: bool = False
     best_available: bool = False  # True when nothing cleared the threshold and this is just the top hit
+    awaiting_review: bool = False  # role uses manual invite: the recruiter decides whether to email
 
 
 class UploadResponse(BaseModel):
@@ -37,6 +43,7 @@ class JobIn(BaseModel):
     description: str = Field(min_length=40, max_length=4000)
     skills: list[str] = Field(min_length=1, max_length=20)
     next_step: str = Field(min_length=5, max_length=300)
+    invite_mode: InviteMode = "auto"
 
     @field_validator("skills")
     @classmethod
@@ -61,8 +68,13 @@ class JobOut(BaseModel):
     skills: list[str]
     next_step: str
     source: str = ""
+    invite_mode: InviteMode = "auto"
     posted_at: datetime | None = None
     match_count: int = 0  # strong matches recorded in match_events
+
+
+class JobUpdate(BaseModel):
+    invite_mode: InviteMode
 
 
 class CandidateMatch(BaseModel):
@@ -78,4 +90,6 @@ class CandidateMatch(BaseModel):
     match_reason: str = ""
     emailed: bool = False
     best_available: bool = False
+    awaiting_review: bool = False  # manual-invite role: waiting for the recruiter to click Invite
+    invited_at: datetime | None = None  # set when the recruiter invited them manually
     created_at: datetime | None = None

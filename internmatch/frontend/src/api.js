@@ -160,6 +160,7 @@ let mockJobs = [
     description: 'Build and maintain REST APIs backed by Postgres for our payments platform.',
     skills: ['Python', 'SQL', 'REST APIs', 'Postgres'],
     next_step: 'Recruiter will schedule a 30-minute Zoom intro call.',
+    invite_mode: 'auto',
     source: 'InternMatch recruiter page',
     posted_at: new Date(Date.now() - 86400000).toISOString(),
     match_count: 2,
@@ -173,6 +174,7 @@ let mockJobs = [
     description: 'Help build batch pipelines that move transaction data into our warehouse.',
     skills: ['Python', 'Airflow', 'SQL'],
     next_step: 'Complete a short take-home SQL task.',
+    invite_mode: 'manual',
     source: 'InternMatch recruiter page',
     posted_at: new Date(Date.now() - 3 * 86400000).toISOString(),
     match_count: 1,
@@ -197,6 +199,26 @@ const mockMatches = [
     id: 'm3', candidate_email: 'priya.n@example.com', job_id: 'mock-2',
     job_title: 'Data Engineering Intern', company: 'Acme Fintech', score: 0.75,
     next_step: 'Complete a short take-home SQL task.', match_reason: '',
-    emailed: true, best_available: false, created_at: new Date(Date.now() - 86400000).toISOString(),
+    emailed: false, best_available: false, awaiting_review: true, created_at: new Date(Date.now() - 86400000).toISOString(),
   },
 ]
+
+/** Switch a role between 'auto' and 'manual' invite. */
+export function updateJob(id, patch) {
+  if (USE_MOCK) {
+    const job = mockJobs.find((j) => j.id === id)
+    Object.assign(job, patch)
+    return Promise.resolve({ ...job })
+  }
+  return request(`/api/recruiter/jobs/${encodeURIComponent(id)}`, { method: 'PATCH', body: JSON.stringify(patch) })
+}
+
+/** Manual invite: email this matched candidate the role's next step now. */
+export function inviteCandidate(matchId) {
+  if (USE_MOCK) {
+    const m = mockMatches.find((x) => x.id === matchId)
+    Object.assign(m, { emailed: true, awaiting_review: false, invited_at: new Date().toISOString() })
+    return Promise.resolve({ ...m })
+  }
+  return request(`/api/recruiter/matches/${encodeURIComponent(matchId)}/invite`, { method: 'POST' })
+}

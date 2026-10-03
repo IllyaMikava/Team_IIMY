@@ -35,6 +35,7 @@ def vector_search(cv_text: str, k: int = 15) -> list[dict]:
                 "description": 1,
                 "skills": 1,
                 "next_step": 1,
+                "invite_mode": 1,
                 "score": {"$meta": "vectorSearchScore"},
             }
         },

@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const PAGE = 12
 
-export default function RolesList({ jobs, loading, onClose }) {
+export default function RolesList({ jobs, loading, onClose, onToggleInvite }) {
   const [shown, setShown] = useState(PAGE)
 
   if (loading && !jobs.length) return <p className="rec-empty">Loading roles…</p>
@@ -41,6 +41,15 @@ export default function RolesList({ jobs, loading, onClose }) {
             <div className="next-step-pill">
               <span className="next-step-label">Next step</span>
               <span className="next-step-text">{job.next_step}</span>
+            </div>
+
+            <div className="invite-row">
+              <span className={`badge ${job.invite_mode === 'manual' ? 'badge-warn' : 'badge-ok'}`}>
+                {job.invite_mode === 'manual' ? 'Manual invite' : 'Auto invite'}
+              </span>
+              <button type="button" className="btn-link" onClick={() => onToggleInvite(job)}>
+                Switch to {job.invite_mode === 'manual' ? 'auto' : 'manual'}
+              </button>
             </div>
 
             <div className="role-actions">

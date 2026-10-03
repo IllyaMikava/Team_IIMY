@@ -9,7 +9,33 @@ function timeAgo(iso) {
   return new Date(iso).toLocaleDateString(undefined, { day: 'numeric', month: 'short' })
 }
 
-export default function CandidatesTable({ matches, loading }) {
+function Status({ m, onInvite, inviting }) {
+  if (m.emailed) {
+    return <span className="match-badge">{m.invited_at ? 'invited ✓' : 'emailed ✓'}</span>
+  }
+  // Not emailed yet: the recruiter can invite (manual-invite role), invite anyway (closest match),
+  // or retry (email failed).
+  const [badge, badgeClass, action] = m.awaiting_review
+    ? ['Awaiting review', 'badge-warn', 'Invite']
+    : m.best_available
+      ? ['Closest match', 'badge-muted', 'Invite anyway']
+      : ['Email failed', 'badge-miss', 'Retry email']
+  return (
+    <div className="status-cell">
+      <span className={`badge ${badgeClass}`}>{badge}</span>
+      <button
+        type="button"
+        className={`btn btn-sm${m.awaiting_review ? ' btn-primary' : ''}`}
+        onClick={() => onInvite(m)}
+        disabled={inviting}
+      >
+        {inviting ? 'Sending…' : action}
+      </button>
+    </div>
+  )
+}
+
+export default function CandidatesTable({ matches, loading, onInvite, invitingId }) {
   if (loading && !matches.length) return <p className="rec-empty">Loading candidates…</p>
   if (!matches.length) {
     return (
@@ -52,13 +78,7 @@ export default function CandidatesTable({ matches, loading }) {
               </td>
               <td data-label="Next step" className="cell-next">{m.next_step}</td>
               <td data-label="Status">
-                {m.best_available ? (
-                  <span className="badge badge-muted" title="Closest role, but below the match threshold, so it wasn't emailed">Closest match</span>
-                ) : m.emailed ? (
-                  <span className="match-badge">emailed ✓</span>
-                ) : (
-                  <span className="badge badge-miss">email failed</span>
-                )}
+                <Status m={m} onInvite={onInvite} inviting={invitingId === m.id} />
               </td>
             </tr>
           ))}
