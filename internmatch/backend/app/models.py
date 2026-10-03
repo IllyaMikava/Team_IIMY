@@ -1,5 +1,7 @@
-"""Response models for the API."""
-from pydantic import BaseModel
+"""Request / response models for the API."""
+from datetime import datetime
+
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
 class MatchResult(BaseModel):
@@ -18,3 +20,62 @@ class UploadResponse(BaseModel):
     candidate_email: str
     matches: list[MatchResult]
     total_emailed: int
+
+
+# ---------------------------------------------------------------- recruiter page
+
+
+class JobIn(BaseModel):
+    """A role posted from the recruiter page. `next_step` is decided here, upfront."""
+
+    model_config = ConfigDict(str_strip_whitespace=True)
+
+    title: str = Field(min_length=2, max_length=120)
+    company: str = Field(min_length=1, max_length=80)
+    location: str = Field(default="", max_length=80)
+    url: str = Field(default="", max_length=300)
+    description: str = Field(min_length=40, max_length=4000)
+    skills: list[str] = Field(min_length=1, max_length=20)
+    next_step: str = Field(min_length=5, max_length=300)
+
+    @field_validator("skills")
+    @classmethod
+    def clean_skills(cls, skills: list[str]) -> list[str]:
+        seen, out = set(), []
+        for s in (s.strip() for s in skills):
+            if s and s.lower() not in seen:
+                seen.add(s.lower())
+                out.append(s[:40])
+        if not out:
+            raise ValueError("add at least one skill")
+        return out
+
+
+class JobOut(BaseModel):
+    id: str
+    title: str
+    company: str
+    location: str = ""
+    url: str = ""
+    description: str
+    skills: list[str]
+    next_step: str
+    source: str = ""
+    posted_at: datetime | None = None
+    match_count: int = 0  # strong matches recorded in match_events
+
+
+class CandidateMatch(BaseModel):
+    """One row of match_events, as shown to recruiters."""
+
+    id: str
+    candidate_email: str
+    job_id: str | None = None
+    job_title: str
+    company: str
+    score: float
+    next_step: str
+    match_reason: str = ""
+    emailed: bool = False
+    best_available: bool = False
+    created_at: datetime | None = None

@@ -84,3 +84,119 @@ function mockUpload(email) {
     ),
   )
 }
+
+// --------------------------------------------------------------- recruiter API
+
+async function request(path, options = {}) {
+  const res = await fetch(`${API_BASE}${path}`, {
+    ...options,
+    headers: options.body ? { 'Content-Type': 'application/json' } : undefined,
+  })
+  if (!res.ok) {
+    let detail = `Request failed (${res.status})`
+    try {
+      const body = await res.json()
+      // FastAPI validation errors come back as a list of {loc, msg}.
+      if (Array.isArray(body?.detail)) {
+        detail = body.detail
+          .map((d) => `${d.loc?.at(-1) ?? 'field'}: ${d.msg}`)
+          .join(' · ')
+      } else if (body?.detail) {
+        detail = body.detail
+      }
+    } catch {
+      /* non-JSON error body */
+    }
+    throw new Error(detail)
+  }
+  return res.status === 204 ? null : res.json()
+}
+
+const companyQuery = (company) =>
+  company?.trim() ? `?company=${encodeURIComponent(company.trim())}` : ''
+
+/** Roles (newest first) with match_count. Optional company filter. */
+export function listJobs(company) {
+  if (USE_MOCK) return Promise.resolve(mockJobs.filter((j) => byCompany(j, company)))
+  return request(`/api/recruiter/jobs${companyQuery(company)}`)
+}
+
+/** Post a role: { title, company, location, url, description, skills[], next_step }. */
+export function createJob(job) {
+  if (USE_MOCK) {
+    const created = { ...job, id: `mock-${Date.now()}`, source: 'InternMatch recruiter page', posted_at: new Date().toISOString(), match_count: 0 }
+    mockJobs.unshift(created)
+    return Promise.resolve(created)
+  }
+  return request('/api/recruiter/jobs', { method: 'POST', body: JSON.stringify(job) })
+}
+
+/** Close (delete) a role so it stops matching. */
+export function closeJob(id) {
+  if (USE_MOCK) {
+    mockJobs = mockJobs.filter((j) => j.id !== id)
+    return Promise.resolve(null)
+  }
+  return request(`/api/recruiter/jobs/${encodeURIComponent(id)}`, { method: 'DELETE' })
+}
+
+/** Candidates matched to roles (newest first). Optional company filter. */
+export function listMatches(company) {
+  if (USE_MOCK) return Promise.resolve(mockMatches.filter((m) => byCompany(m, company)))
+  return request(`/api/recruiter/matches${companyQuery(company)}`)
+}
+
+// --- recruiter mocks, shape-identical to the real backend ---
+const byCompany = (row, company) =>
+  !company?.trim() || row.company.toLowerCase().includes(company.trim().toLowerCase())
+
+let mockJobs = [
+  {
+    id: 'mock-1',
+    title: 'Backend Engineering Intern',
+    company: 'Acme Fintech',
+    location: 'Dublin, Ireland',
+    url: 'https://example.com/jobs/backend-intern',
+    description: 'Build and maintain REST APIs backed by Postgres for our payments platform.',
+    skills: ['Python', 'SQL', 'REST APIs', 'Postgres'],
+    next_step: 'Recruiter will schedule a 30-minute Zoom intro call.',
+    source: 'InternMatch recruiter page',
+    posted_at: new Date(Date.now() - 86400000).toISOString(),
+    match_count: 2,
+  },
+  {
+    id: 'mock-2',
+    title: 'Data Engineering Intern',
+    company: 'Acme Fintech',
+    location: 'Remote (EU)',
+    url: '',
+    description: 'Help build batch pipelines that move transaction data into our warehouse.',
+    skills: ['Python', 'Airflow', 'SQL'],
+    next_step: 'Complete a short take-home SQL task.',
+    source: 'InternMatch recruiter page',
+    posted_at: new Date(Date.now() - 3 * 86400000).toISOString(),
+    match_count: 1,
+  },
+]
+
+const mockMatches = [
+  {
+    id: 'm1', candidate_email: 'alex.murphy@example.com', job_id: 'mock-1',
+    job_title: 'Backend Engineering Intern', company: 'Acme Fintech', score: 0.81,
+    next_step: 'Recruiter will schedule a 30-minute Zoom intro call.',
+    match_reason: 'Their Postgres + REST API gym tracker maps directly to this role.',
+    emailed: true, best_available: false, created_at: new Date(Date.now() - 3600000).toISOString(),
+  },
+  {
+    id: 'm2', candidate_email: 'sam.oconnor@example.com', job_id: 'mock-1',
+    job_title: 'Backend Engineering Intern', company: 'Acme Fintech', score: 0.77,
+    next_step: 'Recruiter will schedule a 30-minute Zoom intro call.', match_reason: '',
+    emailed: true, best_available: false, created_at: new Date(Date.now() - 7200000).toISOString(),
+  },
+  {
+    id: 'm3', candidate_email: 'priya.n@example.com', job_id: 'mock-2',
+    job_title: 'Data Engineering Intern', company: 'Acme Fintech', score: 0.75,
+    next_step: 'Complete a short take-home SQL task.', match_reason: '',
+    emailed: true, best_available: false, created_at: new Date(Date.now() - 86400000).toISOString(),
+  },
+]

@@ -17,6 +17,7 @@ from .cv_parser import extract_text
 from .db import match_events
 from .emailer import is_mock_mode, send_match_email
 from .models import MatchResult, UploadResponse
+from .recruiter import router as recruiter_router
 from .search import explain_matches, filter_strong, vector_search
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
@@ -32,6 +33,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+app.include_router(recruiter_router)
 
 
 @app.get("/api/health")
@@ -116,6 +118,7 @@ def _record_match_event(email: str, doc: dict, match: MatchResult) -> None:
                 "company": match.company,
                 "score": match.score,
                 "next_step": match.next_step,
+                "match_reason": match.match_reason,
                 "emailed": match.emailed,
                 "best_available": match.best_available,
                 "created_at": datetime.now(timezone.utc),

@@ -11,7 +11,6 @@ Listings are keyed by (title, company). A listing is only re-embedded when its
 title/description/skills text changed, so re-running is cheap.
 """
 import argparse
-import hashlib
 import json
 import sys
 from datetime import datetime, timezone
@@ -25,17 +24,10 @@ from pymongo.errors import PyMongoError  # noqa: E402
 
 from app.db import listings  # noqa: E402
 from app.embeddings import DIMENSIONS, MAX_BATCH, embed_texts  # noqa: E402
+from app.jobs import listing_text, text_hash  # noqa: E402
 
 DATA_FILE = BACKEND_DIR / "data" / "listings.json"
 REQUIRED = ("title", "company", "location", "url", "description", "skills", "next_step")
-
-
-def embedding_input(job: dict) -> str:
-    return f"{job['title']}\n{job['description']}\n{', '.join(job['skills'])}"
-
-
-def text_hash(text: str) -> str:
-    return hashlib.sha1(text.encode("utf-8")).hexdigest()
 
 
 def load_listings(limit: int | None) -> list[dict]:
@@ -69,7 +61,7 @@ def main() -> None:
     coll = listings()
     coll.create_index([("title", ASCENDING), ("company", ASCENDING)], unique=True)
 
-    texts = [embedding_input(j) for j in jobs]
+    texts = [listing_text(j) for j in jobs]
     hashes = [text_hash(t) for t in texts]
     # Only trust stored embeddings that have the right size: a vector from another model
     # (e.g. 384-dim) can't be searched by the 1024-dim vector_index, so it gets re-embedded.
