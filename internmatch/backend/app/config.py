@@ -8,6 +8,7 @@ BACKEND_DIR = Path(__file__).resolve().parents[1]
 load_dotenv(BACKEND_DIR / ".env")
 
 MONGODB_URI = os.getenv("MONGODB_URI", "").strip()
+# Embeddings are now local (sentence-transformers) — no Voyage key needed. Kept for reference.
 VOYAGE_API_KEY = os.getenv("VOYAGE_API_KEY", "").strip()
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "").strip()
 
