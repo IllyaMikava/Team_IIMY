@@ -30,3 +30,18 @@ def listings() -> Collection:
 def match_events() -> Collection:
     """Audit log: one record per match shown/emailed to a candidate."""
     return get_db()["match_events"]
+
+
+def candidates() -> Collection:
+    """Uploaded CVs, keyed by email, each with an `embedding` (for recruiter-side matching)."""
+    return get_db()["candidates"]
+
+
+def jobs() -> Collection:
+    """Recruiter-created jobs, each with an `embedding` used to find matching candidates."""
+    return get_db()["jobs"]
+
+
+def candidate_matches() -> Collection:
+    """One record per (job, candidate) match, with an accept/decline `status`."""
+    return get_db()["candidate_matches"]

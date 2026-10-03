@@ -5,41 +5,53 @@ import anthropic
 from pydantic import BaseModel
 
 from . import config
-from .db import listings
+from .db import candidates, listings
 from .embeddings import embed_query
 
 log = logging.getLogger("internmatch.search")
 
-VECTOR_INDEX = "vector_index"
+VECTOR_INDEX = "vector_index"                      # on listings.embedding
+CANDIDATES_INDEX = "candidates_vector_index"        # on candidates.embedding
 REASON_MODEL = "claude-haiku-4-5"
 
 
-def vector_search(cv_text: str, k: int = 15) -> list[dict]:
-    """Return the k listings closest to the CV, best first, each with a `score` (0–1)."""
+def _vector_search(coll, index: str, query_vector: list[float], project: dict, k: int) -> list[dict]:
+    """Shared $vectorSearch pipeline: rank docs in `coll` by closeness to `query_vector`."""
     pipeline = [
         {
             "$vectorSearch": {
-                "index": VECTOR_INDEX,
+                "index": index,
                 "path": "embedding",
-                "queryVector": embed_query(cv_text),
+                "queryVector": query_vector,
                 "numCandidates": 100,
                 "limit": k,
             }
         },
-        {
-            "$project": {
-                "title": 1,
-                "company": 1,
-                "location": 1,
-                "url": 1,
-                "description": 1,
-                "skills": 1,
-                "next_step": 1,
-                "score": {"$meta": "vectorSearchScore"},
-            }
-        },
+        {"$project": {**project, "score": {"$meta": "vectorSearchScore"}}},
     ]
-    return list(listings().aggregate(pipeline))
+    return list(coll.aggregate(pipeline))
+
+
+def vector_search(cv_text: str, k: int = 15) -> list[dict]:
+    """Return the k listings closest to the CV, best first, each with a `score` (0–1)."""
+    return _vector_search(
+        listings(),
+        VECTOR_INDEX,
+        embed_query(cv_text),
+        {"title": 1, "company": 1, "location": 1, "url": 1, "description": 1, "skills": 1, "next_step": 1},
+        k,
+    )
+
+
+def search_candidates(job_text: str, k: int = 25) -> list[dict]:
+    """Return the k candidates whose CVs are closest to a job, best first, each with a `score` (0–1)."""
+    return _vector_search(
+        candidates(),
+        CANDIDATES_INDEX,
+        embed_query(job_text),
+        {"email": 1, "name": 1, "cv_text": 1},
+        k,
+    )
 
 
 def filter_strong(results: list[dict], threshold: float | None = None, max_results: int | None = None) -> list[dict]:

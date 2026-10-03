@@ -1,4 +1,6 @@
 """Response models for the API."""
+from typing import Literal
+
 from pydantic import BaseModel
 
 
@@ -18,3 +20,36 @@ class UploadResponse(BaseModel):
     candidate_email: str
     matches: list[MatchResult]
     total_emailed: int
+
+
+# --- recruiter side -------------------------------------------------------
+
+class JobIn(BaseModel):
+    title: str
+    company: str
+    location: str = ""
+    description: str
+    next_step: str = ""
+
+
+class JobOut(BaseModel):
+    id: str
+    title: str
+    company: str
+    location: str = ""
+    description: str = ""
+    next_step: str = ""
+    created_at: str
+    candidate_count: int = 0
+
+
+class CandidateMatchOut(BaseModel):
+    id: str
+    candidate_name: str
+    candidate_email: str
+    score: float
+    status: Literal["new", "accepted", "declined"] = "new"
+
+
+class DecisionIn(BaseModel):
+    decision: Literal["accepted", "declined"]
